@@ -5,7 +5,7 @@ export const pocketPop = {
     opacity: 1, 
     rotate: [0, 5, -5, 0],
     transition: { 
-      type: "spring", 
+      type: "spring" as const, 
       stiffness: 400, 
       damping: 25 
     } 
@@ -41,7 +41,7 @@ export const staggerItem = {
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 }
+    transition: { type: "spring" as const, stiffness: 300, damping: 24 }
   }
 };
 
