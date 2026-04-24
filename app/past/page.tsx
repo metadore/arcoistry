@@ -235,10 +235,11 @@ export default function PastPage() {
 
       {/* ── Tokyo Rainy Night Video Background ── */}
       <video
-        autoPlay
-        loop
-        muted
-        playsInline
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        playsInline={true}
+        preload="auto"
         className="fixed inset-0 -z-20 w-full h-full object-cover"
         style={{ opacity: 0.75, pointerEvents: 'none' }}
       >

@@ -20,10 +20,11 @@ export default function VideoBackground() {
     <>
       <video
         key={src}
-        autoPlay
-        loop
-        muted
-        playsInline
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        playsInline={true}
+        preload="auto"
         className="fixed inset-0 -z-20 w-full h-full object-cover opacity-80"
         style={{ pointerEvents: 'none' }}
       >
