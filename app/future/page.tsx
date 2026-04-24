@@ -4,7 +4,7 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
-import { projectsData } from '@/data/projects';
+import { projectsData, Project } from '@/data/projects';
 import GadgetManual from '@/components/ui/GadgetManual';
 import { useAppStore } from '@/store/useAppStore';
 
