@@ -12,8 +12,7 @@ export const pocketPop: Variants = {
       damping: 25 
     } 
   }
-  }
-} as const;
+};
 
 export const cardHover: Variants = {
   hover: {
@@ -24,11 +23,10 @@ export const cardHover: Variants = {
   },
   tap: {
     scale: 0.95,
-    backgroundColor: "rgba(255, 215, 0, 0.2)", // Flash Yellow
+    backgroundColor: "rgba(255, 215, 0, 0.2)",
     transition: { duration: 0.1 }
   }
-  }
-} as const;
+};
 
 export const staggerContainer: Variants = {
   hidden: { opacity: 0 },
@@ -38,8 +36,7 @@ export const staggerContainer: Variants = {
       staggerChildren: 0.05
     }
   }
-  }
-} as const;
+};
 
 export const staggerItem: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -48,11 +45,10 @@ export const staggerItem: Variants = {
     y: 0,
     transition: { type: "spring" as const, stiffness: 300, damping: 24 }
   }
-  }
-} as const;
+};
 
 export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 0.5 } },
   exit: { opacity: 0, transition: { duration: 0.3 } }
-} as const;
+};
