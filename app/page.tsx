@@ -1,65 +1,126 @@
-import Image from "next/image";
+"use client";
+
+import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useAppStore } from './store/useAppStore';
+import GadgetGrid from './components/ui/GadgetGrid';
+import { motion } from 'framer-motion';
 
 export default function Home() {
+  const router = useRouter();
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="min-h-screen pt-24 pb-32 flex flex-col items-center">
+
+      {/* Hero Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        className="text-center mb-16 px-4 max-w-4xl"
+      >
+        <h1 className="mb-4">
+          <span className="text-white">Hi, I'm </span>
+          <span className="text-gradient-doraemon">Arcoistry</span>
+        </h1>
+        <h2 className="text-2xl md:text-3xl text-gray-300 font-light mb-6">
+          Artist • Coder • Creator
+        </h2>
+        <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed glass-panel p-6 rounded-2xl mb-8">
+          Welcome to my 4D Pocket. I blend chemistry, code, and art into interactive experiences.
+          Select a timeline in the Chrono-Terminal to explore my gadgets.
+        </p>
+
+        {/* Timeline CTAs */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+        >
+          {/* Past */}
+          <Link
+            href="/past"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-base
+                       overflow-hidden transition-all duration-300
+                       border border-amber-400/40 text-amber-300
+                       hover:border-amber-300 hover:text-white
+                       hover:shadow-[0_0_30px_rgba(251,191,36,0.4)]"
+            style={{ background: 'rgba(251,191,36,0.08)', backdropFilter: 'blur(12px)' }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ background: 'linear-gradient(105deg, transparent 40%, rgba(251,191,36,0.15) 50%, transparent 60%)' }} />
+            <span className="text-xl">🕰️</span>
+            <span className="relative z-10 tracking-wide">The Archive</span>
+            <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-200">→</span>
+          </Link>
+
+          {/* Art */}
+          <button
+            onClick={() => {
+              const { setTransitioning } = useAppStore.getState();
+              setTransitioning(true);
+              setTimeout(() => {
+                router.push('/art');
+                setTimeout(() => setTransitioning(false), 1000);
+              }, 4500); // 4.5 seconds transition
+            }}
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-base
+                       overflow-hidden transition-all duration-300
+                       border border-rose-400/40 text-rose-300
+                       hover:border-rose-300 hover:text-white
+                       hover:shadow-[0_0_30px_rgba(251,113,133,0.4)] cursor-pointer text-left"
+            style={{ background: 'rgba(251,113,133,0.08)', backdropFilter: 'blur(12px)' }}
           >
-            Documentation
-          </a>
-        </div>
-      </main>
+            <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ background: 'linear-gradient(105deg, transparent 40%, rgba(251,113,133,0.15) 50%, transparent 60%)' }} />
+            <span className="text-xl">🎨</span>
+            <span className="relative z-10 tracking-wide">The Gallery</span>
+            <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-200">→</span>
+          </button>
+
+          {/* Contact */}
+          <Link
+            href="/contact"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-base
+                       overflow-hidden transition-all duration-300
+                       border border-purple-400/40 text-purple-300
+                       hover:border-purple-300 hover:text-white
+                       hover:shadow-[0_0_30px_rgba(168,85,247,0.4)]"
+            style={{ background: 'rgba(168,85,247,0.08)', backdropFilter: 'blur(12px)' }}
+          >
+            <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ background: 'linear-gradient(105deg, transparent 40%, rgba(168,85,247,0.15) 50%, transparent 60%)' }} />
+            <span className="text-xl">🛸</span>
+            <span className="relative z-10 tracking-wide">The Hub</span>
+            <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-200">→</span>
+          </Link>
+
+          {/* Future */}
+          <Link
+            href="/future"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-base
+                       overflow-hidden transition-all duration-300
+                       border border-cyan-400/40 text-cyan-300
+                       hover:border-cyan-300 hover:text-white
+                       hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]"
+            style={{ background: 'rgba(34,211,238,0.08)', backdropFilter: 'blur(12px)' }}
+          >
+            <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ background: 'linear-gradient(105deg, transparent 40%, rgba(34,211,238,0.15) 50%, transparent 60%)' }} />
+            <span className="text-xl">🚀</span>
+            <span className="relative z-10 tracking-wide">The Horizon</span>
+            <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-200">→</span>
+          </Link>
+        </motion.div>
+      </motion.div>
+
+      {/* Gadget Grid */}
+      <div className="w-full relative z-10">
+        <GadgetGrid />
+      </div>
+
     </div>
   );
 }
+
