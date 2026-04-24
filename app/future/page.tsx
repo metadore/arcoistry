@@ -43,11 +43,10 @@ function ParallaxCard({ project, onClick }: { project: Project, onClick: () => v
     <motion.div
       ref={ref}
       layout
-      variants={cardVariant}
+      variants={cardVariant as any}
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, scale: 0.85, transition: { duration: 0.2 } }}
-      style={{ y }}
       whileHover={{ y: -7, scale: 1.02 }}
       whileTap={{ scale: 0.97 }}
       onClick={onClick}
