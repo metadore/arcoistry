@@ -1,4 +1,6 @@
-export const pocketPop = {
+import { Variants } from 'framer-motion';
+
+export const pocketPop: Variants = {
   hidden: { scale: 0, opacity: 0 },
   visible: { 
     scale: 1, 
@@ -10,9 +12,10 @@ export const pocketPop = {
       damping: 25 
     } 
   }
-};
+  }
+} as const;
 
-export const cardHover = {
+export const cardHover: Variants = {
   hover: {
     y: -5,
     scale: 1.05,
@@ -24,9 +27,10 @@ export const cardHover = {
     backgroundColor: "rgba(255, 215, 0, 0.2)", // Flash Yellow
     transition: { duration: 0.1 }
   }
-};
+  }
+} as const;
 
-export const staggerContainer = {
+export const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -34,19 +38,21 @@ export const staggerContainer = {
       staggerChildren: 0.05
     }
   }
-};
+  }
+} as const;
 
-export const staggerItem = {
+export const staggerItem: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: { 
     opacity: 1, 
     y: 0,
     transition: { type: "spring" as const, stiffness: 300, damping: 24 }
   }
-};
+  }
+} as const;
 
-export const fadeIn = {
+export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 0.5 } },
   exit: { opacity: 0, transition: { duration: 0.3 } }
-};
+} as const;
