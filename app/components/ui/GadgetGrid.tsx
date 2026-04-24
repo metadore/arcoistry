@@ -44,7 +44,7 @@ export default function GadgetGrid() {
       {/* Grid */}
       <motion.div 
         layout
-        variants={staggerContainer}
+        variants={staggerContainer as any}
         initial="hidden"
         animate="visible"
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
@@ -54,7 +54,7 @@ export default function GadgetGrid() {
             <motion.div
               layout
               key={project.id}
-              variants={staggerItem}
+              variants={staggerItem as any}
               initial="hidden"
               animate="visible"
               exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.2 } }}
