@@ -1,38 +1,41 @@
-# 🌀 Arcoistry Portfolio | The 4D Pocket 🦾
+# 🌀 Arcoistry — The 4D Pocket
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="180" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon.svg" width="220" alt="Doraemon" />
 
-<br>
+<br><br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/public/vercel.svg" width="100" height="100" alt="Arcoistry Logo" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/public/vercel.svg" width="80" alt="Arcoistry" />
 
-<h1>🌀 ARCOISTRY // THE 4D POCKET</h1>
+<h1>ARCOISTRY</h1>
 
-<h3><b>Artist • Coder • Creator</b></h3>
+<h3>Artist • Coder • Creator</h3>
 
-<p><i>"Bringing the magic of the future to the digital present."</i></p>
+<p><i>Bringing the magic of the future to the digital present.</i></p>
 
 <br>
 
 <a href="https://arcoistry-tknh.vercel.app">
-<img src="https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-ENTER_THE_4D_POCKET-black?style=for-the-badge" />
-</a>
-
-<a href="https://github.com/metadore">
-<img src="https://img.shields.io/badge/⚡_GITHUB-METADORE-black?style=for-the-badge&logo=github" />
-</a>
-
-<a href="https://youtube.com/@arcoistry">
-<img src="https://img.shields.io/badge/▶_YOUTUBE-ARCOISTRY-red?style=for-the-badge&logo=youtube" />
+<img src="https://img.shields.io/badge/ENTER_THE_4D_POCKET-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=nextdotjs" />
-<img src="https://img.shields.io/badge/Framer_Motion-Latest-blueviolet?style=for-the-badge&logo=framer" />
-<img src="https://img.shields.io/badge/Three.js-WebGL-black?style=for-the-badge&logo=three.js" />
+<a href="https://github.com/metadore">
+<img src="https://img.shields.io/badge/GitHub-metadore-181717?style=flat-square&logo=github" />
+</a>
+&nbsp;
+<a href="https://youtube.com/@arcoistry">
+<img src="https://img.shields.io/badge/YouTube-@arcoistry-FF0000?style=flat-square&logo=youtube&logoColor=white" />
+</a>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" />
+<img src="https://img.shields.io/badge/Framer_Motion-Latest-8A2BE2?style=flat-square&logo=framer" />
+<img src="https://img.shields.io/badge/Three.js-WebGL-black?style=flat-square&logo=three.js" />
+<img src="https://img.shields.io/badge/GSAP-Animation-88CE02?style=flat-square&logo=greensock" />
 
 </div>
 
@@ -40,232 +43,191 @@
 
 <div align="center">
 
-## 🌀 `WELCOME TO THE CHRONO-TERMINAL`
+### `A PORTFOLIO FROM ANOTHER DIMENSION.`
 
-```text
-╔══════════════════════════════════════════════════════════╗
-║                                                          ║
-║                  🌀  4D POCKET SYSTEM                    ║
-║                                                          ║
-║          ◀ PAST       PRESENT       FUTURE ▶             ║
-║                                                          ║
-║              [ TIMELINE CONNECTION ACTIVE ]              ║
-║                                                          ║
-╚══════════════════════════════════════════════════════════╝
-```
-
-### **A portfolio that doesn't behave like a portfolio.**
+**Arcoistry is an interactive journey through Past, Present and Future.**
 
 </div>
 
-Arcoistry is not just a portfolio; it's a **multi-timeline interactive experience**.
-
-Inspired by the futuristic world of Doraemon, the site transforms a creative portfolio into a journey through different eras.
-
-> **Explore the past. Experience the present. Enter the future.**
-
 ---
 
-# 🕰️ THE ARCHIVE
+## 🌀 The 4D Pocket
 
-### `01 // PAST`
+Arcoistry isn't designed to feel like a traditional portfolio.
 
-> *"Every invention starts somewhere."*
-
-Explore the blueprints and gadgets of yesterday.
-
-The Archive contains previous experiments, projects and creative work — presented through a cinematic **Tokyo Rainy Night** atmosphere.
+It is a **multi-timeline digital experience** inspired by the futuristic imagination of Doraemon — where projects, experiments and ideas exist across different points in time.
 
 ```text
-╭──────────────────────────────────────╮
-│              ARCHIVE                 │
-├──────────────────────────────────────┤
-│                                      │
-│   🌧️  Tokyo Rainy Night              │
-│   📦  Previous Projects              │
-│   🧪  Old Experiments                │
-│   🗂️  Digital Blueprints             │
-│                                      │
-╰──────────────────────────────────────╯
+                    🌀 4D POCKET
+
+          ┌──────────┬──────────┬──────────┐
+          │          │          │          │
+        PAST       PRESENT     FUTURE
+          │          │          │
+       Archive       Hub       Horizon
+          │          │          │
+       Projects   Experiments  Concepts
+          │          │          │
+          └──────────┴──────────┘
+                     │
+                     ▼
+              ARCOISTRY EXPERIENCE
 ```
-
-The Archive is designed to evolve alongside the creator.
-
-New repositories can become new entries in the digital timeline.
 
 ---
 
-# 📍 THE HUB
+## 🕰️ PAST — The Archive
 
-### `02 // PRESENT`
+**Where everything started.**
 
-> *"Where everything is happening right now."*
+The Archive contains previous projects, experiments and digital blueprints.
 
-The center of the **4D Pocket**.
+🌧️ Tokyo rainy-night atmosphere
+📦 Interactive project cards
+🗂️ Previous experiments
+🔗 GitHub-connected projects
 
-A dynamic space showcasing current experiments across:
+The goal is simple:
+
+> **Turn the history of the creator into something you can explore.**
+
+---
+
+## 📍 PRESENT — The Hub
+
+**The center of the 4D Pocket.**
+
+The Hub represents what is being built **right now**.
 
 <div align="center">
 
-### 🧪 CHEMISTRY
-
-### 🎨 ART
-
-### 💻 CODE
+| 🧪 Chemistry |     🎨 Art    |      💻 Code     |
+| :----------: | :-----------: | :--------------: |
+|  Experiments | Creative work | Digital projects |
+|   Research   |  Visual ideas |     Software     |
 
 </div>
 
-```text
-                       🧪
-                    CHEMISTRY
-                       │
-                       │
-                       ▼
-                 ┌───────────┐
-                 │           │
-          🎨 ─── │  ARCOISTRY │ ─── 💻
-          ART    │    HUB    │     CODE
-                 │           │
-                 └───────────┘
-                       │
-                       ▼
-                  🌀 4D STATE
-```
+Everything currently being explored converges here.
 
 ---
 
-# 🛸 THE HORIZON
+## 🛸 FUTURE — The Horizon
 
-### `03 // FUTURE`
+**Ideas that haven't become reality yet.**
 
-> *"The blueprint doesn't exist yet."*
+The Horizon is a visual representation of future experiments, concepts and prototypes.
 
-A glimpse into the concepts of tomorrow.
+🌌 Futuristic interfaces
+⚡ Experimental interactions
+🧠 AI experiments
+🚀 Unbuilt ideas
+✨ Digital concepts
 
-High-speed cinematic visuals, experimental interfaces and futuristic concepts racing toward the horizon.
-
-```text
-                 🚀
-                  \
-                   \
-                    \       ✦
-                     \   FUTURE
-                      \       ✦
-                       ────────────
-                         HORIZON
-```
+> **Not everything needs to exist yet.**
 
 ---
 
-# 🧰 SECRET GADGETS
+# 🧰 Secret Gadgets
 
 <div align="center">
 
-| 🧰 Gadget                   | ⚡ Capability                                                                                              |
-| :-------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| 🚁 **Take-Copter Parallax** | Experience anti-gravity scrolling. Cards float and respond to your movement as you explore the timelines. |
-| 📦 **4D Pocket Sync**       | Automatic GitHub integration. New repositories can appear inside the website's Archive.                   |
-| 🚪 **Anywhere Door**        | Seamless cinematic transitions between timelines using high-fidelity visual overlays.                     |
-| 🖱️ **Custom 4D Cursor**    | A specialized interface tool designed for navigating high-dimensional creative spaces.                    |
-| 🌀 **Chrono Navigation**    | Move through Past, Present and Future as distinct digital worlds.                                         |
-| 🌌 **Dimensional UI**       | Motion, depth and interactive layers create a spatial browsing experience.                                |
+| Gadget                      | What it does                                               |
+| :-------------------------- | :--------------------------------------------------------- |
+| 🚁 **Take-Copter Parallax** | Floating cards and depth-based scrolling interactions.     |
+| 📦 **4D Pocket Sync**       | Connects the portfolio with the creator's GitHub projects. |
+| 🚪 **Anywhere Door**        | Cinematic transitions between different timelines.         |
+| 🖱️ **4D Cursor**           | Custom cursor designed specifically for the experience.    |
+| 🌀 **Chrono Navigation**    | Navigate between Past, Present and Future.                 |
+| 🌌 **Dimensional UI**       | Motion, depth and WebGL create a spatial interface.        |
 
 </div>
 
 ---
 
-# 🌀 HOW THE 4D POCKET WORKS
+# ⚡ Experience Architecture
 
 ```text
                          USER
                           │
                           ▼
-                  ┌──────────────┐
-                  │  4D CURSOR   │
-                  └──────┬───────┘
-                         │
-              ┌──────────┼──────────┐
-              │          │          │
-              ▼          ▼          ▼
-           🕰️ PAST    📍 NOW     🛸 FUTURE
-              │          │          │
-              ▼          ▼          ▼
-          PROJECTS   EXPERIMENTS  CONCEPTS
-              │          │          │
-              └──────────┼──────────┘
-                         │
-                         ▼
-                  🌀 4D EXPERIENCE
+                    ┌───────────┐
+                    │  4D CURSOR │
+                    └─────┬─────┘
+                          │
+            ┌─────────────┼─────────────┐
+            │             │             │
+            ▼             ▼             ▼
+        🕰️ PAST       📍 PRESENT     🛸 FUTURE
+        ARCHIVE          HUB          HORIZON
+            │             │             │
+            ▼             ▼             ▼
+        PROJECTS      EXPERIMENTS     CONCEPTS
+            │             │             │
+            └─────────────┼─────────────┘
+                          ▼
+                    🌀 4D EXPERIENCE
 ```
 
 ---
 
-# 🧪 TECH STACK
+# 🛠️ Tech Stack
 
-Built with the most advanced tools from the **22nd century**.
-
-### ⚡ Framework
+### Core
 
 * **Next.js 16** — App Router
 * **React**
 
-### 🎨 Styling
+### Styling
 
 * **Tailwind CSS**
 * **Vanilla CSS**
 
-### 🌀 Animations
+### Animation
 
 * **Framer Motion**
 * **GSAP**
 
-### 🌌 Visuals
+### 3D & Visuals
 
 * **Three.js**
 * **WebGL**
 
-### 🧠 State
+### State
 
-* **Zustand** — Global 4D State
+* **Zustand**
 
 ---
 
-# 🗂️ SYSTEM ARCHITECTURE
+# 📂 Project Concept
 
 ```text
 ARCOISTRY
 │
-├── 🕰️ ARCHIVE
-│   ├── Projects
-│   ├── GitHub Sync
-│   └── Previous Experiments
+├── 🕰️ PAST
+│   └── Archive
 │
-├── 📍 HUB
-│   ├── Current Work
-│   ├── Chemistry
-│   ├── Art
-│   └── Code
+├── 📍 PRESENT
+│   └── Hub
 │
-├── 🛸 HORIZON
-│   ├── Future Concepts
-│   ├── Experiments
-│   └── Prototypes
+├── 🛸 FUTURE
+│   └── Horizon
 │
 ├── 🌀 INTERACTION
-│   ├── 4D Cursor
 │   ├── Parallax
+│   ├── Custom Cursor
 │   ├── Transitions
 │   └── WebGL
 │
 └── 📦 GITHUB
-    └── Repository Synchronization
+    └── Project Sync
 ```
 
 ---
 
-# 🚀 GETTING STARTED
+# 🚀 Run Locally
 
-First, clone the repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/metadore/arcoistry.git
@@ -278,13 +240,13 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open:
+Then open:
 
 ```text
 http://localhost:3000
@@ -292,71 +254,53 @@ http://localhost:3000
 
 ---
 
-# 🧩 DORAEMON SYSTEM
-
-The README includes the custom Doraemon SVG stored separately in the repository's **`main` branch**.
-
-```text
-GitHub Repository
-│
-├── main
-│   └── doraemon.svg
-│
-└── README.md
-        │
-        └──────────────► raw.githubusercontent.com
-                              │
-                              ▼
-                       🌀 Doraemon SVG
-```
-
-The README references the file directly without moving it:
-
-```html
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="180" alt="Doraemon" />
-```
-
----
-
-# 🌐 LIVE SYSTEM
+# 🌐 Live
 
 <div align="center">
 
-## 🌀 ENTER THE 4D POCKET
-
 <a href="https://arcoistry-tknh.vercel.app">
-<img src="https://img.shields.io/badge/OPEN_ARCOISTRY-ENTER_THE_PORTAL-00AEEF?style=for-the-badge" />
+
+<img src="https://img.shields.io/badge/🌐_OPEN_ARCOISTRY-000000?style=for-the-badge" />
+
 </a>
 
 <br><br>
 
+**[arcoistry-tknh.vercel.app](https://arcoistry-tknh.vercel.app)**
+
+</div>
+
+---
+
+# 📬 Contact
+
+<div align="center">
+
 <a href="https://github.com/metadore">
-<img src="https://img.shields.io/badge/GITHUB-EXPLORE_THE_ARCHIVE-black?style=for-the-badge&logo=github" />
+<img src="https://img.shields.io/badge/GitHub-@metadore-181717?style=for-the-badge&logo=github" />
 </a>
 
 <a href="https://youtube.com/@arcoistry">
-<img src="https://img.shields.io/badge/YOUTUBE-WATCH_THE_CREATOR-red?style=for-the-badge&logo=youtube" />
+<img src="https://img.shields.io/badge/YouTube-@arcoistry-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+</a>
+
+<br><br>
+
+<a href="https://arcoistry-tknh.vercel.app">
+<img src="https://img.shields.io/badge/Portfolio-Arcoistry-00AEEF?style=for-the-badge" />
 </a>
 
 </div>
 
 ---
 
-# 📬 CONTACT THE CREATOR
-
-Want to build a gadget together?
-
-* **🌐 Portfolio:** [arcoistry-tknh.vercel.app](https://arcoistry-tknh.vercel.app)
-* **▶️ YouTube:** [@arcoistry](https://youtube.com/@arcoistry)
-* **💻 GitHub:** [@metadore](https://github.com/metadore)
-
----
-
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="100" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon.svg" width="120" alt="Doraemon" />
 
-### 🌀 `THE POCKET IS OPEN.`
+<br>
+
+### `THE POCKET IS OPEN.`
 
 <i>Made with 💙 by Arcoistry</i>
 
