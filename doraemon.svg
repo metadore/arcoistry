@@ -1,0 +1,187 @@
+<svg width="600" height="700" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- GRADIENTS -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#e6f7ff"/>
+      <stop offset="100%" stop-color="#cceeff"/>
+    </radialGradient>
+
+    <radialGradient id="headBlue" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#00a7ee"/>
+      <stop offset="75%" stop-color="#0080ca"/>
+      <stop offset="100%" stop-color="#0066aa"/>
+    </radialGradient>
+
+    <radialGradient id="bodyBlue" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#00a7ee"/>
+      <stop offset="80%" stop-color="#007cb8"/>
+      <stop offset="100%" stop-color="#005b8a"/>
+    </radialGradient>
+
+    <radialGradient id="redGradient" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="70%" stop-color="#e60000"/>
+      <stop offset="100%" stop-color="#b30000"/>
+    </radialGradient>
+
+    <radialGradient id="bellGradient" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fff200"/>
+      <stop offset="70%" stop-color="#ecc000"/>
+      <stop offset="100%" stop-color="#b88600"/>
+    </radialGradient>
+
+    <linearGradient id="pocketShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e6e6e6"/>
+      <stop offset="20%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- SHADOWS -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="8" flood-color="#002b47" flood-opacity="0.15"/>
+    </filter>
+
+    <filter id="bellGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+
+    <filter id="groundShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="600" height="700" fill="url(#bgGlow)" rx="24"/>
+
+  <!-- ANIMATED GROUND SHADOW -->
+  <ellipse cx="300" cy="640" rx="170" ry="18" fill="#003352" opacity="0.2" filter="url(#groundShadow)">
+    <animate attributeName="rx" values="170;150;170" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.12;0.2" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- ENTIRE CHARACTER BREATHING / FLOATING GROUP -->
+  <g id="doraemon" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="3s" repeatCount="indefinite"/>
+
+    <!-- LEFT ARM (WAVING ANIMATION) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 180 340; 15 180 340; -5 180 340; 0 180 340" dur="2s" repeatCount="indefinite"/>
+      <!-- Left Arm Base -->
+      <path d="M 185 360 C 130 365 110 330 115 315 C 125 295 160 315 180 335 Z" fill="url(#bodyBlue)" stroke="#000000" stroke-width="4.5" stroke-linejoin="round"/>
+      <!-- Left Hand -->
+      <circle cx="115" cy="310" r="32" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+      <ellipse cx="110" cy="305" rx="26" ry="22" fill="#ffffff" opacity="0.5"/>
+    </g>
+
+    <!-- RIGHT ARM (SUBTLE BREATHING MOTION) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 420 340; -5 420 340; 0 420 340" dur="3s" repeatCount="indefinite"/>
+      <!-- Right Arm Base -->
+      <path d="M 415 360 C 470 365 490 330 485 315 C 475 295 440 315 420 335 Z" fill="url(#bodyBlue)" stroke="#000000" stroke-width="4.5" stroke-linejoin="round"/>
+      <!-- Right Hand -->
+      <circle cx="485" cy="310" r="32" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+      <ellipse cx="480" cy="305" rx="26" ry="22" fill="#ffffff" opacity="0.5"/>
+    </g>
+
+    <!-- FEET -->
+    <ellipse cx="215" cy="625" rx="62" ry="26" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+    <ellipse cx="385" cy="625" rx="62" ry="26" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+
+    <!-- LEGS & BODY CROTCH -->
+    <path d="M 210 595 L 390 595 C 390 595 400 610 300 610 C 200 610 210 595 210 595 Z" fill="#ffffff" stroke="#000000" stroke-width="4"/>
+    <path d="M 280 608 Q 300 592 320 608" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- MAIN BODY -->
+    <path d="M 180 340 L 420 340 C 445 450 435 590 380 595 L 220 595 C 165 590 155 450 180 340 Z" fill="url(#bodyBlue)" stroke="#000000" stroke-width="4.5" stroke-linejoin="round"/>
+
+    <!-- WHITE BELLY POUCH AREA -->
+    <path d="M 195 340 C 190 440 205 565 300 565 C 395 565 410 440 405 340 Z" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+
+    <!-- HALF-CIRCULAR POCKET -->
+    <path d="M 225 425 L 375 425 C 375 495 350 525 300 525 C 250 525 225 495 225 425 Z" fill="url(#pocketShadow)" stroke="#000000" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- HEAD GROUP (WITH HEAD TILT ANIMATION) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 300 225; 2 300 225; -2 300 225; 0 300 225" dur="4s" repeatCount="indefinite"/>
+
+      <!-- Outer Blue Head -->
+      <ellipse cx="300" cy="225" rx="200" ry="175" fill="url(#headBlue)" stroke="#000000" stroke-width="4.5"/>
+
+      <!-- White Face Mask -->
+      <path d="M 140 245 C 130 140 200 115 300 115 C 400 115 470 140 460 245 C 450 330 380 345 300 345 C 220 345 150 330 140 245 Z" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+
+      <!-- RED COLLAR -->
+      <rect x="170" y="325" width="260" height="26" rx="13" fill="url(#redGradient)" stroke="#000000" stroke-width="4.5"/>
+
+      <!-- GOLD BELL (SWINGING ANIMATION) -->
+      <g filter="url(#bellGlow)">
+        <animateTransform attributeName="transform" type="rotate" values="0 300 340; 6 300 340; -6 300 340; 0 300 340" dur="2s" repeatCount="indefinite"/>
+        <circle cx="300" cy="365" r="26" fill="url(#bellGradient)" stroke="#000000" stroke-width="4"/>
+        <ellipse cx="292" cy="355" rx="8" ry="5" fill="#ffffff" opacity="0.6"/>
+        <path d="M 275 357 L 325 357 M 274 362 L 326 362" stroke="#000000" stroke-width="3"/>
+        <circle cx="300" cy="373" r="5" fill="#331a00"/>
+        <line x1="300" y1="378" x2="300" y2="389" stroke="#331a00" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+
+      <!-- EYES (WITH BLINKING & PUPIL LOOK ANIMATION) -->
+      <g>
+        <!-- Eye Blinking (Scales Y) -->
+        <animateTransform attributeName="transform" type="scale" values="1,1; 1,1; 1,0.05; 1,1; 1,1" keyTimes="0;0.45;0.5;0.55;1" dur="4s" repeatCount="indefinite" transform-origin="300 120"/>
+
+        <!-- Left Eye Outer -->
+        <ellipse cx="260" cy="120" rx="24" ry="34" fill="#ffffff" stroke="#000000" stroke-width="4"/>
+        <!-- Right Eye Outer -->
+        <ellipse cx="308" cy="120" rx="24" ry="34" fill="#ffffff" stroke="#000000" stroke-width="4"/>
+
+        <!-- Pupils Moving Group -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0,0; 3,0; -3,0; 0,0" keyTimes="0;0.3;0.7;1" dur="6s" repeatCount="indefinite"/>
+          <!-- Left Pupil -->
+          <ellipse cx="270" cy="126" rx="8" ry="12" fill="#000000"/>
+          <circle cx="268" cy="122" r="3" fill="#ffffff"/>
+
+          <!-- Right Pupil -->
+          <ellipse cx="298" cy="126" rx="8" ry="12" fill="#000000"/>
+          <circle cx="296" cy="122" r="3" fill="#ffffff"/>
+        </g>
+      </g>
+
+      <!-- NOSE (SHINING ANIMATION) -->
+      <g>
+        <circle cx="284" cy="160" r="18" fill="url(#redGradient)" stroke="#000000" stroke-width="4"/>
+        <circle cx="278" cy="153" r="6" fill="#ffffff" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+
+      <!-- NOSE TO MOUTH LINE -->
+      <line x1="284" y1="178" x2="284" y2="280" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- MOUTH -->
+      <path d="M 175 220 Q 284 270 393 220 C 400 310 350 330 284 330 C 218 330 168 310 175 220 Z" fill="#c40000" stroke="#000000" stroke-width="4.5" stroke-linejoin="round"/>
+      <path d="M 215 285 Q 240 250 284 265 Q 328 250 353 285 C 330 320 238 320 215 285 Z" fill="#ff7373" stroke="#000000" stroke-width="3.5" stroke-linejoin="round"/>
+
+      <!-- MOUTH CORNER SMILE CURVES -->
+      <path d="M 166 224 Q 175 218 184 228" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 402 224 Q 393 218 384 228" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- WHISKERS (TWITCHING ANIMATION) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 284 210; 1.5 284 210; -1.5 284 210; 0 284 210" dur="2.5s" repeatCount="indefinite"/>
+        <!-- Left Whiskers -->
+        <line x1="150" y1="175" x2="245" y2="190" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="140" y1="210" x2="240" y2="212" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="145" y1="245" x2="245" y2="232" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+
+        <!-- Right Whiskers -->
+        <line x1="418" y1="190" x2="518" y2="175" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="423" y1="212" x2="528" y2="210" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="418" y1="232" x2="518" y2="245" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+
+      <!-- HEAD SHINE -->
+      <path d="M 140 160 C 170 80 300 50 380 65 C 320 52 180 70 140 160 Z" fill="#ffffff" opacity="0.25"/>
+    </g>
+  </g>
+</svg>
