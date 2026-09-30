@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="100%" height="100%">
+  <defs>
+    <!-- Deep Cosmic Space & Warp Hole Gradients -->
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1c0038"/>
+      <stop offset="45%" stop-color="#0a0018"/>
+      <stop offset="100%" stop-color="#020008"/>
+    </radialGradient>
+
+    <!-- Warp Portal Tunnel Gradient -->
+    <radialGradient id="portalTunnel" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#ff00a0"/>
+      <stop offset="55%" stop-color="#00f0ff"/>
+      <stop offset="85%" stop-color="#7000ff"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Rocket Nose & Body Red/Pink Gradient (Doraemon Signature Red) -->
+    <linearGradient id="rocketRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6685"/>
+      <stop offset="35%" stop-color="#ff0033"/>
+      <stop offset="75%" stop-color="#cc0029"/>
+      <stop offset="100%" stop-color="#660014"/>
+    </linearGradient>
+
+    <!-- Rocket Metallic Silver Hull -->
+    <linearGradient id="rocketHull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#e6e6fa"/>
+      <stop offset="70%" stop-color="#9999bb"/>
+      <stop offset="100%" stop-color="#4a4a66"/>
+    </linearGradient>
+
+    <!-- Gold Accent Trims -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="40%" stop-color="#ffd700"/>
+      <stop offset="80%" stop-color="#ccab00"/>
+      <stop offset="100%" stop-color="#665500"/>
+    </linearGradient>
+
+    <!-- Anywhere Door Pink Gradient -->
+    <linearGradient id="doorPink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff66b3"/>
+      <stop offset="50%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#b30059"/>
+    </linearGradient>
+
+    <!-- Rocket Engine Flame / Plasma Thruster -->
+    <linearGradient id="plasmaFlame" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#00ffff"/>
+      <stop offset="50%" stop-color="#ff00aa"/>
+      <stop offset="85%" stop-color="#ff5500"/>
+      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glass Porthole Tint -->
+    <linearGradient id="glassTint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6ffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#80ffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#008080" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="22" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="-8" dy="16" stdDeviation="14" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <style>
+    /* Rocket Hovering / Launching Vibration & Float */
+    .rocket-ship {
+      animation: rocketFlight 3.5s ease-in-out infinite alternate;
+      transform-origin: 380px 400px;
+    }
+    @keyframes rocketFlight {
+      0% { transform: translateY(14px) translateX(-6px) rotate(-1deg); }
+      100% { transform: translateY(-16px) translateX(8px) rotate(2deg); }
+    }
+
+    /* Plasma Engine Flame Pulse */
+    .thrust-flame {
+      animation: flamePulse 0.15s ease-in-out infinite alternate;
+      transform-origin: 220px 420px;
+    }
+    @keyframes flamePulse {
+      0% { transform: scaleX(0.92) scaleY(0.96); opacity: 0.85; }
+      100% { transform: scaleX(1.08) scaleY(1.04); opacity: 1; }
+    }
+
+    /* Portal Tunnel Spinning */
+    .portal-spin-cw {
+      animation: spinCW 20s linear infinite;
+      transform-origin: 650px 320px;
+    }
+    .portal-spin-ccw {
+      animation: spinCCW 14s linear infinite;
+      transform-origin: 650px 320px;
+    }
+    @keyframes spinCW { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes spinCCW { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
+
+    /* Anywhere Door Opening Angle Pulse */
+    .door-hatch {
+      animation: hatchPulse 4s ease-in-out infinite alternate;
+      transform-origin: 410px 350px;
+    }
+    @keyframes hatchPulse {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(-30deg); }
+    }
+
+    /* Sparkles & Star Particles */
+    .sparkle-1 { animation: twinkle 1.4s ease-in-out infinite alternate; }
+    .sparkle-2 { animation: twinkle 2.2s ease-in-out infinite alternate 0.6s; }
+    .sparkle-3 { animation: twinkle 2.8s ease-in-out infinite alternate 1.1s; }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; transform: scale(0.6); }
+      100% { opacity: 1; transform: scale(1.4); }
+    }
+
+    .trail-particle {
+      animation: particleFly 2.5s linear infinite;
+    }
+    .delay-1 { animation-delay: 0.6s; }
+    .delay-2 { animation-delay: 1.2s; }
+    .delay-3 { animation-delay: 1.8s; }
+
+    @keyframes particleFly {
+      0% { transform: translateX(0) translateY(0) scale(1); opacity: 0.9; }
+      100% { transform: translateX(-260px) translateY(40px) scale(0.2); opacity: 0; }
+    }
+  </style>
+
+  <!-- Deep Space Canvas -->
+  <rect width="900" height="800" fill="url(#spaceBg)"/>
+
+  <!-- Background Stars & Galactic Cosmic Dust -->
+  <g opacity="0.6">
+    <circle cx="100" cy="120" r="1.5" fill="#fff" class="sparkle-1"/>
+    <circle cx="820" cy="140" r="2" fill="#00ffff" class="sparkle-2"/>
+    <circle cx="140" cy="680" r="1.2" fill="#ff00a0" class="sparkle-3"/>
+    <circle cx="850" cy="650" r="1.8" fill="#fff" class="sparkle-1"/>
+    <circle cx="280" cy="180" r="1.4" fill="#ffd700" class="sparkle-2"/>
+    <circle cx="750" cy="710" r="1.6" fill="#00f0ff" class="sparkle-3"/>
+  </g>
+
+  <!-- ================= ANYWHERE SPACE PORTAL (DESTINATION TARGET) ================= -->
+  <g id="warp-portal" transform="translate(60, -30)">
+    <!-- Swirling Warp Vortex Glow -->
+    <ellipse cx="650" cy="320" rx="190" ry="220" fill="url(#portalTunnel)" filter="url(#intenseGlow)"/>
+
+    <!-- Concentric Celestial Coordinate Rings -->
+    <g class="portal-spin-cw" stroke="#00ffff" stroke-width="1.5" fill="none" opacity="0.75">
+      <ellipse cx="650" cy="320" rx="160" ry="180" stroke-dasharray="15 10 35 15"/>
+      <ellipse cx="650" cy="320" rx="120" ry="135" stroke-dasharray="8 8"/>
+    </g>
+
+    <g class="portal-spin-ccw" stroke="#ff00a0" stroke-width="2" fill="none" opacity="0.65" filter="url(#softGlow)">
+      <ellipse cx="650" cy="320" rx="140" ry="160" stroke-dasharray="25 15 10 15"/>
+      <ellipse cx="650" cy="320" rx="90" ry="100" stroke-dasharray="6 12"/>
+    </g>
+
+    <!-- Destination Constellation Map Lines inside Portal -->
+    <g stroke="#ffffff" stroke-width="1" fill="none" opacity="0.5">
+      <path d="M 610,250 L 640,280 L 680,260 L 710,310 L 660,360 L 620,340 Z"/>
+      <circle cx="610" cy="250" r="3" fill="#fff"/>
+      <circle cx="640" cy="280" r="2.5" fill="#ffd700"/>
+      <circle cx="680" cy="260" r="3" fill="#00ffff"/>
+      <circle cx="710" cy="310" r="3.5" fill="#ff00a0"/>
+    </g>
+  </g>
+
+  <!-- Ground Aura / Rocket Launch Shadow -->
+  <ellipse cx="450" cy="710" rx="360" ry="35" fill="#000000" opacity="0.75" filter="url(#intenseGlow)"/>
+
+  <!-- ================= ANYWHERE-ROCKET HYBRID VESSEL ================= -->
+  <g class="rocket-ship" filter="url(#dropShadow)">
+
+    <!-- 1. THRUSTER PLASMA FLAME (REAR TRAIL) -->
+    <g class="thrust-flame" transform="translate(40, 20)">
+      <polygon points="210,400 30,340 10,400 30,460" fill="url(#plasmaFlame)" filter="url(#intenseGlow)"/>
+      <polygon points="210,410 80,370 60,400 80,430" fill="#ffffff" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- Flying Energy Particles from Rocket Exhaust -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="180" cy="380" r="6" fill="#00ffff" class="trail-particle"/>
+      <circle cx="150" cy="430" r="8" fill="#ff00a0" class="trail-particle delay-1"/>
+      <circle cx="120" cy="390" r="5" fill="#ffffff" class="trail-particle delay-2"/>
+      <circle cx="90" cy="420" r="7" fill="#ffd700" class="trail-particle delay-3"/>
+    </g>
+
+    <!-- 2. ROCKET REAR ENGINE NOZZLE & STABILIZERS -->
+    <g id="engine-mount">
+      <!-- Main Nozzle Bell -->
+      <path d="M 210,360 L 250,370 L 250,430 L 210,440 Z" fill="url(#goldAccent)" stroke="#332600" stroke-width="2"/>
+      <ellipse cx="210" cy="400" rx="10" ry="40" fill="#1a1a1a" stroke="url(#goldAccent)" stroke-width="2"/>
+
+      <!-- Lower Wing / Fin (Retro Space Style) -->
+      <path d="M 240,430 L 200,530 C 230,530 280,490 320,440 Z" fill="url(#rocketRed)" stroke="#4d000f" stroke-width="2"/>
+      <!-- Upper Wing / Fin -->
+      <path d="M 240,370 L 200,270 C 230,270 280,310 320,360 Z" fill="url(#rocketRed)" stroke="#4d000f" stroke-width="2"/>
+
+      <!-- Wing Highlight Trim -->
+      <path d="M 210,280 L 245,365" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      <path d="M 210,520 L 245,435" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <!-- 3. MAIN ROCKET FUSELAGE / HULL -->
+    <g id="fuselage">
+      <!-- Sleek Rocket Body Cylinder -->
+      <path d="M 240,360 
+               C 320,330 460,330 550,345 
+               C 620,355 660,380 690,400 
+               C 660,420 620,445 550,455 
+               C 460,470 320,470 240,440 Z" 
+            fill="url(#rocketHull)" 
+            stroke="#2e2e42" 
+            stroke-width="2.5"/>
+
+      <!-- Top Nose Cone (Doraemon Red Nose Cone Header) -->
+      <path d="M 580,350 C 630,365 670,385 700,400 C 670,415 630,435 580,450 C 600,415 600,385 580,350 Z" fill="url(#rocketRed)" stroke="#660014" stroke-width="2"/>
+
+      <!-- Gold Accent Ring Separatrix -->
+      <path d="M 580,350 C 600,385 600,415 580,450" fill="none" stroke="url(#goldAccent)" stroke-width="5"/>
+
+      <!-- Fuselage Metallic Shine Lines -->
+      <path d="M 260,352 C 340,338 480,338 560,350" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+      <path d="M 250,448 C 340,462 480,462 550,450" fill="none" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    </g>
+
+    <!-- 4. THE ANYWHERE DOOR INTEGRATED HATCH (DORAEMON GADGET CORE) -->
+    <g id="anywhere-door-hatch" transform="translate(320, 335)">
+
+      <!-- Outer Door Frame Moulding (Built into Hull) -->
+      <rect x="0" y="0" width="130" height="130" rx="12" fill="url(#goldAccent)" stroke="#4d3b00" stroke-width="2.5" filter="url(#softGlow)"/>
+
+      <!-- Door Inner Recess -->
+      <rect x="8" y="8" width="114" height="114" rx="8" fill="#33001a"/>
+
+      <!-- THE ANYWHERE DOOR PANEL (PINK HATCH) -->
+      <g class="door-hatch">
+        <!-- Door Face -->
+        <rect x="12" y="12" width="106" height="106" rx="6" fill="url(#doorPink)" stroke="#ff99dd" stroke-width="2"/>
+
+        <!-- Door Panel Bevel Details -->
+        <rect x="22" y="22" width="86" height="38" rx="4" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+        <rect x="22" y="66" width="86" height="42" rx="4" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+
+        <!-- Brass Door Knob / Space Lock Handle -->
+        <circle cx="96" cy="65" r="7" fill="url(#goldAccent)" stroke="#4d3b00" stroke-width="1.5"/>
+        <circle cx="94" cy="63" r="2" fill="#ffffff"/>
+
+        <!-- Electronic Keypad / Destination Screen above Knob -->
+        <rect x="76" y="28" width="24" height="14" rx="2" fill="#001a11" stroke="#00ffaa" stroke-width="1"/>
+        <line x1="80" y1="35" x2="94" y2="35" stroke="#00ffaa" stroke-width="1.5" stroke-dasharray="2 2" class="sparkle-1"/>
+      </g>
+
+      <!-- Dimensional Warp Glow Spilling Out From Door Crack -->
+      <path d="M 118,14 L 124,14 L 124,116 L 118,116 Z" fill="#00ffff" filter="url(#intenseGlow)" opacity="0.8"/>
+    </g>
+
+    <!-- 5. COCKPIT PORTHOLE & DORAEMON BELL EMBLEM -->
+    <!-- Front Cockpit Circular Window -->
+    <g id="porthole" transform="translate(485, 365)">
+      <circle cx="25" cy="25" r="24" fill="url(#goldAccent)" stroke="#332600" stroke-width="2"/>
+      <circle cx="25" cy="25" r="19" fill="url(#glassTint)" stroke="#00ffff" stroke-width="1.5"/>
+
+      <!-- Glass Flare -->
+      <path d="M 12,18 C 20,10 32,10 38,18 C 30,14 18,14 12,18 Z" fill="#ffffff" opacity="0.8"/>
+
+      <!-- Silhouette of Navigator inside Cockpit -->
+      <circle cx="25" cy="22" r="8" fill="#002244" opacity="0.7"/>
+      <circle cx="25" cy="38" r="13" fill="#002244" opacity="0.7"/>
+    </g>
+
+    <!-- Doraemon Yellow Bell Emblem on Fuselage -->
+    <g id="doraemon-bell-brand" transform="translate(280, 385)">
+      <circle cx="15" cy="15" r="13" fill="url(#goldAccent)" stroke="#4d3b00" stroke-width="1.5" filter="url(#softGlow)"/>
+      <line x1="2" y1="11" x2="28" y2="11" stroke="#4d3b00" stroke-width="2"/>
+      <circle cx="15" cy="18" r="3.5" fill="#332600"/>
+      <line x1="15" y1="21.5" x2="15" y2="27" stroke="#4d3b00" stroke-width="2"/>
+    </g>
+
+  </g> <!-- END ANYWHERE-ROCKET GROUP -->
+
+  <!-- FOREGROUND WARP SPARKS & ANYWHERE DESTINATION ICONS -->
+  <g filter="url(#intenseGlow)">
+    <!-- Magic Sparkle Stars around Rocket Nose -->
+    <path d="M 780,290 Q 780,305 795,305 Q 780,305 780,320 Q 780,305 765,305 Q 780,305 780,290 Z" fill="#00ffff" class="sparkle-1"/>
+    <path d="M 720,440 Q 720,458 738,458 Q 720,458 720,476 Q 720,458 702,458 Q 720,458 720,440 Z" fill="#ff00a0" class="sparkle-2"/>
+    <path d="M 520,240 Q 520,252 532,252 Q 520,252 520,264 Q 520,252 508,252 Q 520,252 520,240 Z" fill="#ffd700" class="sparkle-3"/>
+  </g>
+</svg>
