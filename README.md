@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_31_05%20PM.png" width="100%" alt="Arcoistry — The 4D Pocket" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_31_05%20PM.png" width="100%" alt="Arcoistry — The 4D Pocket" />
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/doraemon.svg" width="150" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="170" alt="Doraemon" />
 
-<br>
+<br><br>
 
 # 🌀 ARCOISTRY
 
@@ -16,7 +16,7 @@
 
 <br>
 
-`SAME CREATOR. DIFFERENT TIMELINES.`
+*Same creator. Different timelines.*
 
 <br><br>
 
@@ -38,7 +38,7 @@
 
 <br><br>
 
-`⚠ POCKET CONTENTS ARE UNSTABLE ⚠`
+`⚠ POCKET CONTENTS ARE UNSTABLE`
 
 </div>
 
@@ -46,461 +46,400 @@
 
 <div align="center">
 
-```text
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║                    🌀 4D POCKET ONLINE                      ║
-║                                                              ║
-║                 ┌────────────────────┐                       ║
-║                 │  UNKNOWN OBJECT    │                       ║
-║                 │     DETECTED       │                       ║
-║                 └─────────┬──────────┘                       ║
-║                           │                                  ║
-║             ┌─────────────┼─────────────┐                    ║
-║             ▼             ▼             ▼                    ║
-║          🕰️ PAST       📍 PRESENT     🛸 FUTURE              ║
-║          ARCHIVE          HUB          HORIZON              ║
-║                                                              ║
-║                  DIMENSIONAL STABILITY                       ║
-║                         73%                                  ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
+### `A PORTFOLIO THAT DOESN'T BEHAVE LIKE A PORTFOLIO.`
 
-### `WELCOME TO THE POCKET.`
+<br>
+
+🌀   **OPEN**   →   **EXPLORE**   →   **DISCOVER**
 
 </div>
 
 ---
 
-# 🧳 `POCKET / CONTENTS`
+# 🧳 THE POCKET
 
-> **This is not a normal portfolio.**
+Arcoistry is a personal digital space where **art, code, research, experiments and unfinished ideas** coexist.
 
-Arcoistry is a personal digital pocket where **art, code, research, experiments, interfaces and unfinished ideas** are thrown together.
+It's part portfolio.
 
-Some things are finished.
+Part laboratory.
 
-Some are broken.
+Part sketchbook.
 
-Some are still being built.
-
-Some probably shouldn't exist yet.
-
-That's exactly why they're here.
-
-```text
-                         🌀 ARCOISTRY
-                              │
-                              ▼
-                     ┌─────────────────┐
-                     │    4D POCKET    │
-                     └────────┬────────┘
-                              │
-            ┌─────────────────┼─────────────────┐
-            │                 │                 │
-            ▼                 ▼                 ▼
-        🎨 CREATIVE       💻 DIGITAL        🧪 RESEARCH
-            │                 │                 │
-            └─────────────────┼─────────────────┘
-                              │
-             ┌────────────────┼────────────────┐
-             │                │                │
-             ▼                ▼                ▼
-           🤖 AI           🔧 HARDWARE      🛸 IDEAS
-             │                │                │
-             └────────────────┼────────────────┘
-                              ▼
-                         `ARCOISTRY`
-```
-
----
-
-# 🚪 `01 / ANYWHERE DOOR`
+Part something that probably shouldn't have been built.
 
 <div align="center">
 
-## `CHOOSE YOUR TIMELINE`
+### `THERE IS NO SINGLE TIMELINE HERE.`
 
 <br>
 
-|      🕰️ PAST     |     📍 PRESENT     |       🛸 FUTURE      |
-| :---------------: | :----------------: | :------------------: |
-|    **ARCHIVE**    |       **HUB**      |      **HORIZON**     |
-| Things that exist | Things being built | Things not built yet |
-|      Projects     |     Experiments    |       Concepts       |
+🕰️ **PAST**
+
+Previous projects, experiments and things that already happened.
+
+<br>
+
+📍 **PRESENT**
+
+Things currently being built, tested and explored.
+
+<br>
+
+🛸 **FUTURE**
+
+Ideas that haven't become real yet.
 
 </div>
 
+---
+
+# 🚪 ANYWHERE DOOR
+
+### `ONE POCKET. THREE TIMELINES.`
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+## 🕰️
+
+### PAST
+
+`THE ARCHIVE`
+
+Old projects
+Previous experiments
+Finished worlds
+
+</td>
+
+<td width="33%" align="center">
+
+## 📍
+
+### PRESENT
+
+`THE HUB`
+
+Current work
+Research
+Experiments
+
+</td>
+
+<td width="33%" align="center">
+
+## 🛸
+
+### FUTURE
+
+`THE HORIZON`
+
+Unbuilt ideas
+AI experiments
+Impossible concepts
+
+</td>
+</tr>
+</table>
+
 <br>
 
-```text
-                    ┌─────────────────────┐
-                    │                     │
-                    │    ANYWHERE DOOR    │
-                    │                     │
-                    │     ◉ PAST          │
-                    │     ◉ PRESENT       │
-                    │     ◉ FUTURE        │
-                    │                     │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                       SELECT TIMELINE
-```
+<div align="center">
 
-> `ONE DOOR. THREE TIMELINES.`
+`THE ANYWHERE DOOR IS ALWAYS OPEN.`
+
+</div>
 
 ---
 
-# 🕰️ `02 / PAST`
-
-## `THE ARCHIVE`
+# 🕰️ 01 — THE ARCHIVE
 
 ### `WHERE THE EXPERIMENTS BECAME REAL.`
 
-The Archive contains projects, prototypes, experiments and ideas from previous timelines.
-
-```text
-ARCHIVE/
-│
-├── 💻 SOFTWARE
-│
-├── 🎨 CREATIVE WORK
-│
-├── 🔧 HARDWARE
-│
-├── 🤖 AI EXPERIMENTS
-│
-├── 🧪 RESEARCH
-│
-└── 🗃️ ABANDONED IDEAS
-```
+The Archive is the collection of things that have already escaped the pocket.
 
 <div align="center">
 
-> `EVERY PROJECT IS A FOSSIL FROM AN EARLIER VERSION OF THE CREATOR.`
+🖥️   **SOFTWARE**
+
+🎨   **CREATIVE WORK**
+
+🔧   **HARDWARE**
+
+🤖   **AI EXPERIMENTS**
+
+🧪   **RESEARCH**
+
+🗃️   **ABANDONED IDEAS**
+
+</div>
+
+<br>
+
+> **Every finished project is a fossil from an earlier version of the creator.**
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="110" alt="Doraemon" />
 
 </div>
 
 ---
 
-# 📍 `03 / PRESENT`
-
-## `THE HUB`
+# 📍 02 — THE HUB
 
 ### `CURRENTLY UNDER CONSTRUCTION.`
 
-This is where the unstable stuff lives.
+This is where things get messy.
+
+Ideas are tested.
+
+Projects change direction.
+
+Experiments become projects.
+
+Projects become experiments again.
 
 <div align="center">
 
-```text
-╭────────────────────────────────────────────────────╮
-│                                                    │
-│        🧪 RESEARCH      💻 BUILDING               │
-│                                                    │
-│        🤖 AI            🎨 DESIGN                 │
-│                                                    │
-│        🔧 HARDWARE      🧠 EXPERIMENTS            │
-│                                                    │
-│        🌐 INTERACTION   ⚡ IDEAS                  │
-│                                                    │
-╰────────────────────────────────────────────────────╯
-```
+### CURRENTLY EXPLORING
+
+<br>
+
+`AI`   ✦   `MACHINE LEARNING`   ✦   `HCI`
+
+`WEB`   ✦   `HARDWARE`   ✦   `RESEARCH`
+
+`INTERACTION`   ✦   `CREATIVE TECHNOLOGY`
 
 </div>
 
-### CURRENT SIGNALS
+<br>
 
-```text
-[■■■■■■■■■■■■■■■■■■■■] AI / ML
+<div align="center">
 
-[■■■■■■■■■■■■■■■■■□□□] WEB
+**STATUS**
 
-[■■■■■■■■■■■■■■□□□□□□] HARDWARE
+`BUILDING · BREAKING · LEARNING · REBUILDING`
 
-[■■■■■■■■■■■■□□□□□□□] RESEARCH
-
-[■■■■■■■■■■□□□□□□□□□□] CREATIVE CODE
-```
-
-> `CURRENT STATUS: BUILDING SOMETHING STRANGE.`
+</div>
 
 ---
 
-# 🛸 `04 / FUTURE`
-
-## `THE HORIZON`
+# 🛸 03 — THE HORIZON
 
 ### `IDEAS THAT HAVEN'T BECOME REALITY YET.`
 
-Some ideas don't deserve a repository.
+Not every idea needs to immediately become a GitHub repository.
 
-They deserve a **dimension**.
+Some can stay strange.
 
-```text
-                         FUTURE SIGNAL
-                              │
-                              ▼
-                    ┌──────────────────┐
-                    │   UNKNOWN IDEA   │
-                    └────────┬─────────┘
-                             │
-             ┌───────────────┼───────────────┐
-             ▼               ▼               ▼
-            🤖 AI         🔧 HARDWARE       🌐 WEB
-             │               │               │
-             └───────────────┼───────────────┘
-                             │
-                             ▼
-                       ??? / BUILD ????
-```
+Some can stay impossible.
 
-### `HORIZON / CLASSIFIED`
+Some can wait.
 
-```text
-╭─────────────────────────────────────────────╮
-│                                             │
-│  [001] ████████████████  UNKNOWN           │
-│  [002] ███████████░░░░░  AI                │
-│  [003] █████████░░░░░░░  HARDWARE          │
-│  [004] ███████░░░░░░░░░  INTERFACE         │
-│  [005] █████░░░░░░░░░░░  ???               │
-│                                             │
-│             ACCESS RESTRICTED              │
-│                                             │
-╰─────────────────────────────────────────────╯
-```
+<div align="center">
+
+✦ **FUTURE INTERFACES**
+
+✦ **AI EXPERIMENTS**
+
+✦ **HUMAN–MACHINE INTERACTION**
+
+✦ **WEIRD HARDWARE**
+
+✦ **UNBUILT WORLDS**
+
+✦ **DIGITAL CONCEPTS**
+
+</div>
+
+<br>
 
 > **NOT EVERYTHING NEEDS TO EXIST YET.**
 
 ---
 
-# 🧰 `05 / SECRET GADGETS`
+# 🧰 SECRET GADGETS
 
 <div align="center">
 
-| 🧰 GADGET              |     STATUS     | FUNCTION                     |
-| :--------------------- | :------------: | :--------------------------- |
-| 🚪 **Anywhere Door**   |    `ONLINE`    | Jump between timelines       |
-| 🚁 **Take-Copter**     |    `ONLINE`    | Defy normal depth            |
-| 🌀 **4D Pocket**       |    `ONLINE`    | Store projects & experiments |
-| 🕰️ **Time Viewer**    |    `ONLINE`    | Look into previous work      |
-| 🧠 **What-If Machine** |   `UNSTABLE`   | Generate impossible ideas    |
-| 🪄 **Time Furoshiki**  | `EXPERIMENTAL` | Rewrap old ideas             |
-| 🔦 **Small Light**     |    `ONLINE`    | Reveal hidden details        |
-| 🚀 **Anywhere Rocket** |   `BUILDING`   | Launch future experiments    |
+### `POCKET INVENTORY`
 
 </div>
 
+|     | Gadget              | What it does                    |
+| :-: | :------------------ | :------------------------------ |
+|  🚪 | **Anywhere Door**   | Moves between timelines         |
+|  🚁 | **Take-Copter**     | Adds depth and movement         |
+|  🌀 | **4D Pocket**       | Stores projects and experiments |
+| 🕰️ | **Time Viewer**     | Looks back at previous work     |
+|  🧠 | **What-If Machine** | Generates impossible ideas      |
+|  🪄 | **Time Furoshiki**  | Rewraps old ideas into new ones |
+|  🔦 | **Small Light**     | Reveals hidden details          |
+|  🚀 | **Anywhere Rocket** | Launches future experiments     |
+
 ---
 
-# 📦 `06 / POCKET INVENTORY`
+# 📦 WHAT'S INSIDE?
 
 <details>
 <summary>💻 <b>SOFTWARE</b></summary>
 
 <br>
 
-Things that live inside screens.
+**Things that live inside screens.**
 
-```text
-SOFTWARE
-│
-├── NEXT.JS
-├── REACT
-├── JAVASCRIPT
-├── TYPESCRIPT
-├── PYTHON
-├── C
-└── CREATIVE WEB
-```
+`Next.js` · `React` · `JavaScript` · `TypeScript` · `Python` · `C`
+
+<br>
+
+Creative web experiences, applications, interfaces and experiments.
 
 </details>
+
+<br>
 
 <details>
 <summary>🤖 <b>AI / MACHINE LEARNING</b></summary>
 
 <br>
 
-Things involving data, models and machines pretending to understand things.
+**Things involving data, models and machines pretending to understand things.**
 
-```text
-AI
-│
-├── MACHINE LEARNING
-├── COMPUTER VISION
-├── AI INTERFACES
-├── DATA
-└── EXPERIMENTAL MODELS
-```
+`Machine Learning` · `Computer Vision` · `AI Interfaces` · `Data` · `Experimental Models`
 
 </details>
+
+<br>
 
 <details>
 <summary>🔧 <b>HARDWARE</b></summary>
 
 <br>
 
-Things that exist outside the screen.
+**Things that exist outside the screen.**
 
-```text
-HARDWARE
-│
-├── ARDUINO
-├── RASPBERRY PI
-├── SENSORS
-├── EMBEDDED SYSTEMS
-└── HUMAN–MACHINE INTERACTION
-```
+`Arduino` · `Raspberry Pi` · `Sensors` · `Embedded Systems` · `Human–Machine Interaction`
 
 </details>
+
+<br>
 
 <details>
 <summary>🎨 <b>CREATIVE EXPERIMENTS</b></summary>
 
 <br>
 
-Where engineering stops behaving like engineering.
+**Where engineering stops behaving like engineering.**
 
-```text
-CREATIVE
-│
-├── UI / UX
-├── MOTION
-├── INTERACTION
-├── VISUAL DESIGN
-└── DIGITAL EXPERIMENTS
-```
+`UI/UX` · `Motion` · `Interaction` · `Visual Design` · `Digital Experiments`
 
 </details>
 
 ---
 
-# 🧬 `07 / DIMENSIONAL TELEMETRY`
+# 🧪 EXPERIMENT LAB
 
 <div align="center">
 
-### `SYSTEM SIGNATURE`
+### `CURRENT EXPERIMENTS`
 
 <br>
+
+🧪 **RESEARCH**
+
+    
+
+🤖 **AI**
+
+    
+
+💻 **WEB**
+
+    
+
+🔧 **HARDWARE**
+
+<br><br>
+
+🎨 **DESIGN**
+
+    
+
+🧠 **HCI**
+
+    
+
+🌐 **INTERACTION**
+
+</div>
+
+<br>
+
+> Some experiments become projects.
+> Some become research.
+> Some disappear into the pocket.
+
+---
+
+# 🧬 DIMENSIONAL SIGNATURE
+
+<div align="center">
 
 <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,python,c,arduino,raspberrypi,tailwind,threejs,git,github,vercel&perline=7" />
 
 <br><br>
 
-```text
-┌──────────────────────────────────────────────┐
-│                                              │
-│  WEB              ████████████████░░  90%   │
-│  EXPERIMENTS      ███████████████░░░  84%   │
-│  AI / ML          ████████████░░░░░░  72%   │
-│  HARDWARE         ██████████░░░░░░░░  64%   │
-│  3D / WEBGL       █████████░░░░░░░░░  58%   │
-│                                              │
-│  SYSTEM STATUS: EXPERIMENTAL                 │
-│                                              │
-└──────────────────────────────────────────────┘
-```
+`NEXT.JS` · `REACT` · `TYPESCRIPT` · `PYTHON`
+
+`C` · `ARDUINO` · `RASPBERRY PI` · `THREE.JS`
+
+`TAILWIND` · `GIT` · `GITHUB` · `VERCEL`
 
 </div>
 
 ---
 
-# 🗺️ `08 / DIMENSION MAP`
-
-```text
-                              ┌───────────────┐
-                              │   ARCOISTRY   │
-                              │    CORE NODE  │
-                              └───────┬───────┘
-                                      │
-                  ┌───────────────────┼───────────────────┐
-                  │                   │                   │
-                  ▼                   ▼                   ▼
-           ┌────────────┐      ┌────────────┐      ┌────────────┐
-           │  🕰️ PAST   │      │ 📍 PRESENT │      │ 🛸 FUTURE  │
-           │            │      │            │      │            │
-           │  ARCHIVE   │      │    HUB     │      │  HORIZON   │
-           └─────┬──────┘      └─────┬──────┘      └─────┬──────┘
-                 │                   │                   │
-                 ▼                   ▼                   ▼
-             PROJECTS            EXPERIMENTS          CONCEPTS
-                 │                   │                   │
-                 └───────────────────┼───────────────────┘
-                                     │
-                                     ▼
-                              🌀 4D POCKET
-```
-
----
-
-# 🧪 `09 / EXPERIMENT LOG`
-
-```text
-╔══════════════════════════════════════════════════════╗
-║              ARCOISTRY / EXPERIMENT LOG              ║
-╠══════════════════════════════════════════════════════╣
-║                                                      ║
-║  [001]  WEB EXPERIENCE             ████████████      ║
-║                                                      ║
-║  [002]  AI EXPERIMENT               ██████████       ║
-║                                                      ║
-║  [003]  HARDWARE                   ████████         ║
-║                                                      ║
-║  [004]  HUMAN–MACHINE INTERFACE    ███████          ║
-║                                                      ║
-║  [005]  RESEARCH                   ██████           ║
-║                                                      ║
-║  [006]  UNKNOWN                    ████             ║
-║                                                      ║
-║                MORE LOADING...                       ║
-║                                                      ║
-╚══════════════════════════════════════════════════════╝
-```
-
----
-
-# 🌀 `10 / THE POCKET RULE`
+# 🌀 THE POCKET RULE
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="120" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="150" alt="Doraemon" />
 
 <br><br>
 
-### `THE POCKET IS NOT A STORAGE DEVICE.`
+### `CREATE.`
 
-### `IT IS A WAY OF THINKING.`
+### `BREAK.`
+
+### `EXPERIMENT.`
+
+### `LEARN.`
+
+### `REBUILD.`
+
+### `CREATE AGAIN.`
 
 <br>
 
-```text
-CREATE
-   ↓
-BREAK
-   ↓
-EXPERIMENT
-   ↓
-LEARN
-   ↓
-REBUILD
-   ↓
-CREATE AGAIN
-```
+**The pocket doesn't store ideas.**
+
+**It creates new ones.**
 
 </div>
 
 ---
 
-# 🧿 `11 / CREATOR`
+# 🧿 THE CREATOR
 
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="130" alt="Doraemon" />
 
-<br>
+<br><br>
 
 ## `ARCOISTRY`
 
@@ -510,35 +449,33 @@ CREATE AGAIN
 
 I build things somewhere between:
 
-`TECHNOLOGY × ART × RESEARCH × IMAGINATION`
+**TECHNOLOGY × ART × RESEARCH × IMAGINATION**
 
 <br>
 
-> **THE GOAL ISN'T TO BUILD ANOTHER PORTFOLIO.**
+> *The goal isn't to build another portfolio.*
 
-> **THE GOAL IS TO BUILD A WORLD.**
+> *The goal is to build a world.*
 
 </div>
 
 ---
 
-# 📡 `12 / TRANSMISSION`
+# 📡 TRANSMISSION
 
 <div align="center">
 
-```text
-╭──────────────────────────────────────────────╮
-│                                              │
-│              INCOMING TRANSMISSION           │
-│                                              │
-│       "THE POCKET IS BIGGER INSIDE."         │
-│                                              │
-│               CONNECTION OPEN                │
-│                                              │
-╰──────────────────────────────────────────────╯
-```
+### `THE POCKET IS OPEN.`
 
 <br>
+
+🌀
+
+<br>
+
+`CONNECTION ESTABLISHED`
+
+<br><br>
 
 <a href="https://arcoistry-tknh.vercel.app">
 <img src="https://img.shields.io/badge/🌐_PORTFOLIO-38BDF8?style=for-the-badge&labelColor=020617" />
@@ -556,37 +493,18 @@ I build things somewhere between:
 <img src="https://img.shields.io/badge/▶_YOUTUBE-F87171?style=for-the-badge&labelColor=020617" />
 </a>
 
-</div>
+<br><br>
 
----
-
-<br>
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="150" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="160" alt="Doraemon" />
 
 <br><br>
 
-```text
-╔══════════════════════════════════════════════════╗
-║                                                  ║
-║                 🌀 POCKET STATUS                 ║
-║                                                  ║
-║                    ████████                      ║
-║                     OPEN                         ║
-║                                                  ║
-║          SEE YOU IN ANOTHER TIMELINE.            ║
-║                                                  ║
-╚══════════════════════════════════════════════════╝
-```
-
-### `ARCOISTRY // THE 4D POCKET`
-
-`Made somewhere between yesterday and tomorrow.`
+### `SEE YOU IN ANOTHER TIMELINE.`
 
 <br>
 
-<img src="https://img.shields.io/badge/BUILT_IN_ONE_TIMELINE-020617?style=for-the-badge&color=38BDF8" />
+`ARCOISTRY // THE 4D POCKET`
+
+*Made somewhere between yesterday and tomorrow.*
 
 </div>
