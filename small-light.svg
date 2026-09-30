@@ -35,7 +35,7 @@
       <stop offset="100%" stop-color="#80001a"/>
     </linearGradient>
 
-    <!-- Shrinking Light Cone Beam (Yellow/Gold Energy Glow) -->
+    <!-- Shrinking Light Cone Beam -->
     <linearGradient id="beamGrad" x1="0%" y1="50%" x2="100%" y2="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
       <stop offset="20%" stop-color="#fff275" stop-opacity="0.85"/>
@@ -78,9 +78,14 @@
       animation: torchHover 4s ease-in-out infinite alternate;
       transform-origin: 260px 400px;
     }
+
     @keyframes torchHover {
-      0% { transform: translateY(10px) rotate(-1.5deg); }
-      100% { transform: translateY(-14px) rotate(2deg); }
+      0% {
+        transform: translateY(10px) rotate(-1.5deg);
+      }
+      100% {
+        transform: translateY(-14px) rotate(2deg);
+      }
     }
 
     /* Shrinking Beam Pulsing */
@@ -88,9 +93,16 @@
       animation: beamPulse 1.8s ease-in-out infinite alternate;
       transform-origin: 350px 400px;
     }
+
     @keyframes beamPulse {
-      0% { opacity: 0.75; transform: scaleY(0.96); }
-      100% { opacity: 1; transform: scaleY(1.04); }
+      0% {
+        opacity: 0.75;
+        transform: scaleY(0.96);
+      }
+      100% {
+        opacity: 1;
+        transform: scaleY(1.04);
+      }
     }
 
     /* Target Grid Rings Animation */
@@ -98,50 +110,101 @@
       animation: spinCW 12s linear infinite;
       transform-origin: 720px 400px;
     }
+
     .grid-ring-ccw {
       animation: spinCCW 16s linear infinite;
       transform-origin: 720px 400px;
     }
+
     @keyframes spinCW {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
+
     @keyframes spinCCW {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(-360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
     }
 
     /* Shrinking Arrow Indicator Animation */
     .shrink-arrows {
       animation: shrinkArrowMove 1.5s ease-in-out infinite;
     }
+
     @keyframes shrinkArrowMove {
-      0% { transform: translateX(0px); opacity: 0.2; }
-      50% { opacity: 1; }
-      100% { transform: translateX(-35px); opacity: 0; }
+      0% {
+        transform: translateX(0px);
+        opacity: 0.2;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(-35px);
+        opacity: 0;
+      }
     }
 
     /* Sparkle & Floating Particle Animations */
-    .sparkle-1 { animation: twinkle 1.4s ease-in-out infinite alternate; }
-    .sparkle-2 { animation: twinkle 2.1s ease-in-out infinite alternate 0.5s; }
-    .sparkle-3 { animation: twinkle 2.8s ease-in-out infinite alternate 1.0s; }
+    .sparkle-1 {
+      animation: twinkle 1.4s ease-in-out infinite alternate;
+    }
+
+    .sparkle-2 {
+      animation: twinkle 2.1s ease-in-out infinite alternate 0.5s;
+    }
+
+    .sparkle-3 {
+      animation: twinkle 2.8s ease-in-out infinite alternate 1.0s;
+    }
 
     @keyframes twinkle {
-      0% { opacity: 0.2; transform: scale(0.6); }
-      100% { opacity: 1; transform: scale(1.4); }
+      0% {
+        opacity: 0.2;
+        transform: scale(0.6);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1.4);
+      }
     }
 
     .particle-float {
       animation: floatLeft 3s linear infinite;
     }
-    .delay-1 { animation-delay: 0.8s; }
-    .delay-2 { animation-delay: 1.6s; }
-    .delay-3 { animation-delay: 2.4s; }
+
+    .delay-1 {
+      animation-delay: 0.8s;
+    }
+
+    .delay-2 {
+      animation-delay: 1.6s;
+    }
+
+    .delay-3 {
+      animation-delay: 2.4s;
+    }
 
     @keyframes floatLeft {
-      0% { transform: translateX(0px) translateY(0px) scale(1); opacity: 0; }
-      30% { opacity: 0.9; }
-      100% { transform: translateX(-220px) translateY(15px) scale(0.2); opacity: 0; }
+      0% {
+        transform: translateX(0px) translateY(0px) scale(1);
+        opacity: 0;
+      }
+      30% {
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateX(-220px) translateY(15px) scale(0.2);
+        opacity: 0;
+      }
     }
   </style>
 
@@ -158,60 +221,172 @@
   </g>
 
   <!-- Ground Shadow / Aura -->
-  <ellipse cx="450" cy="690" rx="360" ry="35" fill="#000000" opacity="0.7" filter="url(#intenseGlow)"/>
+  <ellipse
+    cx="450"
+    cy="690"
+    rx="360"
+    ry="35"
+    fill="#000000"
+    opacity="0.7"
+    filter="url(#intenseGlow)"
+  />
 
   <!-- ================= SHRINKING LIGHT BEAM & CONE ================= -->
   <g class="light-beam">
+
     <!-- Outer Cone Arc Glow -->
-    <polygon points="350,380 780,180 780,620" fill="url(#beamGrad)" filter="url(#intenseGlow)"/>
-    <polygon points="350,385 750,220 750,580" fill="url(#beamGrad)"/>
+    <polygon
+      points="350,380 780,180 780,620"
+      fill="url(#beamGrad)"
+      filter="url(#intenseGlow)"
+    />
+
+    <polygon
+      points="350,385 750,220 750,580"
+      fill="url(#beamGrad)"
+    />
 
     <!-- Concentric Shrinking Target Grid / Rings at Ray Focus -->
-    <g class="grid-ring-cw" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.7">
-      <ellipse cx="720" cy="400" rx="40" ry="140" stroke-dasharray="15 10 30 10"/>
-      <ellipse cx="720" cy="400" rx="25" ry="90" stroke-dasharray="8 8"/>
+    <g
+      class="grid-ring-cw"
+      stroke="#ffd700"
+      stroke-width="1.5"
+      fill="none"
+      opacity="0.7"
+    >
+      <ellipse
+        cx="720"
+        cy="400"
+        rx="40"
+        ry="140"
+        stroke-dasharray="15 10 30 10"
+      />
+
+      <ellipse
+        cx="720"
+        cy="400"
+        rx="25"
+        ry="90"
+        stroke-dasharray="8 8"
+      />
     </g>
-    <g class="grid-ring-ccw" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.8" filter="url(#softGlow)">
-      <ellipse cx="720" cy="400" rx="55" ry="180" stroke-dasharray="25 15 10 15"/>
-    </ellipse>
+
+    <g
+      class="grid-ring-ccw"
+      stroke="#ffffff"
+      stroke-width="2"
+      fill="none"
+      opacity="0.8"
+      filter="url(#softGlow)"
+    >
+      <ellipse
+        cx="720"
+        cy="400"
+        rx="55"
+        ry="180"
+        stroke-dasharray="25 15 10 15"
+      />
+    </g>
+
   </g>
 
   <!-- Shrinking Motion Vectors / Arrows pointing INWARD -->
-  <g class="shrink-arrows" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+  <g
+    class="shrink-arrows"
+    stroke="#ffffff"
+    stroke-width="3"
+    fill="none"
+    opacity="0.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#softGlow)"
+  >
+
     <!-- Top Arrow set -->
     <path d="M 650,280 L 610,300 L 650,320"/>
+
     <!-- Middle Arrow set -->
     <path d="M 680,380 L 640,400 L 680,420"/>
+
     <!-- Bottom Arrow set -->
     <path d="M 650,480 L 610,500 L 650,520"/>
+
   </g>
 
-  <!-- Floating Energy Shrink Particles (Flying Inward to Shrink) -->
+  <!-- Floating Energy Shrink Particles -->
   <g filter="url(#intenseGlow)">
-    <circle cx="700" cy="320" r="5" fill="#ffffff" class="particle-float"/>
-    <circle cx="730" cy="450" r="4" fill="#ffd700" class="particle-float delay-1"/>
-    <circle cx="680" cy="510" r="6" fill="#ff5500" class="particle-float delay-2"/>
-    <circle cx="750" cy="260" r="3.5" fill="#ffffff" class="particle-float delay-3"/>
+    <circle
+      cx="700"
+      cy="320"
+      r="5"
+      fill="#ffffff"
+      class="particle-float"
+    />
+
+    <circle
+      cx="730"
+      cy="450"
+      r="4"
+      fill="#ffd700"
+      class="particle-float delay-1"
+    />
+
+    <circle
+      cx="680"
+      cy="510"
+      r="6"
+      fill="#ff5500"
+      class="particle-float delay-2"
+    />
+
+    <circle
+      cx="750"
+      cy="260"
+      r="3.5"
+      fill="#ffffff"
+      class="particle-float delay-3"
+    />
   </g>
 
   <!-- ================= SMALL LIGHT TORCH (DORAEMON GADGET) ================= -->
+
   <g class="torch-unit" filter="url(#dropShadow)">
 
     <!-- 1. BACK CAP / HANGER LOOP -->
-    <path d="M 100,380 C 80,380 70,390 70,400 C 70,410 80,420 100,420 Z" fill="none" stroke="url(#ringGold)" stroke-width="7" stroke-linecap="round"/>
-    <rect x="95" y="382" width="15" height="36" rx="3" fill="url(#ringGold)" stroke="#4d3b00" stroke-width="1"/>
+    <path
+      d="M 100,380
+         C 80,380 70,390 70,400
+         C 70,410 80,420 100,420 Z"
+      fill="none"
+      stroke="url(#ringGold)"
+      stroke-width="7"
+      stroke-linecap="round"
+    />
+
+    <rect
+      x="95"
+      y="382"
+      width="15"
+      height="36"
+      rx="3"
+      fill="url(#ringGold)"
+      stroke="#4d3b00"
+      stroke-width="1"
+    />
 
     <!-- 2. MAIN BLUE CYLINDRICAL HANDLE -->
-    <path d="M 105,355 
-             L 230,365 
-             C 240,365 245,370 245,400 
-             C 245,430 240,435 230,435 
-             L 105,445 
-             C 95,445 90,430 90,400 
-             C 90,370 95,355 105,355 Z" 
-          fill="url(#handleBlue)" 
-          stroke="#001122" 
-          stroke-width="2.5"/>
+    <path
+      d="M 105,355
+         L 230,365
+         C 240,365 245,370 245,400
+         C 245,430 240,435 230,435
+         L 105,445
+         C 95,445 90,430 90,400
+         C 90,370 95,355 105,355 Z"
+      fill="url(#handleBlue)"
+      stroke="#001122"
+      stroke-width="2.5"
+    />
 
     <!-- Handle Grip Grooves / Ridges -->
     <g stroke="#002244" stroke-width="3" opacity="0.6">
@@ -222,51 +397,176 @@
     </g>
 
     <!-- Handle Highlight Shine -->
-    <path d="M 110,368 L 225,374" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+    <path
+      d="M 110,368 L 225,374"
+      stroke="#ffffff"
+      stroke-width="4"
+      stroke-linecap="round"
+      opacity="0.55"
+    />
 
     <!-- 3. RED ON/OFF SLIDE SWITCH -->
-    <rect x="145" y="342" width="35" height="18" rx="4" fill="url(#switchRed)" stroke="#4d0010" stroke-width="1.5"/>
+    <rect
+      x="145"
+      y="342"
+      width="35"
+      height="18"
+      rx="4"
+      fill="url(#switchRed)"
+      stroke="#4d0010"
+      stroke-width="1.5"
+    />
+
     <!-- Switch Ridge Button -->
-    <rect x="160" y="337" width="16" height="23" rx="3" fill="url(#ringGold)" stroke="#665500" stroke-width="1"/>
-    <line x1="168" y1="340" x2="168" y2="357" stroke="#4d3b00" stroke-width="1.5"/>
+    <rect
+      x="160"
+      y="337"
+      width="16"
+      height="23"
+      rx="3"
+      fill="url(#ringGold)"
+      stroke="#665500"
+      stroke-width="1"
+    />
+
+    <line
+      x1="168"
+      y1="340"
+      x2="168"
+      y2="357"
+      stroke="#4d3b00"
+      stroke-width="1.5"
+    />
 
     <!-- 4. GOLDEN MID-RING / ACCENT COLLAR -->
-    <path d="M 230,362 L 255,360 C 262,360 265,370 265,400 C 265,430 262,440 255,440 L 230,438 Z" fill="url(#ringGold)" stroke="#4d3b00" stroke-width="2"/>
+    <path
+      d="M 230,362
+         L 255,360
+         C 262,360 265,370 265,400
+         C 265,430 262,440 255,440
+         L 230,438 Z"
+      fill="url(#ringGold)"
+      stroke="#4d3b00"
+      stroke-width="2"
+    />
 
-    <!-- 5. FRONT CONICAL BELL / CROWN (SILVER / WHITE FUNNEL) -->
-    <path d="M 255,360 
-             L 340,310 
-             C 355,310 360,330 360,400 
-             C 360,470 355,490 340,490 
-             L 255,440 Z" 
-          fill="url(#bodySilver)" 
-          stroke="#33334d" 
-          stroke-width="2.5"/>
+    <!-- 5. FRONT CONICAL BELL / CROWN -->
+    <path
+      d="M 255,360
+         L 340,310
+         C 355,310 360,330 360,400
+         C 360,470 355,490 340,490
+         L 255,440 Z"
+      fill="url(#bodySilver)"
+      stroke="#33334d"
+      stroke-width="2.5"
+    />
 
-    <!-- Crown Inner Lip / Rim Accent (Gold Outer Ring) -->
-    <ellipse cx="340" cy="400" rx="16" ry="90" fill="url(#ringGold)" stroke="#4d3b00" stroke-width="2"/>
+    <!-- Crown Inner Lip / Rim Accent -->
+    <ellipse
+      cx="340"
+      cy="400"
+      rx="16"
+      ry="90"
+      fill="url(#ringGold)"
+      stroke="#4d3b00"
+      stroke-width="2"
+    />
 
     <!-- Bell Reflection Highlights -->
-    <path d="M 260,363 L 335,320" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
-    <path d="M 260,437 L 335,480" stroke="#000000" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+    <path
+      d="M 260,363 L 335,320"
+      stroke="#ffffff"
+      stroke-width="5"
+      stroke-linecap="round"
+      opacity="0.7"
+    />
 
-    <!-- 6. GLOWING FRONT LENS (THE EMITTER SOURCE) -->
-    <ellipse cx="344" cy="400" rx="11" ry="84" fill="url(#lensGlow)" filter="url(#softGlow)"/>
-    <ellipse cx="346" cy="400" rx="6" ry="76" fill="#ffffff"/>
+    <path
+      d="M 260,437 L 335,480"
+      stroke="#000000"
+      stroke-width="4"
+      stroke-linecap="round"
+      opacity="0.25"
+    />
 
-  </g> <!-- END TORCH UNIT -->
+    <!-- 6. GLOWING FRONT LENS -->
+    <ellipse
+      cx="344"
+      cy="400"
+      rx="11"
+      ry="84"
+      fill="url(#lensGlow)"
+      filter="url(#softGlow)"
+    />
+
+    <ellipse
+      cx="346"
+      cy="400"
+      rx="6"
+      ry="76"
+      fill="#ffffff"
+    />
+
+  </g>
 
   <!-- FOREGROUND BURST / LIGHT FLARE AT LENS -->
-  <g transform="translate(346, 400)" filter="url(#intenseGlow)">
+  <g
+    transform="translate(346, 400)"
+    filter="url(#intenseGlow)"
+  >
+
     <!-- Starburst Rays -->
-    <path d="M 0,-40 L 0,40 M -30,0 L 30,0 M -20,-25 L 20,25 M -20,25 L 20,-25" stroke="#ffffff" stroke-width="3.5" opacity="0.9"/>
-    <circle cx="0" cy="0" r="18" fill="#ffffff"/>
-    <circle cx="0" cy="0" r="32" fill="#ffd700" opacity="0.5"/>
+    <path
+      d="M 0,-40 L 0,40
+         M -30,0 L 30,0
+         M -20,-25 L 20,25
+         M -20,25 L 20,-25"
+      stroke="#ffffff"
+      stroke-width="3.5"
+      opacity="0.9"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="18"
+      fill="#ffffff"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="32"
+      fill="#ffd700"
+      opacity="0.5"
+    />
+
   </g>
 
-  <!-- Big Front Sparkle Text / Icon Indicator (Small Light Branding Sparkles) -->
+  <!-- Big Front Sparkle Text / Icon Indicator -->
   <g filter="url(#intenseGlow)">
-    <path d="M 180,240 Q 180,255 195,255 Q 180,255 180,270 Q 180,255 165,255 Q 180,255 180,240 Z" fill="#ffd700" class="sparkle-1"/>
-    <path d="M 310,190 Q 310,208 328,208 Q 310,208 310,226 Q 310,208 292,208 Q 310,208 310,190 Z" fill="#ffffff" class="sparkle-2"/>
+
+    <path
+      d="M 180,240
+         Q 180,255 195,255
+         Q 180,255 180,270
+         Q 180,255 165,255
+         Q 180,255 180,240 Z"
+      fill="#ffd700"
+      class="sparkle-1"
+    />
+
+    <path
+      d="M 310,190
+         Q 310,208 328,208
+         Q 310,208 310,226
+         Q 310,208 292,208
+         Q 310,208 310,190 Z"
+      fill="#ffffff"
+      class="sparkle-2"
+    />
+
   </g>
+
 </svg>
