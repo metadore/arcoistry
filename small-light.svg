@@ -1,13 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="900" height="800">
+
   <defs>
-    <!-- Dark Cosmic Background Gradient -->
+
+    <!-- Background -->
     <radialGradient id="bgGradient" cx="50%" cy="50%" r="75%">
       <stop offset="0%" stop-color="#180033"/>
       <stop offset="50%" stop-color="#0a001a"/>
       <stop offset="100%" stop-color="#020008"/>
     </radialGradient>
 
-    <!-- Metallic Torch Casing Gradients -->
+    <!-- Silver -->
     <linearGradient id="bodySilver" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="30%" stop-color="#e6e6fb"/>
@@ -15,6 +17,7 @@
       <stop offset="100%" stop-color="#4d4d66"/>
     </linearGradient>
 
+    <!-- Gold -->
     <linearGradient id="ringGold" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fff5cc"/>
       <stop offset="35%" stop-color="#ffd700"/>
@@ -22,6 +25,7 @@
       <stop offset="100%" stop-color="#665500"/>
     </linearGradient>
 
+    <!-- Blue Handle -->
     <linearGradient id="handleBlue" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00d5ff"/>
       <stop offset="40%" stop-color="#0088cc"/>
@@ -29,13 +33,14 @@
       <stop offset="100%" stop-color="#002244"/>
     </linearGradient>
 
+    <!-- Red Switch -->
     <linearGradient id="switchRed" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ff6680"/>
       <stop offset="50%" stop-color="#ff0033"/>
       <stop offset="100%" stop-color="#80001a"/>
     </linearGradient>
 
-    <!-- Shrinking Light Cone Beam -->
+    <!-- Beam -->
     <linearGradient id="beamGrad" x1="0%" y1="50%" x2="100%" y2="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
       <stop offset="20%" stop-color="#fff275" stop-opacity="0.85"/>
@@ -44,6 +49,7 @@
       <stop offset="100%" stop-color="#ff0055" stop-opacity="0"/>
     </linearGradient>
 
+    <!-- Lens -->
     <radialGradient id="lensGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="40%" stop-color="#ffffaa"/>
@@ -51,176 +57,112 @@
       <stop offset="100%" stop-color="#ff5500"/>
     </radialGradient>
 
-    <!-- Filters for Intense Shrink Ray Aura -->
-    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur1"/>
-      <feGaussianBlur stdDeviation="22" result="blur2"/>
+    <!-- Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge>
-        <feMergeNode in="blur2"/>
-        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <!-- Strong Glow -->
+    <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
-    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="-5" dy="15" stdDeviation="12" flood-color="#000000" flood-opacity="0.85"/>
+    <!-- Shadow -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow
+        dx="-5"
+        dy="15"
+        stdDeviation="12"
+        flood-color="#000000"
+        flood-opacity="0.85"
+      />
     </filter>
+
   </defs>
 
-  <style>
-    /* Floating Motion for the Small Light Torch */
-    .torch-unit {
-      animation: torchHover 4s ease-in-out infinite alternate;
-      transform-origin: 260px 400px;
-    }
 
-    @keyframes torchHover {
-      0% {
-        transform: translateY(10px) rotate(-1.5deg);
-      }
-      100% {
-        transform: translateY(-14px) rotate(2deg);
-      }
-    }
+  <!-- ====================================================== -->
+  <!-- BACKGROUND                                             -->
+  <!-- ====================================================== -->
 
-    /* Shrinking Beam Pulsing */
-    .light-beam {
-      animation: beamPulse 1.8s ease-in-out infinite alternate;
-      transform-origin: 350px 400px;
-    }
+  <rect
+    x="0"
+    y="0"
+    width="900"
+    height="800"
+    fill="url(#bgGradient)"
+  />
 
-    @keyframes beamPulse {
-      0% {
-        opacity: 0.75;
-        transform: scaleY(0.96);
-      }
-      100% {
-        opacity: 1;
-        transform: scaleY(1.04);
-      }
-    }
 
-    /* Target Grid Rings Animation */
-    .grid-ring-cw {
-      animation: spinCW 12s linear infinite;
-      transform-origin: 720px 400px;
-    }
+  <!-- ====================================================== -->
+  <!-- STARS                                                  -->
+  <!-- ====================================================== -->
 
-    .grid-ring-ccw {
-      animation: spinCCW 16s linear infinite;
-      transform-origin: 720px 400px;
-    }
+  <g fill="#ffffff">
 
-    @keyframes spinCW {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+    <circle cx="120" cy="150" r="1.5">
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="1.4s"
+        repeatCount="indefinite"
+      />
+    </circle>
 
-    @keyframes spinCCW {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(-360deg);
-      }
-    }
+    <circle cx="800" cy="180" r="2" fill="#ffd700">
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="2.1s"
+        begin="0.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
 
-    /* Shrinking Arrow Indicator Animation */
-    .shrink-arrows {
-      animation: shrinkArrowMove 1.5s ease-in-out infinite;
-    }
+    <circle cx="180" cy="680" r="1.2" fill="#ff0055">
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="2.8s"
+        begin="1s"
+        repeatCount="indefinite"
+      />
+    </circle>
 
-    @keyframes shrinkArrowMove {
-      0% {
-        transform: translateX(0px);
-        opacity: 0.2;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateX(-35px);
-        opacity: 0;
-      }
-    }
+    <circle cx="820" cy="620" r="1.8">
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="1.4s"
+        repeatCount="indefinite"
+      />
+    </circle>
 
-    /* Sparkle & Floating Particle Animations */
-    .sparkle-1 {
-      animation: twinkle 1.4s ease-in-out infinite alternate;
-    }
+    <circle cx="480" cy="120" r="1.4" fill="#00ffff">
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="2.1s"
+        begin="0.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
 
-    .sparkle-2 {
-      animation: twinkle 2.1s ease-in-out infinite alternate 0.5s;
-    }
-
-    .sparkle-3 {
-      animation: twinkle 2.8s ease-in-out infinite alternate 1.0s;
-    }
-
-    @keyframes twinkle {
-      0% {
-        opacity: 0.2;
-        transform: scale(0.6);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1.4);
-      }
-    }
-
-    .particle-float {
-      animation: floatLeft 3s linear infinite;
-    }
-
-    .delay-1 {
-      animation-delay: 0.8s;
-    }
-
-    .delay-2 {
-      animation-delay: 1.6s;
-    }
-
-    .delay-3 {
-      animation-delay: 2.4s;
-    }
-
-    @keyframes floatLeft {
-      0% {
-        transform: translateX(0px) translateY(0px) scale(1);
-        opacity: 0;
-      }
-      30% {
-        opacity: 0.9;
-      }
-      100% {
-        transform: translateX(-220px) translateY(15px) scale(0.2);
-        opacity: 0;
-      }
-    }
-  </style>
-
-  <!-- Deep Space Background -->
-  <rect width="900" height="800" fill="url(#bgGradient)"/>
-
-  <!-- Background Ambient Glow & Stars -->
-  <g opacity="0.6">
-    <circle cx="120" cy="150" r="1.5" fill="#fff" class="sparkle-1"/>
-    <circle cx="800" cy="180" r="2" fill="#ffd700" class="sparkle-2"/>
-    <circle cx="180" cy="680" r="1.2" fill="#ff0055" class="sparkle-3"/>
-    <circle cx="820" cy="620" r="1.8" fill="#fff" class="sparkle-1"/>
-    <circle cx="480" cy="120" r="1.4" fill="#00ffff" class="sparkle-2"/>
   </g>
 
-  <!-- Ground Shadow / Aura -->
+
+  <!-- ====================================================== -->
+  <!-- GROUND SHADOW                                          -->
+  <!-- ====================================================== -->
+
   <ellipse
     cx="450"
     cy="690"
@@ -228,135 +170,248 @@
     ry="35"
     fill="#000000"
     opacity="0.7"
-    filter="url(#intenseGlow)"
+    filter="url(#strongGlow)"
   />
 
-  <!-- ================= SHRINKING LIGHT BEAM & CONE ================= -->
-  <g class="light-beam">
 
-    <!-- Outer Cone Arc Glow -->
+  <!-- ====================================================== -->
+  <!-- SHRINKING LIGHT BEAM                                   -->
+  <!-- ====================================================== -->
+
+  <g>
+
     <polygon
       points="350,380 780,180 780,620"
       fill="url(#beamGrad)"
-      filter="url(#intenseGlow)"
+      filter="url(#strongGlow)"
+      opacity="0.8"
     />
 
     <polygon
       points="350,385 750,220 750,580"
       fill="url(#beamGrad)"
+      opacity="0.8"
     />
 
-    <!-- Concentric Shrinking Target Grid / Rings at Ray Focus -->
-    <g
-      class="grid-ring-cw"
-      stroke="#ffd700"
-      stroke-width="1.5"
-      fill="none"
-      opacity="0.7"
-    >
-      <ellipse
-        cx="720"
-        cy="400"
-        rx="40"
-        ry="140"
-        stroke-dasharray="15 10 30 10"
-      />
-
-      <ellipse
-        cx="720"
-        cy="400"
-        rx="25"
-        ry="90"
-        stroke-dasharray="8 8"
-      />
-    </g>
-
-    <g
-      class="grid-ring-ccw"
-      stroke="#ffffff"
-      stroke-width="2"
-      fill="none"
-      opacity="0.8"
-      filter="url(#softGlow)"
-    >
-      <ellipse
-        cx="720"
-        cy="400"
-        rx="55"
-        ry="180"
-        stroke-dasharray="25 15 10 15"
-      />
-    </g>
+    <!-- Beam pulse -->
+    <animateTransform
+      attributeName="transform"
+      type="scale"
+      values="1 0.97;1 1.03;1 0.97"
+      dur="1.8s"
+      repeatCount="indefinite"
+      additive="sum"
+    />
 
   </g>
 
-  <!-- Shrinking Motion Vectors / Arrows pointing INWARD -->
+
+  <!-- ====================================================== -->
+  <!-- TARGET RINGS                                          -->
+  <!-- ====================================================== -->
+
   <g
-    class="shrink-arrows"
+    stroke="#ffd700"
+    stroke-width="1.5"
+    fill="none"
+    opacity="0.7"
+  >
+
+    <ellipse
+      cx="720"
+      cy="400"
+      rx="40"
+      ry="140"
+      stroke-dasharray="15 10 30 10"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 720 400"
+        to="360 720 400"
+        dur="12s"
+        repeatCount="indefinite"
+      />
+    </ellipse>
+
+    <ellipse
+      cx="720"
+      cy="400"
+      rx="25"
+      ry="90"
+      stroke-dasharray="8 8"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 720 400"
+        to="360 720 400"
+        dur="12s"
+        repeatCount="indefinite"
+      />
+    </ellipse>
+
+  </g>
+
+
+  <!-- Outer rotating ring -->
+
+  <g
+    stroke="#ffffff"
+    stroke-width="2"
+    fill="none"
+    opacity="0.8"
+    filter="url(#glow)"
+  >
+
+    <ellipse
+      cx="720"
+      cy="400"
+      rx="55"
+      ry="180"
+      stroke-dasharray="25 15 10 15"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 720 400"
+        to="-360 720 400"
+        dur="16s"
+        repeatCount="indefinite"
+      />
+    </ellipse>
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- INWARD ARROWS                                         -->
+  <!-- ====================================================== -->
+
+  <g
     stroke="#ffffff"
     stroke-width="3"
     fill="none"
-    opacity="0.8"
     stroke-linecap="round"
     stroke-linejoin="round"
-    filter="url(#softGlow)"
+    filter="url(#glow)"
   >
 
-    <!-- Top Arrow set -->
-    <path d="M 650,280 L 610,300 L 650,320"/>
+    <path d="M650 280 L610 300 L650 320"/>
 
-    <!-- Middle Arrow set -->
-    <path d="M 680,380 L 640,400 L 680,420"/>
+    <path d="M680 380 L640 400 L680 420"/>
 
-    <!-- Bottom Arrow set -->
-    <path d="M 650,480 L 610,500 L 650,520"/>
+    <path d="M650 480 L610 500 L650 520"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0;-35 0;0 0"
+      dur="1.5s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="1.5s"
+      repeatCount="indefinite"
+    />
 
   </g>
 
-  <!-- Floating Energy Shrink Particles -->
-  <g filter="url(#intenseGlow)">
-    <circle
-      cx="700"
-      cy="320"
-      r="5"
-      fill="#ffffff"
-      class="particle-float"
-    />
 
-    <circle
-      cx="730"
-      cy="450"
-      r="4"
-      fill="#ffd700"
-      class="particle-float delay-1"
-    />
+  <!-- ====================================================== -->
+  <!-- ENERGY PARTICLES                                      -->
+  <!-- ====================================================== -->
 
-    <circle
-      cx="680"
-      cy="510"
-      r="6"
-      fill="#ff5500"
-      class="particle-float delay-2"
-    />
+  <g filter="url(#strongGlow)">
 
-    <circle
-      cx="750"
-      cy="260"
-      r="3.5"
-      fill="#ffffff"
-      class="particle-float delay-3"
-    />
+    <circle cx="700" cy="320" r="5" fill="#ffffff">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;-220 15"
+        dur="3s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.9;0"
+        dur="3s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="730" cy="450" r="4" fill="#ffd700">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;-220 15"
+        dur="3s"
+        begin="0.8s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.9;0"
+        dur="3s"
+        begin="0.8s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="680" cy="510" r="6" fill="#ff5500">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;-220 15"
+        dur="3s"
+        begin="1.6s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.9;0"
+        dur="3s"
+        begin="1.6s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="750" cy="260" r="3.5" fill="#ffffff">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;-220 15"
+        dur="3s"
+        begin="2.4s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.9;0"
+        dur="3s"
+        begin="2.4s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
   </g>
 
-  <!-- ================= SMALL LIGHT TORCH (DORAEMON GADGET) ================= -->
 
-  <g class="torch-unit" filter="url(#dropShadow)">
+  <!-- ====================================================== -->
+  <!-- SMALL LIGHT TORCH                                     -->
+  <!-- ====================================================== -->
 
-    <!-- 1. BACK CAP / HANGER LOOP -->
+  <g filter="url(#shadow)">
+
+    <!-- HANGER LOOP -->
+
     <path
-      d="M 100,380
-         C 80,380 70,390 70,400
-         C 70,410 80,420 100,420 Z"
+      d="M100 380
+         C80 380 70 390 70 400
+         C70 410 80 420 100 420 Z"
       fill="none"
       stroke="url(#ringGold)"
       stroke-width="7"
@@ -374,38 +429,50 @@
       stroke-width="1"
     />
 
-    <!-- 2. MAIN BLUE CYLINDRICAL HANDLE -->
+
+    <!-- BLUE HANDLE -->
+
     <path
-      d="M 105,355
-         L 230,365
-         C 240,365 245,370 245,400
-         C 245,430 240,435 230,435
-         L 105,445
-         C 95,445 90,430 90,400
-         C 90,370 95,355 105,355 Z"
+      d="M105 355
+         L230 365
+         C240 365 245 370 245 400
+         C245 430 240 435 230 435
+         L105 445
+         C95 445 90 430 90 400
+         C90 370 95 355 105 355 Z"
       fill="url(#handleBlue)"
       stroke="#001122"
       stroke-width="2.5"
     />
 
-    <!-- Handle Grip Grooves / Ridges -->
-    <g stroke="#002244" stroke-width="3" opacity="0.6">
+
+    <!-- HANDLE GROOVES -->
+
+    <g
+      stroke="#002244"
+      stroke-width="3"
+      opacity="0.6"
+    >
       <line x1="125" y1="360" x2="125" y2="440"/>
       <line x1="140" y1="361" x2="140" y2="439"/>
       <line x1="155" y1="362" x2="155" y2="438"/>
       <line x1="170" y1="362" x2="170" y2="438"/>
     </g>
 
-    <!-- Handle Highlight Shine -->
+
+    <!-- HANDLE HIGHLIGHT -->
+
     <path
-      d="M 110,368 L 225,374"
+      d="M110 368 L225 374"
       stroke="#ffffff"
       stroke-width="4"
       stroke-linecap="round"
       opacity="0.55"
     />
 
-    <!-- 3. RED ON/OFF SLIDE SWITCH -->
+
+    <!-- RED SWITCH -->
+
     <rect
       x="145"
       y="342"
@@ -417,7 +484,6 @@
       stroke-width="1.5"
     />
 
-    <!-- Switch Ridge Button -->
     <rect
       x="160"
       y="337"
@@ -438,31 +504,37 @@
       stroke-width="1.5"
     />
 
-    <!-- 4. GOLDEN MID-RING / ACCENT COLLAR -->
+
+    <!-- GOLD COLLAR -->
+
     <path
-      d="M 230,362
-         L 255,360
-         C 262,360 265,370 265,400
-         C 265,430 262,440 255,440
-         L 230,438 Z"
+      d="M230 362
+         L255 360
+         C262 360 265 370 265 400
+         C265 430 262 440 255 440
+         L230 438 Z"
       fill="url(#ringGold)"
       stroke="#4d3b00"
       stroke-width="2"
     />
 
-    <!-- 5. FRONT CONICAL BELL / CROWN -->
+
+    <!-- SILVER FRONT CONE -->
+
     <path
-      d="M 255,360
-         L 340,310
-         C 355,310 360,330 360,400
-         C 360,470 355,490 340,490
-         L 255,440 Z"
+      d="M255 360
+         L340 310
+         C355 310 360 330 360 400
+         C360 470 355 490 340 490
+         L255 440 Z"
       fill="url(#bodySilver)"
       stroke="#33334d"
       stroke-width="2.5"
     />
 
-    <!-- Crown Inner Lip / Rim Accent -->
+
+    <!-- GOLD FRONT RIM -->
+
     <ellipse
       cx="340"
       cy="400"
@@ -473,9 +545,11 @@
       stroke-width="2"
     />
 
-    <!-- Bell Reflection Highlights -->
+
+    <!-- REFLECTION -->
+
     <path
-      d="M 260,363 L 335,320"
+      d="M260 363 L335 320"
       stroke="#ffffff"
       stroke-width="5"
       stroke-linecap="round"
@@ -483,21 +557,23 @@
     />
 
     <path
-      d="M 260,437 L 335,480"
+      d="M260 437 L335 480"
       stroke="#000000"
       stroke-width="4"
       stroke-linecap="round"
       opacity="0.25"
     />
 
-    <!-- 6. GLOWING FRONT LENS -->
+
+    <!-- LENS -->
+
     <ellipse
       cx="344"
       cy="400"
       rx="11"
       ry="84"
       fill="url(#lensGlow)"
-      filter="url(#softGlow)"
+      filter="url(#glow)"
     />
 
     <ellipse
@@ -510,18 +586,21 @@
 
   </g>
 
-  <!-- FOREGROUND BURST / LIGHT FLARE AT LENS -->
+
+  <!-- ====================================================== -->
+  <!-- LENS LIGHT BURST                                     -->
+  <!-- ====================================================== -->
+
   <g
-    transform="translate(346, 400)"
-    filter="url(#intenseGlow)"
+    transform="translate(346 400)"
+    filter="url(#strongGlow)"
   >
 
-    <!-- Starburst Rays -->
     <path
-      d="M 0,-40 L 0,40
-         M -30,0 L 30,0
-         M -20,-25 L 20,25
-         M -20,25 L 20,-25"
+      d="M0 -40 L0 40
+         M-30 0 L30 0
+         M-20 -25 L20 25
+         M-20 25 L20 -25"
       stroke="#ffffff"
       stroke-width="3.5"
       opacity="0.9"
@@ -540,32 +619,83 @@
       r="32"
       fill="#ffd700"
       opacity="0.5"
-    />
+    >
+      <animate
+        attributeName="r"
+        values="25;38;25"
+        dur="1.4s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="opacity"
+        values="0.3;0.7;0.3"
+        dur="1.4s"
+        repeatCount="indefinite"
+      />
+    </circle>
 
   </g>
 
-  <!-- Big Front Sparkle Text / Icon Indicator -->
-  <g filter="url(#intenseGlow)">
+
+  <!-- ====================================================== -->
+  <!-- FRONT SPARKLES                                        -->
+  <!-- ====================================================== -->
+
+  <g filter="url(#strongGlow)">
 
     <path
-      d="M 180,240
-         Q 180,255 195,255
-         Q 180,255 180,270
-         Q 180,255 165,255
-         Q 180,255 180,240 Z"
+      d="M180 240
+         Q180 255 195 255
+         Q180 255 180 270
+         Q180 255 165 255
+         Q180 255 180 240 Z"
       fill="#ffd700"
-      class="sparkle-1"
-    />
+    >
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="1.4s"
+        repeatCount="indefinite"
+      />
+
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="0.7;1.3;0.7"
+        dur="1.4s"
+        repeatCount="indefinite"
+        additive="sum"
+      />
+    </path>
+
 
     <path
-      d="M 310,190
-         Q 310,208 328,208
-         Q 310,208 310,226
-         Q 310,208 292,208
-         Q 310,208 310,190 Z"
+      d="M310 190
+         Q310 208 328 208
+         Q310 208 310 226
+         Q310 208 292 208
+         Q310 208 310 190 Z"
       fill="#ffffff"
-      class="sparkle-2"
-    />
+    >
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="2.1s"
+        begin="0.5s"
+        repeatCount="indefinite"
+      />
+
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="0.7;1.3;0.7"
+        dur="2.1s"
+        begin="0.5s"
+        repeatCount="indefinite"
+        additive="sum"
+      />
+    </path>
 
   </g>
 
