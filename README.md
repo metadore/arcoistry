@@ -6,11 +6,9 @@
 
 `SAME CREATOR. DIFFERENT TIMELINES.`
 
----
-
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="180">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/4d-pocket.svg" width="220">
 
 </div>
 
@@ -21,6 +19,12 @@
 ## `A PORTFOLIO THAT DOESN'T BEHAVE LIKE A PORTFOLIO.`
 
 **OPEN · EXPLORE · DISCOVER**
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon.svg" width="180">
+
+</div>
 
 ---
 
@@ -62,7 +66,7 @@ Ideas that haven't become real yet.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/anywhere-door.svg" width="180">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-door.svg" width="200">
 
 </div>
 
@@ -98,13 +102,13 @@ Impossible concepts
 
 ### `WHERE THE EXPERIMENTS BECAME REAL.`
 
-The Archive is the collection of things that have already escaped the pocket.
-
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/time-machine.svg" width="150">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/time-machine.svg" width="170">
 
 </div>
+
+The Archive is the collection of things that have already escaped the pocket.
 
 🖥️ **SOFTWARE**
 
@@ -136,7 +140,7 @@ The Archive is the collection of things that have already escaped the pocket.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/take-copter.svg" width="160">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/take-copter.svg" width="180">
 
 </div>
 
@@ -152,11 +156,11 @@ Projects become experiments again.
 
 ### CURRENTLY EXPLORING
 
-`AI` &nbsp; ✦ &nbsp; `MACHINE LEARNING` &nbsp; ✦ &nbsp; `HCI`
+`AI`   ✦   `MACHINE LEARNING`   ✦   `HCI`
 
-`WEB` &nbsp; ✦ &nbsp; `HARDWARE` &nbsp; ✦ &nbsp; `RESEARCH`
+`WEB`   ✦   `HARDWARE`   ✦   `RESEARCH`
 
-`INTERACTION` &nbsp; ✦ &nbsp; `CREATIVE TECHNOLOGY`
+`INTERACTION`   ✦   `CREATIVE TECHNOLOGY`
 
 `BUILDING · BREAKING · LEARNING · REBUILDING`
 
@@ -168,7 +172,7 @@ Projects become experiments again.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/anywhere-rocket.svg" width="180">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-rocket.svg" width="190">
 
 </div>
 
@@ -208,7 +212,7 @@ Some can wait.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/anywhere-door.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-door.svg" width="120">
 
 ### ANYWHERE DOOR
 
@@ -216,7 +220,7 @@ Some can wait.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/take-copter.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/take-copter.svg" width="120">
 
 ### TAKE-COPTER
 
@@ -224,7 +228,7 @@ Some can wait.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/4d-pocket.svg" width="120">
 
 ### 4D POCKET
 
@@ -232,7 +236,7 @@ Some can wait.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/time-machine.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/time-machine.svg" width="120">
 
 ### TIME MACHINE
 
@@ -240,7 +244,7 @@ Some can wait.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/what-if-machine.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/what-if-machine.svg" width="120">
 
 ### WHAT-IF MACHINE
 
@@ -248,7 +252,7 @@ Some can wait.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/time-furoshiki.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/time-furoshiki.svg" width="120">
 
 ### TIME FUROSHIKI
 
@@ -256,7 +260,7 @@ Some can wait.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/small-light.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/small-light.svg" width="120">
 
 ### SMALL LIGHT
 
@@ -264,7 +268,7 @@ Some can wait.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/anywhere-rocket.svg" width="110">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-rocket.svg" width="120">
 
 ### ANYWHERE ROCKET
 
@@ -302,7 +306,7 @@ Creative web experiences, applications, interfaces and experiments.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/what-if-machine.svg" width="150">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/what-if-machine.svg" width="170">
 
 </div>
 
@@ -372,6 +376,12 @@ Creative web experiences, applications, interfaces and experiments.
 
 ### `ARTIST · CODER · CREATOR`
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon-bell.svg" width="150">
+
+</div>
+
 I build things somewhere between:
 
 ### `TECHNOLOGY × ART × RESEARCH × IMAGINATION`
@@ -382,11 +392,23 @@ I build things somewhere between:
 
 ---
 
+# 🍡 POCKET FUEL
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/dorayaki.svg" width="150">
+
+</div>
+
+`IDEAS NEED FUEL.`
+
+---
+
 # 📡 TRANSMISSION
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/small-light.svg" width="140">
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/small-light.svg" width="150">
 
 ### `THE POCKET IS OPEN.`
 
