@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Dark Cosmic Background -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1a0033"/>
+      <stop offset="50%" stop-color="#0d001a"/>
+      <stop offset="100%" stop-color="#05000a"/>
+    </radialGradient>
+
+    <!-- Metallic Yellow / Gold for Base -->
+    <linearGradient id="goldBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff275"/>
+      <stop offset="30%" stop-color="#ffd700"/>
+      <stop offset="70%" stop-color="#d4a000"/>
+      <stop offset="100%" stop-color="#806000"/>
+    </linearGradient>
+
+    <radialGradient id="goldCap" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#ffe650"/>
+      <stop offset="70%" stop-color="#cca300"/>
+      <stop offset="100%" stop-color="#665200"/>
+    </radialGradient>
+
+    <!-- Bamboo Wood Grain Gradients -->
+    <linearGradient id="bambooBlade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e6b800"/>
+      <stop offset="20%" stop-color="#ffe680"/>
+      <stop offset="50%" stop-color="#f0c233"/>
+      <stop offset="80%" stop-color="#d49b00"/>
+      <stop offset="100%" stop-color="#a37500"/>
+    </linearGradient>
+
+    <linearGradient id="bladeEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffe680" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#805c00" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Holographic Energy Ring Gradients -->
+    <linearGradient id="holoRing1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#b026ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff00a0" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <radialGradient id="energyCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#8000ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="18" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="dropShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="12" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <style>
+    /* Whole Copters Hovering Effect */
+    .copter-unit {
+      animation: hoverFloat 4s ease-in-out infinite alternate;
+      transform-origin: 400px 420px;
+    }
+
+    @keyframes hoverFloat {
+      0% { transform: translateY(12px) rotate(-1deg); }
+      100% { transform: translateY(-18px) rotate(1.5deg); }
+    }
+
+    /* Fast Rotor Spinning Animation */
+    .rotor-spinning {
+      animation: spinRotor 0.15s linear infinite;
+      transform-origin: 400px 300px;
+    }
+
+    @keyframes spinRotor {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Motion Blur Arc Rotation */
+    .blur-ring {
+      animation: spinBlur 0.3s linear infinite reverse;
+      transform-origin: 400px 300px;
+    }
+
+    @keyframes spinBlur {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Holographic Tech Rings Rotation */
+    .tech-ring-1 {
+      animation: rotateRing 8s linear infinite;
+      transform-origin: 400px 520px;
+    }
+
+    .tech-ring-2 {
+      animation: rotateRing 12s linear infinite reverse;
+      transform-origin: 400px 520px;
+    }
+
+    @keyframes rotateRing {
+      0% { transform: scaleY(0.35) rotate(0deg); }
+      100% { transform: scaleY(0.35) rotate(360deg); }
+    }
+
+    /* Energy Field Pulsing */
+    .energy-field {
+      animation: pulseField 2.5s ease-in-out infinite alternate;
+      transform-origin: 400px 520px;
+    }
+
+    @keyframes pulseField {
+      0% { opacity: 0.4; transform: scale(0.92); }
+      100% { opacity: 0.85; transform: scale(1.08); }
+    }
+
+    /* Sparkles & Floating Dust */
+    .sparkle-1 { animation: twinkle 1.4s ease-in-out infinite alternate; }
+    .sparkle-2 { animation: twinkle 2.1s ease-in-out infinite alternate 0.4s; }
+    .sparkle-3 { animation: twinkle 2.8s ease-in-out infinite alternate 0.9s; }
+
+    @keyframes twinkle {
+      0% { opacity: 0.1; transform: scale(0.6); }
+      100% { opacity: 1; transform: scale(1.4); }
+    }
+
+    .particle-rise {
+      animation: riseUp 3s ease-out infinite;
+    }
+    .p-delay-1 { animation-delay: 0.8s; }
+    .p-delay-2 { animation-delay: 1.6s; }
+    .p-delay-3 { animation-delay: 2.4s; }
+
+    @keyframes riseUp {
+      0% { transform: translateY(0px) scale(0.5); opacity: 0; }
+      50% { opacity: 0.9; }
+      100% { transform: translateY(-140px) scale(1.2); opacity: 0; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGlow)"/>
+
+  <!-- Stars / Cosmic Dust -->
+  <g opacity="0.6">
+    <circle cx="120" cy="150" r="1.5" fill="#00ffff" class="sparkle-1"/>
+    <circle cx="680" cy="180" r="2" fill="#ff00a0" class="sparkle-2"/>
+    <circle cx="160" cy="620" r="1.2" fill="#fff" class="sparkle-3"/>
+    <circle cx="710" cy="580" r="1.8" fill="#00ffff" class="sparkle-1"/>
+    <circle cx="250" cy="220" r="1" fill="#fff" class="sparkle-2"/>
+    <circle cx="580" cy="260" r="1.4" fill="#b026ff" class="sparkle-3"/>
+  </g>
+
+  <!-- GROUND HOLOGRAPHIC PEDESTAL / ENERGY FIELD -->
+  <g id="hologram-platform">
+    <!-- Ground Cast Shadow -->
+    <ellipse cx="400" cy="660" rx="180" ry="25" fill="#000000" opacity="0.6" filter="url(#intenseGlow)"/>
+
+    <!-- Outer Pulsing Glow -->
+    <ellipse cx="400" cy="520" rx="260" ry="85" fill="url(#energyCore)" class="energy-field"/>
+
+    <!-- Concentric Tech Rings (Perspectivized) -->
+    <g class="tech-ring-1">
+      <circle cx="400" cy="520" r="220" fill="none" stroke="url(#holoRing1)" stroke-width="2" stroke-dasharray="15 8 4 8 30 15"/>
+      <circle cx="400" cy="520" r="180" fill="none" stroke="#00ffff" stroke-width="1" stroke-dasharray="8 6"/>
+    </g>
+
+    <g class="tech-ring-2">
+      <circle cx="400" cy="520" r="150" fill="none" stroke="#ff00a0" stroke-width="1.5" stroke-dasharray="20 10 5 10"/>
+      <circle cx="400" cy="520" r="110" fill="none" stroke="#00ffff" stroke-width="2" stroke-dasharray="40 15"/>
+    </g>
+
+    <!-- Rising Energy Particles from Base -->
+    <g filter="url(#intenseGlow)">
+      <circle cx="350" cy="520" r="3" fill="#00ffff" class="particle-rise"/>
+      <circle cx="450" cy="500" r="2.5" fill="#ff00a0" class="particle-rise p-delay-1"/>
+      <circle cx="280" cy="510" r="3.5" fill="#b026ff" class="particle-rise p-delay-2"/>
+      <circle cx="510" cy="530" r="2" fill="#00ffff" class="particle-rise p-delay-3"/>
+      <circle cx="400" cy="490" r="4" fill="#ffffff" class="particle-rise p-delay-1"/>
+    </g>
+  </g>
+
+  <!-- ================= BAMBOO COPTER UNIT ================= -->
+  <g class="copter-unit" filter="url(#dropShadow)">
+
+    <!-- 1. BASE MOUNT (Attaches to Head) -->
+    <g id="suction-base">
+      <!-- Base Shadow/Occlusion -->
+      <ellipse cx="400" cy="452" rx="52" ry="16" fill="#2a1f00" opacity="0.6"/>
+
+      <!-- Lower Flange / Suction Cup Base -->
+      <path d="M 340,440 C 340,425 460,425 460,440 L 468,450 C 468,462 332,462 332,450 Z" fill="url(#goldBody)" stroke="#594300" stroke-width="1.5"/>
+      <ellipse cx="400" cy="440" rx="60" ry="16" fill="url(#goldCap)" stroke="#ffe680" stroke-width="1"/>
+
+      <!-- Inner Base Step -->
+      <path d="M 360,410 C 360,398 440,398 440,410 L 448,435 C 448,445 352,445 352,435 Z" fill="url(#goldBody)" stroke="#594300" stroke-width="1.5"/>
+      <ellipse cx="400" cy="410" rx="40" ry="11" fill="url(#goldCap)"/>
+    </g>
+
+    <!-- 2. VERTICAL SHAFT / ROD -->
+    <g id="vertical-rod">
+      <!-- Main Cylinder -->
+      <path d="M 388,300 L 412,300 L 412,410 L 388,410 Z" fill="url(#goldBody)" stroke="#403000" stroke-width="1.5"/>
+
+      <!-- Metallic Highlights on Shaft -->
+      <path d="M 393,300 L 398,300 L 398,410 L 393,410 Z" fill="#ffffff" opacity="0.5"/>
+      <path d="M 406,300 L 409,300 L 409,410 L 406,410 Z" fill="#403000" opacity="0.4"/>
+
+      <!-- Joint Rings / Ridge Details -->
+      <ellipse cx="400" cy="370" rx="14" ry="4" fill="url(#goldCap)" stroke="#594300" stroke-width="1"/>
+      <ellipse cx="400" cy="330" rx="13" ry="3.8" fill="url(#goldCap)" stroke="#594300" stroke-width="1"/>
+    </g>
+
+    <!-- 3. ROTOR HUB / BEARING TOP -->
+    <g id="rotor-hub">
+      <!-- Top Connector Ring -->
+      <ellipse cx="400" cy="300" rx="18" ry="6" fill="url(#goldBody)" stroke="#403000" stroke-width="1.5"/>
+
+      <!-- Bearing Cap Pin -->
+      <path d="M 392,285 L 408,285 L 412,300 L 388,300 Z" fill="url(#goldBody)" stroke="#403000" stroke-width="1"/>
+      <ellipse cx="400" cy="285" rx="8" ry="3" fill="#ffffff" opacity="0.8"/>
+    </g>
+
+    <!-- 4. ROTATING BLADES ASSEMBLY (ANIMATED) -->
+    <g id="blades-system">
+
+      <!-- Motion Blur Trails (Behind Main Blades) -->
+      <g class="blur-ring" opacity="0.4" filter="url(#softGlow)">
+        <ellipse cx="400" cy="300" rx="270" ry="24" fill="none" stroke="#ffe680" stroke-width="8" stroke-dasharray="120 60 180 40"/>
+        <ellipse cx="400" cy="300" rx="260" ry="20" fill="none" stroke="#00ffff" stroke-width="4" stroke-dasharray="80 100 140 50"/>
+      </g>
+
+      <!-- Fast Spinning Main Blades Group -->
+      <g class="rotor-spinning">
+
+        <!-- BLADE 1 (Left Wing) -->
+        <g id="blade-1">
+          <!-- Main Wood Body -->
+          <path d="M 400,296 C 340,290 200,270 130,285 C 120,288 120,308 135,312 C 200,320 340,308 400,304 Z" fill="url(#bambooBlade)" stroke="#805c00" stroke-width="1.5"/>
+
+          <!-- Top Highlight / Edge Bevel -->
+          <path d="M 400,296 C 340,290 200,270 130,285 C 125,286 122,295 130,295 C 200,288 340,298 400,300 Z" fill="url(#bladeEdge)"/>
+
+          <!-- Aerodynamic End Curved Tip -->
+          <path d="M 130,285 C 120,288 120,308 135,312 C 128,305 125,292 130,285 Z" fill="#d49b00"/>
+        </g>
+
+        <!-- BLADE 2 (Right Wing) -->
+        <g id="blade-2">
+          <!-- Main Wood Body -->
+          <path d="M 400,304 C 460,308 600,320 665,312 C 680,308 680,288 670,285 C 600,270 460,290 400,296 Z" fill="url(#bambooBlade)" stroke="#805c00" stroke-width="1.5"/>
+
+          <!-- Top Highlight / Edge Bevel -->
+          <path d="M 400,304 C 460,308 600,320 665,312 C 675,310 678,301 670,301 C 600,308 460,298 400,300 Z" fill="url(#bladeEdge)"/>
+
+          <!-- Aerodynamic End Curved Tip -->
+          <path d="M 665,312 C 680,308 680,288 670,285 C 672,292 670,305 665,312 Z" fill="#a37500"/>
+        </g>
+
+        <!-- Central Blade Rotor Clamp / Plate -->
+        <ellipse cx="400" cy="300" rx="22" ry="8" fill="url(#goldCap)" stroke="#594300" stroke-width="1.5"/>
+
+        <!-- Center Screw Bolts -->
+        <circle cx="388" cy="300" r="2.5" fill="#403000"/>
+        <circle cx="388" cy="299" r="1" fill="#ffffff"/>
+        <circle cx="412" cy="300" r="2.5" fill="#403000"/>
+        <circle cx="412" cy="299" r="1" fill="#ffffff"/>
+
+        <circle cx="400" cy="300" r="4" fill="url(#goldBody)" stroke="#403000" stroke-width="1"/>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- FOREGROUND GLOW & SPARKLE OVERLAYS -->
+  <g filter="url(#intenseGlow)">
+    <!-- Cyan Energy Burst Highlights around rotor cap -->
+    <circle cx="400" cy="300" r="8" fill="#00ffff" opacity="0.5" class="sparkle-1"/>
+
+    <!-- Floating Foreground Magic Stars -->
+    <path d="M 180,240 Q 180,252 192,252 Q 180,252 180,264 Q 180,252 168,252 Q 180,252 180,240 Z" fill="#ffffff" class="sparkle-1"/>
+    <path d="M 620,220 Q 620,235 635,235 Q 620,235 620,250 Q 620,235 605,235 Q 620,235 620,220 Z" fill="#00ffff" class="sparkle-2"/>
+    <path d="M 380,180 Q 380,190 390,190 Q 380,190 380,200 Q 380,190 370,190 Q 380,190 380,180 Z" fill="#ff00a0" class="sparkle-3"/>
+  </g>
+</svg>
