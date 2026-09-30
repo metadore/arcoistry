@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_31_05%20PM.png" width="100%" alt="Arcoistry — The 4D Pocket" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_31_05%20PM.png" width="100%" alt="Arcoistry — The 4D Pocket" />
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="170" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon.svg" width="170" alt="Doraemon" />
 
 <br><br>
 
@@ -16,7 +16,7 @@
 
 <br>
 
-*Same creator. Different timelines.*
+`SAME CREATOR. DIFFERENT TIMELINES.`
 
 <br><br>
 
@@ -46,11 +46,13 @@
 
 <div align="center">
 
-### `A PORTFOLIO THAT DOESN'T BEHAVE LIKE A PORTFOLIO.`
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/4d-pocket.svg" width="320" alt="4D Pocket" />
 
-<br>
+<br><br>
 
-🌀   **OPEN**   →   **EXPLORE**   →   **DISCOVER**
+## `A PORTFOLIO THAT DOESN'T BEHAVE LIKE A PORTFOLIO.`
+
+**OPEN · EXPLORE · DISCOVER**
 
 </div>
 
@@ -68,6 +70,8 @@ Part sketchbook.
 
 Part something that probably shouldn't have been built.
 
+<br>
+
 <div align="center">
 
 ### `THERE IS NO SINGLE TIMELINE HERE.`
@@ -78,13 +82,13 @@ Part something that probably shouldn't have been built.
 
 Previous projects, experiments and things that already happened.
 
-<br>
+    ✦    
 
 📍 **PRESENT**
 
 Things currently being built, tested and explored.
 
-<br>
+    ✦    
 
 🛸 **FUTURE**
 
@@ -96,15 +100,23 @@ Ideas that haven't become real yet.
 
 # 🚪 ANYWHERE DOOR
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-door.svg" width="300" alt="Anywhere Door" />
+
+<br><br>
+
 ### `ONE POCKET. THREE TIMELINES.`
+
+</div>
+
+<br>
 
 <table>
 <tr>
 <td width="33%" align="center">
 
-## 🕰️
-
-### PAST
+### 🕰️ PAST
 
 `THE ARCHIVE`
 
@@ -116,9 +128,7 @@ Finished worlds
 
 <td width="33%" align="center">
 
-## 📍
-
-### PRESENT
+### 📍 PRESENT
 
 `THE HUB`
 
@@ -130,9 +140,7 @@ Experiments
 
 <td width="33%" align="center">
 
-## 🛸
-
-### FUTURE
+### 🛸 FUTURE
 
 `THE HORIZON`
 
@@ -144,9 +152,9 @@ Impossible concepts
 </tr>
 </table>
 
-<br>
-
 <div align="center">
+
+<br>
 
 `THE ANYWHERE DOOR IS ALWAYS OPEN.`
 
@@ -156,33 +164,53 @@ Impossible concepts
 
 # 🕰️ 01 — THE ARCHIVE
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/time-machine.svg" width="280" alt="Time Machine" />
+
+</div>
+
 ### `WHERE THE EXPERIMENTS BECAME REAL.`
 
 The Archive is the collection of things that have already escaped the pocket.
 
+<br>
+
 <div align="center">
 
-🖥️   **SOFTWARE**
+🖥️ **SOFTWARE**
 
-🎨   **CREATIVE WORK**
+  ✦  
 
-🔧   **HARDWARE**
+🎨 **CREATIVE WORK**
 
-🤖   **AI EXPERIMENTS**
+  ✦  
 
-🧪   **RESEARCH**
+🔧 **HARDWARE**
 
-🗃️   **ABANDONED IDEAS**
+<br><br>
+
+🤖 **AI EXPERIMENTS**
+
+  ✦  
+
+🧪 **RESEARCH**
+
+  ✦  
+
+🗃️ **ABANDONED IDEAS**
 
 </div>
 
 <br>
 
-> **Every finished project is a fossil from an earlier version of the creator.**
-
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="110" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/time-furoshiki.svg" width="180" alt="Time Furoshiki" />
+
+<br><br>
+
+> **EVERY FINISHED PROJECT IS A FOSSIL FROM AN EARLIER VERSION OF THE CREATOR.**
 
 </div>
 
@@ -190,7 +218,15 @@ The Archive is the collection of things that have already escaped the pocket.
 
 # 📍 02 — THE HUB
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/take-copter.svg" width="230" alt="Take-Copter" />
+
+<br><br>
+
 ### `CURRENTLY UNDER CONSTRUCTION.`
+
+</div>
 
 This is where things get messy.
 
@@ -202,6 +238,8 @@ Experiments become projects.
 
 Projects become experiments again.
 
+<br>
+
 <div align="center">
 
 ### CURRENTLY EXPLORING
@@ -210,17 +248,15 @@ Projects become experiments again.
 
 `AI`   ✦   `MACHINE LEARNING`   ✦   `HCI`
 
+<br>
+
 `WEB`   ✦   `HARDWARE`   ✦   `RESEARCH`
-
-`INTERACTION`   ✦   `CREATIVE TECHNOLOGY`
-
-</div>
 
 <br>
 
-<div align="center">
+`INTERACTION`   ✦   `CREATIVE TECHNOLOGY`
 
-**STATUS**
+<br><br>
 
 `BUILDING · BREAKING · LEARNING · REBUILDING`
 
@@ -230,7 +266,15 @@ Projects become experiments again.
 
 # 🛸 03 — THE HORIZON
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/what-if-machine.svg" width="300" alt="What-If Machine" />
+
+<br><br>
+
 ### `IDEAS THAT HAVEN'T BECOME REALITY YET.`
+
+</div>
 
 Not every idea needs to immediately become a GitHub repository.
 
@@ -240,17 +284,29 @@ Some can stay impossible.
 
 Some can wait.
 
+<br>
+
 <div align="center">
 
 ✦ **FUTURE INTERFACES**
 
+  ·  
+
 ✦ **AI EXPERIMENTS**
+
+<br><br>
 
 ✦ **HUMAN–MACHINE INTERACTION**
 
+  ·  
+
 ✦ **WEIRD HARDWARE**
 
+<br><br>
+
 ✦ **UNBUILT WORLDS**
+
+  ·  
 
 ✦ **DIGITAL CONCEPTS**
 
@@ -258,7 +314,23 @@ Some can wait.
 
 <br>
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-rocket.svg" width="240" alt="Anywhere Rocket" />
+
+<br>
+
 > **NOT EVERYTHING NEEDS TO EXIST YET.**
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/dorayaki.svg" width="150" alt="Dorayaki" />
+
+</div>
 
 ---
 
@@ -268,18 +340,127 @@ Some can wait.
 
 ### `POCKET INVENTORY`
 
-</div>
+<br>
 
-|     | Gadget              | What it does                    |
-| :-: | :------------------ | :------------------------------ |
-|  🚪 | **Anywhere Door**   | Moves between timelines         |
-|  🚁 | **Take-Copter**     | Adds depth and movement         |
-|  🌀 | **4D Pocket**       | Stores projects and experiments |
-| 🕰️ | **Time Viewer**     | Looks back at previous work     |
-|  🧠 | **What-If Machine** | Generates impossible ideas      |
-|  🪄 | **Time Furoshiki**  | Rewraps old ideas into new ones |
-|  🔦 | **Small Light**     | Reveals hidden details          |
-|  🚀 | **Anywhere Rocket** | Launches future experiments     |
+<table>
+<tr>
+<td align="center" width="25%">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-door.svg" width="110" />
+
+<br>
+
+**ANYWHERE DOOR**
+
+<br>
+
+`TIMELINES`
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/take-copter.svg" width="110" />
+
+<br>
+
+**TAKE-COPTER**
+
+<br>
+
+`MOVEMENT`
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/4d-pocket.svg" width="110" />
+
+<br>
+
+**4D POCKET**
+
+<br>
+
+`STORAGE`
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/time-machine.svg" width="110" />
+
+<br>
+
+**TIME MACHINE**
+
+<br>
+
+`ARCHIVE`
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/what-if-machine.svg" width="110" />
+
+<br>
+
+**WHAT-IF MACHINE**
+
+<br>
+
+`IDEAS`
+
+</td>
+
+<td align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/time-furoshiki.svg" width="110" />
+
+<br>
+
+**TIME FUROSHIKI**
+
+<br>
+
+`REWORK`
+
+</td>
+
+<td align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/small-light.svg" width="110" />
+
+<br>
+
+**SMALL LIGHT**
+
+<br>
+
+`DISCOVERY`
+
+</td>
+
+<td align="center">
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-rocket.svg" width="110" />
+
+<br>
+
+**ANYWHERE ROCKET**
+
+<br>
+
+`LAUNCH`
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
@@ -290,11 +471,9 @@ Some can wait.
 
 <br>
 
-**Things that live inside screens.**
+### Things that live inside screens.
 
 `Next.js` · `React` · `JavaScript` · `TypeScript` · `Python` · `C`
-
-<br>
 
 Creative web experiences, applications, interfaces and experiments.
 
@@ -307,7 +486,7 @@ Creative web experiences, applications, interfaces and experiments.
 
 <br>
 
-**Things involving data, models and machines pretending to understand things.**
+### Things involving data, models and machines pretending to understand things.
 
 `Machine Learning` · `Computer Vision` · `AI Interfaces` · `Data` · `Experimental Models`
 
@@ -320,7 +499,7 @@ Creative web experiences, applications, interfaces and experiments.
 
 <br>
 
-**Things that exist outside the screen.**
+### Things that exist outside the screen.
 
 `Arduino` · `Raspberry Pi` · `Sensors` · `Embedded Systems` · `Human–Machine Interaction`
 
@@ -333,7 +512,7 @@ Creative web experiences, applications, interfaces and experiments.
 
 <br>
 
-**Where engineering stops behaving like engineering.**
+### Where engineering stops behaving like engineering.
 
 `UI/UX` · `Motion` · `Interaction` · `Visual Design` · `Digital Experiments`
 
@@ -345,33 +524,37 @@ Creative web experiences, applications, interfaces and experiments.
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/small-light.svg" width="220" alt="Small Light" />
+
+<br><br>
+
 ### `CURRENT EXPERIMENTS`
 
 <br>
 
 🧪 **RESEARCH**
 
-    
+  ✦  
 
 🤖 **AI**
 
-    
+  ✦  
 
 💻 **WEB**
 
-    
+<br><br>
 
 🔧 **HARDWARE**
 
-<br><br>
+  ✦  
 
 🎨 **DESIGN**
 
-    
+  ✦  
 
 🧠 **HCI**
 
-    
+<br><br>
 
 🌐 **INTERACTION**
 
@@ -379,9 +562,15 @@ Creative web experiences, applications, interfaces and experiments.
 
 <br>
 
+<div align="center">
+
 > Some experiments become projects.
+>
 > Some become research.
+>
 > Some disappear into the pocket.
+
+</div>
 
 ---
 
@@ -395,7 +584,11 @@ Creative web experiences, applications, interfaces and experiments.
 
 `NEXT.JS` · `REACT` · `TYPESCRIPT` · `PYTHON`
 
+<br>
+
 `C` · `ARDUINO` · `RASPBERRY PI` · `THREE.JS`
+
+<br>
 
 `TAILWIND` · `GIT` · `GITHUB` · `VERCEL`
 
@@ -407,7 +600,7 @@ Creative web experiences, applications, interfaces and experiments.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="150" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon.svg" width="150" alt="Doraemon" />
 
 <br><br>
 
@@ -437,7 +630,7 @@ Creative web experiences, applications, interfaces and experiments.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="130" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon-bell.svg" width="90" alt="Doraemon Bell" />
 
 <br><br>
 
@@ -449,13 +642,17 @@ Creative web experiences, applications, interfaces and experiments.
 
 I build things somewhere between:
 
-**TECHNOLOGY × ART × RESEARCH × IMAGINATION**
+### `TECHNOLOGY × ART × RESEARCH × IMAGINATION`
 
 <br>
 
-> *The goal isn't to build another portfolio.*
+> **THE GOAL ISN'T TO BUILD ANOTHER PORTFOLIO.**
 
-> *The goal is to build a world.*
+> **THE GOAL IS TO BUILD A WORLD.**
+
+<br>
+
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/dorayaki.svg" width="130" alt="Dorayaki" />
 
 </div>
 
@@ -465,11 +662,11 @@ I build things somewhere between:
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/anywhere-rocket.svg" width="220" alt="Anywhere Rocket" />
+
+<br><br>
+
 ### `THE POCKET IS OPEN.`
-
-<br>
-
-🌀
 
 <br>
 
@@ -495,7 +692,7 @@ I build things somewhere between:
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="160" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/master/doraemon.svg" width="160" alt="Doraemon" />
 
 <br><br>
 
