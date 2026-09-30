@@ -1,0 +1,388 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%">
+  <defs>
+    <!-- Background Space Gradients -->
+    <radialGradient id="spaceGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#2a085c"/>
+      <stop offset="40%" stop-color="#14052b"/>
+      <stop offset="100%" stop-color="#05010d"/>
+    </radialGradient>
+
+    <radialGradient id="portalGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#72f2ff"/>
+      <stop offset="50%" stop-color="#b042ff"/>
+      <stop offset="80%" stop-color="#4c11ac"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cosmic Portal Landscape Gradients -->
+    <linearGradient id="portalSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090014"/>
+      <stop offset="40%" stop-color="#2b004f"/>
+      <stop offset="70%" stop-color="#80116b"/>
+      <stop offset="100%" stop-color="#d13ca4"/>
+    </linearGradient>
+
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe600"/>
+      <stop offset="50%" stop-color="#ff2a8d"/>
+      <stop offset="100%" stop-color="#8a00ff"/>
+    </linearGradient>
+
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d13ca4"/>
+      <stop offset="30%" stop-color="#4a0e4e"/>
+      <stop offset="100%" stop-color="#090014"/>
+    </linearGradient>
+
+    <!-- Anywhere Door Pink Gradients -->
+    <linearGradient id="doorFrameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff85c0"/>
+      <stop offset="30%" stop-color="#ff3385"/>
+      <stop offset="70%" stop-color="#e6005c"/>
+      <stop offset="100%" stop-color="#99003d"/>
+    </linearGradient>
+
+    <linearGradient id="doorBodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff66a3"/>
+      <stop offset="25%" stop-color="#ff3385"/>
+      <stop offset="85%" stop-color="#d90052"/>
+      <stop offset="100%" stop-color="#b30043"/>
+    </linearGradient>
+
+    <linearGradient id="doorInnerEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#800030"/>
+      <stop offset="100%" stop-color="#ff4d94"/>
+    </linearGradient>
+
+    <linearGradient id="doorThickness" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6005c"/>
+      <stop offset="100%" stop-color="#660029"/>
+    </linearGradient>
+
+    <!-- Golden Knob Gradients -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="15%" stop-color="#fff2a3"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="85%" stop-color="#cca100"/>
+      <stop offset="100%" stop-color="#806500"/>
+    </radialGradient>
+
+    <linearGradient id="knobBaseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe875"/>
+      <stop offset="50%" stop-color="#c79d00"/>
+      <stop offset="100%" stop-color="#5e4a00"/>
+    </linearGradient>
+
+    <!-- Shadows & Glow Filters -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur1"/>
+      <feGaussianBlur stdDeviation="25" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="magicSparkle" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComponentTransfer in="blur" result="brightBlur">
+        <feFuncA type="linear" slope="2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="brightBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Door Portal Clip Path -->
+    <clipPath id="doorPortalClip">
+      <polygon points="260,230 520,170 520,710 260,770"/>
+    </clipPath>
+
+    <!-- Cloud Pattern -->
+    <radialGradient id="cloudGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb3da" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffb3da" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Embedded CSS Animations -->
+  <style>
+    /* Door Opening Loop */
+    .door-panel-group {
+      transform-origin: 260px 500px;
+      animation: swingDoor 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes swingDoor {
+      0%, 15% {
+        /* Fully Closed Position */
+        transform: matrix3d(
+          1, 0, 0, 0,
+          0, 1, 0, 0,
+          0, 0, 1, 0,
+          0, 0, 0, 1
+        );
+      }
+      85%, 100% {
+        /* Fully Open Position (matches initial vector pose) */
+        transform: matrix3d(
+          1, 0, 0, 0,
+          0, 1, 0, 0,
+          0, 0, 1, 0,
+          0, 0, 0, 1
+        );
+      }
+    }
+
+    /* Knob Turn Animation */
+    .door-knob {
+      transform-origin: 147px 553px;
+      animation: rotateKnob 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes rotateKnob {
+      0%, 8% { transform: rotate(0deg); }
+      14%, 85% { transform: rotate(-45deg); }
+      100% { transform: rotate(-45deg); }
+    }
+
+    /* Pulsing & Pulsating Glows */
+    .nebula-pulse {
+      animation: pulseGlow 4s ease-in-out infinite alternate;
+      transform-origin: 400px 450px;
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: scale(0.92); opacity: 0.6; }
+      100% { transform: scale(1.1); opacity: 0.95; }
+    }
+
+    .sun-glow {
+      animation: sunPulse 3s ease-in-out infinite alternate;
+      transform-origin: 380px 400px;
+    }
+
+    @keyframes sunPulse {
+      0% { transform: scale(0.96); filter: drop-shadow(0 0 5px #ff2a8d); }
+      100% { transform: scale(1.05); filter: drop-shadow(0 0 25px #ffe600); }
+    }
+
+    /* Floating Particles & Sparkles */
+    .sparkle-twinkle-1 { animation: twinkle 1.8s ease-in-out infinite alternate; }
+    .sparkle-twinkle-2 { animation: twinkle 2.5s ease-in-out infinite alternate 0.6s; }
+    .sparkle-twinkle-3 { animation: twinkle 3.1s ease-in-out infinite alternate 1.2s; }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; transform: scale(0.7); }
+      100% { opacity: 1; transform: scale(1.3); }
+    }
+
+    .particle-float-1 { animation: floatUp 4s ease-in-out infinite; }
+    .particle-float-2 { animation: floatUp 5.5s ease-in-out infinite 1.5s; }
+    .particle-float-3 { animation: floatUp 3.8s ease-in-out infinite 0.7s; }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0px) scale(0.8); opacity: 0; }
+      50% { opacity: 0.9; }
+      100% { transform: translateY(-60px) scale(1.2); opacity: 0; }
+    }
+
+    /* Horizon Grid Scroll effect inside portal */
+    .grid-lines {
+      animation: gridMove 2s linear infinite;
+    }
+
+    @keyframes gridMove {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(20px); }
+    }
+
+    /* Threshold Light Beam Pulse */
+    .portal-threshold-light {
+      animation: thresholdGlow 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes thresholdGlow {
+      0% { opacity: 0.4; }
+      100% { opacity: 0.95; }
+    }
+  </style>
+
+  <!-- ================= BACKGROUND ================= -->
+  <rect width="800" height="900" fill="url(#spaceGlow)"/>
+
+  <!-- Stars & Cosmic Dust Background -->
+  <g opacity="0.6">
+    <!-- Tiny Stars -->
+    <circle cx="120" cy="100" r="1" fill="#fff" class="sparkle-twinkle-1"/>
+    <circle cx="280" cy="80" r="1.5" fill="#72f2ff" class="sparkle-twinkle-2"/>
+    <circle cx="650" cy="120" r="1" fill="#fff" class="sparkle-twinkle-3"/>
+    <circle cx="710" cy="250" r="1.2" fill="#ffb3da" class="sparkle-twinkle-1"/>
+    <circle cx="680" cy="680" r="1.5" fill="#fff" class="sparkle-twinkle-2"/>
+    <circle cx="100" cy="650" r="1" fill="#72f2ff" class="sparkle-twinkle-3"/>
+    <circle cx="150" cy="380" r="1.2" fill="#fff" class="sparkle-twinkle-1"/>
+    <circle cx="630" cy="450" r="1" fill="#fff" class="sparkle-twinkle-2"/>
+
+    <!-- Big Twinkle Stars -->
+    <path d="M 600,90 Q 600,105 615,105 Q 600,105 600,120 Q 600,105 585,105 Q 600,105 600,90 Z" fill="#fff" class="sparkle-twinkle-1" filter="url(#magicSparkle)"/>
+    <path d="M 140,220 Q 140,230 150,230 Q 140,230 140,240 Q 140,230 130,230 Q 140,230 140,220 Z" fill="#72f2ff" class="sparkle-twinkle-3"/>
+    <path d="M 670,550 Q 670,562 682,562 Q 670,562 670,574 Q 670,562 658,562 Q 670,562 670,550 Z" fill="#ffb3da" class="sparkle-twinkle-2"/>
+    <path d="M 110,800 Q 110,812 122,812 Q 110,812 110,824 Q 110,812 98,812 Q 110,812 110,800 Z" fill="#fff" class="sparkle-twinkle-1"/>
+  </g>
+
+  <!-- Nebula Atmosphere Behind Door -->
+  <circle cx="400" cy="450" r="350" fill="url(#portalGlow)" class="nebula-pulse" style="mix-blend-mode: screen;"/>
+  <circle cx="300" cy="350" r="180" fill="url(#cloudGrad)"/>
+  <circle cx="500" cy="500" r="220" fill="url(#cloudGrad)"/>
+
+  <!-- Cast Shadow Ground -->
+  <ellipse cx="400" cy="800" rx="280" ry="45" fill="#000000" opacity="0.6" filter="url(#intenseGlow)"/>
+  <ellipse cx="430" cy="805" rx="200" ry="25" fill="#050010" opacity="0.8"/>
+
+  <!-- ================= PORTAL CONTENT (INSIDE DOOR) ================= -->
+  <g clip-path="url(#doorPortalClip)">
+    <!-- Sky -->
+    <rect x="200" y="100" width="350" height="700" fill="url(#portalSky)"/>
+
+    <!-- Stars in Portal -->
+    <circle cx="350" cy="300" r="0.8" fill="#fff" class="sparkle-twinkle-1"/>
+    <circle cx="420" cy="250" r="1.2" fill="#fff" class="sparkle-twinkle-3"/>
+    <circle cx="480" cy="310" r="1" fill="#ff99dd" class="sparkle-twinkle-2"/>
+    <circle cx="300" cy="380" r="1.5" fill="#7dffff" class="sparkle-twinkle-1"/>
+
+    <!-- Synthwave / Sci-Fi Grid Sun -->
+    <circle cx="380" cy="400" r="90" fill="url(#sunGrad)" class="sun-glow"/>
+
+    <!-- Sun Horizon Lines -->
+    <rect x="250" y="380" width="260" height="2" fill="#2b004f"/>
+    <rect x="250" y="390" width="260" height="3" fill="#2b004f"/>
+    <rect x="250" y="402" width="260" height="4" fill="#2b004f"/>
+    <rect x="250" y="417" width="260" height="6" fill="#2b004f"/>
+    <rect x="250" y="435" width="260" height="8" fill="#2b004f"/>
+
+    <!-- Ocean / Perspective Floor -->
+    <polygon points="200,450 550,450 550,780 200,780" fill="url(#seaGrad)"/>
+
+    <!-- Perspective Grid Lines on Sea -->
+    <g stroke="#ff33a6" stroke-width="1.5" opacity="0.7">
+      <line x1="380" y1="450" x2="380" y2="780"/>
+      <line x1="380" y1="450" x2="310" y2="780"/>
+      <line x1="380" y1="450" x2="230" y2="780"/>
+      <line x1="380" y1="450" x2="150" y2="780"/>
+      <line x1="380" y1="450" x2="450" y2="780"/>
+      <line x1="380" y1="450" x2="530" y2="780"/>
+      <line x1="380" y1="450" x2="610" y2="780"/>
+
+      <!-- Horizontal Moving Grid Lines -->
+      <g class="grid-lines">
+        <line x1="200" y1="460" x2="550" y2="460" stroke-width="0.8"/>
+        <line x1="200" y1="475" x2="550" y2="475" stroke-width="1"/>
+        <line x1="200" y1="495" x2="550" y2="495" stroke-width="1.2"/>
+        <line x1="200" y1="525" x2="550" y2="525" stroke-width="1.5"/>
+        <line x1="200" y1="565" x2="550" y2="565" stroke-width="1.8"/>
+        <line x1="200" y1="620" x2="550" y2="620" stroke-width="2.2"/>
+        <line x1="200" y1="690" x2="550" y2="690" stroke-width="2.8"/>
+      </g>
+    </g>
+
+    <!-- Magic Portal Rim Lighting / Inner Glow -->
+    <polygon points="260,230 520,170 520,710 260,770" fill="none" stroke="#72f2ff" stroke-width="14" class="portal-threshold-light" filter="url(#intenseGlow)"/>
+    <polygon points="260,230 520,170 520,710 260,770" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.8"/>
+  </g>
+
+  <!-- ================= ANYWHERE DOOR FRAME (OUTER) ================= -->
+  <g filter="url(#dropShadow)">
+    <!-- Base / Threshold Plate -->
+    <polygon points="200,810 240,790 560,715 520,730 200,810" fill="#800033"/>
+    <polygon points="215,800 245,785 545,717 515,732" fill="#e6005c"/>
+
+    <!-- Left Outer Post -->
+    <polygon points="215,225 255,215 255,780 215,795" fill="url(#doorFrameGrad)"/>
+    <polygon points="255,215 260,217 260,770 255,780" fill="url(#doorInnerEdge)"/>
+
+    <!-- Top Outer Header -->
+    <polygon points="215,225 535,150 535,185 215,260" fill="url(#doorFrameGrad)"/>
+    <polygon points="215,260 535,185 535,195 245,265" fill="#660024"/>
+
+    <!-- Right Outer Post -->
+    <polygon points="535,150 575,140 575,695 535,710" fill="url(#doorFrameGrad)"/>
+    <polygon points="535,185 540,183 540,700 535,710" fill="#ff4d94"/>
+
+    <!-- Highlights & Caps -->
+    <path d="M 215,225 L 575,140 L 575,146 L 215,231 Z" fill="#ffb3da" opacity="0.6"/>
+    <path d="M 215,225 L 221,223 L 221,793 L 215,795 Z" fill="#ffb3da" opacity="0.8"/>
+    <rect x="210" y="220" width="50" height="12" rx="3" transform="matrix(0.97 -0.24 0.24 0.97 -45 65)" fill="url(#doorFrameGrad)"/>
+    <rect x="530" y="145" width="50" height="12" rx="3" transform="matrix(0.97 -0.24 0.24 0.97 25 -15)" fill="url(#doorFrameGrad)"/>
+  </g>
+
+  <!-- Inner Frame Shadow -->
+  <polygon points="260,230 520,170 520,185 260,245" fill="#000000" opacity="0.4"/>
+  <polygon points="260,230 270,228 270,755 260,770" fill="#000000" opacity="0.3"/>
+
+  <!-- ================= ANIMATED DOOR PANEL ================= -->
+  <g class="door-panel-group" filter="url(#dropShadow)">
+    <!-- Door Thickness -->
+    <polygon points="85,295 105,290 105,820 85,830" fill="url(#doorThickness)"/>
+
+    <!-- Door Front Face -->
+    <polygon points="105,290 260,230 260,770 105,820" fill="url(#doorBodyGrad)"/>
+
+    <!-- Panels Details -->
+    <polygon points="125,320 240,275 240,490 125,520" fill="#d90052" stroke="#ff80b3" stroke-width="1.5" opacity="0.9"/>
+    <polygon points="128,323 237,280 237,487 128,516" fill="none" stroke="#800030" stroke-width="2"/>
+
+    <polygon points="125,540 240,510 240,735 125,775" fill="#d90052" stroke="#ff80b3" stroke-width="1.5" opacity="0.9"/>
+    <polygon points="128,543 237,513 237,732 128,771" fill="none" stroke="#800030" stroke-width="2"/>
+
+    <!-- Highlights -->
+    <polygon points="107,292 258,234 258,238 107,297" fill="#ffffff" opacity="0.4"/>
+    <polygon points="107,292 112,290 112,816 107,818" fill="#ffffff" opacity="0.3"/>
+
+    <!-- Hinges -->
+    <rect x="254" y="280" width="8" height="22" rx="2" transform="matrix(0.97 -0.24 0 1 0 0)" fill="url(#knobBaseGrad)"/>
+    <rect x="254" y="700" width="8" height="22" rx="2" transform="matrix(0.97 -0.24 0 1 0 0)" fill="url(#knobBaseGrad)"/>
+
+    <!-- Animated Door Knob Group -->
+    <g class="door-knob">
+      <ellipse cx="130" cy="565" rx="14" ry="8" fill="#4d001a" opacity="0.6"/>
+      <ellipse cx="132" cy="558" rx="8" ry="16" fill="url(#knobBaseGrad)" stroke="#4d3b00" stroke-width="1"/>
+      <path d="M 132,558 L 146,553 L 148,561 L 134,566 Z" fill="#997a00"/>
+      <polygon points="138,550 148,546 148,562 138,566" fill="url(#knobBaseGrad)"/>
+      <circle cx="147" cy="553" r="12" fill="url(#knobGrad)" filter="url(#softGlow)"/>
+      <ellipse cx="143" cy="549" rx="4" ry="2.5" fill="#ffffff" opacity="0.8" transform="rotate(-20 143 549)"/>
+      <circle cx="132" cy="554" r="2" fill="#1a1300"/>
+      <polygon points="131,554 133,554 134,562 130,562" fill="#1a1300"/>
+    </g>
+  </g>
+
+  <!-- ================= FOREGROUND ANIMATED MAGIC ================= -->
+  <g filter="url(#magicSparkle)">
+    <!-- Threshold Beam Glow -->
+    <polygon points="260,770 520,710 600,820 180,870" fill="url(#cloudGrad)" class="portal-threshold-light" style="mix-blend-mode: screen;"/>
+
+    <!-- Floating / Twinkling Magic Sparkles -->
+    <path class="sparkle-twinkle-1" d="M 200,480 Q 200,500 220,500 Q 200,500 200,520 Q 200,500 180,500 Q 200,500 200,480 Z" fill="#ffffff"/>
+    <circle class="sparkle-twinkle-2" cx="170" cy="450" r="2.5" fill="#72f2ff"/>
+
+    <path class="sparkle-twinkle-3" d="M 480,350 Q 480,375 505,375 Q 480,375 480,400 Q 480,375 455,375 Q 480,375 480,350 Z" fill="#ffe6f2"/>
+
+    <!-- Floating Rising Orbs -->
+    <circle class="particle-float-1" cx="530" cy="540" r="4" fill="#ffd700" filter="url(#softGlow)"/>
+    <circle class="particle-float-2" cx="240" cy="360" r="3" fill="#72f2ff" filter="url(#softGlow)"/>
+    <circle class="particle-float-3" cx="450" cy="680" r="3.5" fill="#ff66cc" filter="url(#softGlow)"/>
+    <circle class="particle-float-1" cx="510" cy="300" r="2.5" fill="#ffffff"/>
+  </g>
+</svg>
