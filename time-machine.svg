@@ -1,0 +1,360 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Space & Nebula -->
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#180033"/>
+      <stop offset="40%" stop-color="#0b001a"/>
+      <stop offset="100%" stop-color="#020008"/>
+    </radialGradient>
+
+    <!-- Time Warp Tunnel & Portals -->
+    <radialGradient id="timeTunnel" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="15%" stop-color="#00ffff"/>
+      <stop offset="40%" stop-color="#7000ff"/>
+      <stop offset="70%" stop-color="#1f004d"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Metallic Base & Platform Gradients -->
+    <linearGradient id="carpetTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffdd80"/>
+      <stop offset="50%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#cc6600"/>
+    </linearGradient>
+
+    <linearGradient id="carpetSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b35900"/>
+      <stop offset="100%" stop-color="#4d2600"/>
+    </linearGradient>
+
+    <linearGradient id="metalConsole" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f5fa"/>
+      <stop offset="40%" stop-color="#d0dce5"/>
+      <stop offset="80%" stop-color="#99aab8"/>
+      <stop offset="100%" stop-color="#607180"/>
+    </linearGradient>
+
+    <linearGradient id="brassGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="50%" stop-color="#d4a000"/>
+      <stop offset="100%" stop-color="#664d00"/>
+    </linearGradient>
+
+    <linearGradient id="chairLeather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="60%" stop-color="#cc0000"/>
+      <stop offset="100%" stop-color="#660000"/>
+    </linearGradient>
+
+    <linearGradient id="screenDisplay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#003311"/>
+      <stop offset="50%" stop-color="#006622"/>
+      <stop offset="100%" stop-color="#001a08"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur1"/>
+      <feGaussianBlur stdDeviation="22" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="sparkleGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComponentTransfer in="blur" result="bright">
+        <feFuncA type="linear" slope="2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="bright"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <style>
+    /* Floating Machine Wobble */
+    .time-machine-unit {
+      animation: hoverFloating 5s ease-in-out infinite alternate;
+      transform-origin: 450px 480px;
+    }
+    @keyframes hoverFloating {
+      0% { transform: translateY(15px) rotate(-1.5deg); }
+      100% { transform: translateY(-20px) rotate(2deg); }
+    }
+
+    /* Tunnel Pulsing */
+    .tunnel-pulse {
+      animation: pulseTunnel 3.5s ease-in-out infinite alternate;
+      transform-origin: 450px 320px;
+    }
+    @keyframes pulseTunnel {
+      0% { transform: scale(0.92); opacity: 0.7; }
+      100% { transform: scale(1.12); opacity: 0.98; }
+    }
+
+    /* Spinning Time Clock Dial Rings */
+    .dial-spin-cw {
+      animation: spinClock 20s linear infinite;
+      transform-origin: 450px 320px;
+    }
+    .dial-spin-ccw {
+      animation: spinClock 14s linear infinite reverse;
+      transform-origin: 450px 320px;
+    }
+    @keyframes spinClock {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Spinning Gears on Machine Console */
+    .gear-spin-fast {
+      animation: spinGear 3s linear infinite;
+      transform-origin: 520px 455px;
+    }
+    .gear-spin-back {
+      animation: spinGear 4.5s linear infinite reverse;
+      transform-origin: 555px 435px;
+    }
+    @keyframes spinGear {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Steering Pole / Light Sphere Glow Pulse */
+    .lamp-glow {
+      animation: pulseLamp 1.2s ease-in-out infinite alternate;
+      transform-origin: 290px 350px;
+    }
+    @keyframes pulseLamp {
+      0% { transform: scale(0.95); opacity: 0.8; filter: drop-shadow(0 0 8px #ff2a8d); }
+      100% { transform: scale(1.12); opacity: 1; filter: drop-shadow(0 0 25px #00ffff); }
+    }
+
+    /* Digital Screen Matrix Wave */
+    .screen-text {
+      animation: blinkText 1.8s steps(2, start) infinite;
+    }
+    @keyframes blinkText {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* Floating Time Numbers & Sparkles */
+    .time-num-float-1 { animation: floatNum 4s ease-in-out infinite; }
+    .time-num-float-2 { animation: floatNum 5.2s ease-in-out infinite 1.2s; }
+    .time-num-float-3 { animation: floatNum 3.8s ease-in-out infinite 2.3s; }
+
+    @keyframes floatNum {
+      0% { transform: translateY(0px) scale(0.8); opacity: 0; }
+      50% { opacity: 0.9; }
+      100% { transform: translateY(-90px) scale(1.2); opacity: 0; }
+    }
+
+    .sparkle-twinkle { animation: twinkle 1.6s ease-in-out infinite alternate; }
+    @keyframes twinkle {
+      0% { opacity: 0.2; transform: scale(0.7); }
+      100% { opacity: 1; transform: scale(1.3); }
+    }
+  </style>
+
+  <!-- Background Space -->
+  <rect width="900" height="800" fill="url(#spaceBg)"/>
+
+  <!-- Cosmic Background Stars -->
+  <g opacity="0.5">
+    <circle cx="100" cy="120" r="1.5" fill="#fff" class="sparkle-twinkle"/>
+    <circle cx="800" cy="150" r="2" fill="#00ffff" class="sparkle-twinkle"/>
+    <circle cx="150" cy="650" r="1.2" fill="#ff00a0" class="sparkle-twinkle"/>
+    <circle cx="820" cy="620" r="1.8" fill="#fff" class="sparkle-twinkle"/>
+    <circle cx="220" cy="200" r="1" fill="#fff"/>
+    <circle cx="730" cy="280" r="1.4" fill="#7000ff"/>
+  </g>
+
+  <!-- ================= TIME WARP TUNNEL (BACKGROUND PORTAL) ================= -->
+  <g id="time-warp-portal">
+    <!-- Tunnel Glow Base -->
+    <circle cx="450" cy="320" r="300" fill="url(#timeTunnel)" class="tunnel-pulse"/>
+
+    <!-- Concentric Zodiac / Clock Dial Rings -->
+    <g class="dial-spin-cw" opacity="0.6" stroke="#00ffff" stroke-width="1.5" fill="none">
+      <circle cx="450" cy="320" r="240" stroke-dasharray="8 12 30 12"/>
+      <circle cx="450" cy="320" r="200" stroke-dasharray="40 15 10 15"/>
+      <circle cx="450" cy="320" r="160" stroke-dasharray="4 8"/>
+
+      <!-- Roman Numerals on Outer Ring -->
+      <g font-family="serif" font-size="16" font-weight="bold" fill="#00ffff" stroke="none" text-anchor="middle">
+        <text x="450" y="90">XII</text>
+        <text x="680" y="325">III</text>
+        <text x="450" y="555">VI</text>
+        <text x="220" y="325">IX</text>
+        <text x="610" y="150">I</text>
+        <text x="670" y="225">II</text>
+        <text x="610" y="500">V</text>
+        <text x="290" y="500">VII</text>
+        <text x="230" y="225">X</text>
+      </g>
+    </g>
+
+    <g class="dial-spin-ccw" opacity="0.5" stroke="#ff00a0" stroke-width="1.5" fill="none">
+      <circle cx="450" cy="320" r="220" stroke-dasharray="20 10 5 10"/>
+      <circle cx="450" cy="320" r="180" stroke-dasharray="15 15"/>
+      <circle cx="450" cy="320" r="130" stroke-dasharray="50 20"/>
+    </g>
+
+    <!-- Flying Floating Time Digits in Space -->
+    <g font-family="monospace" font-weight="bold" font-size="22" fill="#72f2ff" filter="url(#sparkleGlow)">
+      <text x="280" y="240" class="time-num-float-1">1985</text>
+      <text x="580" y="210" class="time-num-float-2">2026</text>
+      <text x="320" y="150" class="time-num-float-3">2112</text>
+      <text x="540" y="160" class="time-num-float-1">00:00</text>
+      <text x="230" y="360" class="time-num-float-2">1066</text>
+      <text x="640" y="380" class="time-num-float-3">3000</text>
+    </g>
+  </g>
+
+  <!-- Ground Shadow under Floating Time Machine -->
+  <ellipse cx="450" cy="680" rx="300" ry="35" fill="#000000" opacity="0.7" filter="url(#intenseGlow)"/>
+
+  <!-- ================= TIME MACHINE (DORAEMON STYLE) ================= -->
+  <g class="time-machine-unit" filter="url(#dropShadow)">
+
+    <!-- 1. MAIN FLAT CARPET PLATFORM (Yellow/Gold Curved Board) -->
+    <g id="carpet-platform">
+      <!-- Lower Thickness Edge -->
+      <path d="M 180,550 C 180,550 450,630 720,550 L 720,575 C 450,655 180,575 180,575 Z" fill="url(#carpetSide)" stroke="#331a00" stroke-width="2"/>
+
+      <!-- Platform Top Face -->
+      <path d="M 230,460 C 350,430 550,430 670,460 C 760,510 740,560 720,550 C 450,630 180,550 160,540 C 140,510 160,480 230,460 Z" fill="url(#carpetTop)" stroke="#b37700" stroke-width="3"/>
+
+      <!-- Platform Decorative Trim Lines -->
+      <path d="M 238,470 C 350,443 550,443 662,470 C 720,505 715,540 705,538 C 450,612 195,538 185,530 C 170,505 185,485 238,470 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    </g>
+
+    <!-- 2. CONTROL CONSOLE BOX (Front Right) -->
+    <g id="control-console">
+      <!-- Console Base Body (3D Box perspective) -->
+      <!-- Left Side -->
+      <polygon points="460,420 520,380 520,490 460,540" fill="#607180" stroke="#39444d" stroke-width="2"/>
+      <!-- Front Side -->
+      <polygon points="520,380 660,400 660,510 520,490" fill="url(#metalConsole)" stroke="#39444d" stroke-width="2"/>
+      <!-- Top Face -->
+      <polygon points="460,420 520,380 660,400 600,445" fill="#e6f0f8" stroke="#39444d" stroke-width="2"/>
+
+      <!-- Interactive Gears on Console Side -->
+      <g class="gear-spin-fast">
+        <circle cx="520" cy="455" r="22" fill="url(#brassGlow)" stroke="#4d3b00" stroke-width="1.5"/>
+        <path d="M 520,428 L 520,482 M 493,455 L 547,455 M 501,436 L 539,474 M 501,474 L 539,436" stroke="#4d3b00" stroke-width="4"/>
+        <circle cx="520" cy="455" r="10" fill="#2b2000"/>
+      </g>
+
+      <g class="gear-spin-back">
+        <circle cx="555" cy="435" r="15" fill="url(#brassGlow)" stroke="#4d3b00" stroke-width="1.5"/>
+        <path d="M 555,417 L 555,453 M 537,435 L 573,435" stroke="#4d3b00" stroke-width="3"/>
+        <circle cx="555" cy="435" r="6" fill="#2b2000"/>
+      </g>
+
+      <!-- Steering Control Joy-Stick Lever -->
+      <g>
+        <line x1="560" y1="420" x2="545" y2="360" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+        <line x1="560" y1="420" x2="545" y2="360" stroke="#aaa" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="542" cy="355" r="14" fill="#ff0000" stroke="#990000" stroke-width="1.5" filter="url(#softGlow)"/>
+        <ellipse cx="538" cy="351" rx="4" ry="2" fill="#fff" opacity="0.8"/>
+      </g>
+
+      <!-- Control Buttons & Levers on Front Face -->
+      <g transform="matrix(0.97 0.14 0 0.97 40 -35)">
+        <!-- Instrument Digital Screen -->
+        <rect x="515" y="405" width="75" height="35" rx="4" fill="url(#screenDisplay)" stroke="#003311" stroke-width="2"/>
+        <text x="522" y="423" font-family="monospace" font-size="10" font-weight="bold" fill="#00ff55" class="screen-text">DEST: 2112</text>
+        <text x="522" y="434" font-family="monospace" font-size="9" fill="#00ff55" class="screen-text">TIME: WARP</text>
+
+        <!-- Push Buttons -->
+        <circle cx="522" cy="455" r="6" fill="#ff3333" stroke="#800000"/>
+        <circle cx="538" cy="455" r="6" fill="#ffcc00" stroke="#806600"/>
+        <circle cx="554" cy="455" r="6" fill="#00cc44" stroke="#00591e"/>
+        <circle cx="570" cy="455" r="6" fill="#0099ff" stroke="#004080"/>
+
+        <!-- Toggle Levers -->
+        <rect x="520" y="470" width="6" height="15" fill="#333"/>
+        <circle cx="523" cy="470" r="4" fill="#ccc"/>
+        <rect x="535" y="470" width="6" height="15" fill="#333"/>
+        <circle cx="538" cy="482" r="4" fill="#ccc"/>
+        <rect x="550" y="470" width="6" height="15" fill="#333"/>
+        <circle cx="553" cy="470" r="4" fill="#ccc"/>
+      </g>
+    </g>
+
+    <!-- 3. STEERING POLE & LIGHT SPHERE (Front Left) -->
+    <g id="steering-light-pole">
+      <!-- Curved Metallic Pole Stem -->
+      <path d="M 260,510 C 250,420 280,380 290,350" fill="none" stroke="url(#metalConsole)" stroke-width="12" stroke-linecap="round"/>
+      <path d="M 260,510 C 250,420 280,380 290,350" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- Pole Base Socket -->
+      <ellipse cx="260" cy="510" rx="18" ry="8" fill="#404e5a" stroke="#232b32" stroke-width="2"/>
+
+      <!-- Glowing Time Navigation Sphere (Classic Clock Lamp) -->
+      <g class="lamp-glow">
+        <circle cx="292" cy="340" r="26" fill="url(#timeTunnel)" filter="url(#intenseGlow)"/>
+        <circle cx="292" cy="340" r="20" fill="#ffffff" stroke="#00ffff" stroke-width="2"/>
+        <!-- Inner Clock Pointer Symbol -->
+        <line x1="292" y1="340" x2="292" y2="328" stroke="#ff0080" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="292" y1="340" x2="302" y2="340" stroke="#ff0080" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- 4. OPERATOR SEAT (Red Leather Armchair) -->
+    <g id="driver-chair">
+      <!-- Chair Support Post -->
+      <rect x="340" y="450" width="16" height="35" fill="#404e5a" stroke="#232b32" stroke-width="1.5"/>
+      <ellipse cx="348" cy="485" rx="16" ry="6" fill="#232b32"/>
+
+      <!-- Cushion Seat Bottom -->
+      <path d="M 300,440 C 300,430 390,430 400,440 C 410,455 390,470 348,470 C 310,470 290,455 300,440 Z" fill="url(#chairLeather)" stroke="#4d0000" stroke-width="2"/>
+
+      <!-- Plush Seat Backrest -->
+      <path d="M 305,360 C 305,340 375,340 375,360 L 380,440 C 370,445 310,445 300,440 Z" fill="url(#chairLeather)" stroke="#4d0000" stroke-width="2"/>
+
+      <!-- Backrest Tufting / Button Details -->
+      <g fill="#330000" opacity="0.7">
+        <circle cx="325" cy="375" r="3"/>
+        <circle cx="355" cy="375" r="3"/>
+        <circle cx="328" cy="405" r="3"/>
+        <circle cx="358" cy="405" r="3"/>
+        <!-- Stitch Lines -->
+        <line x1="325" y1="375" x2="355" y2="375" stroke="#330000" stroke-width="1"/>
+        <line x1="328" y1="405" x2="358" y2="405" stroke="#330000" stroke-width="1"/>
+        <line x1="325" y1="375" x2="328" y2="405" stroke="#330000" stroke-width="1"/>
+        <line x1="355" y1="375" x2="358" y2="405" stroke="#330000" stroke-width="1"/>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- FOREGROUND TIME LIGHTNING & SPARKLES -->
+  <g filter="url(#sparkleGlow)">
+    <!-- Electric Lightning Flares around Machine Base -->
+    <path d="M 200,560 L 220,540 L 215,550 L 235,530" fill="none" stroke="#00ffff" stroke-width="2" class="sparkle-twinkle"/>
+    <path d="M 680,520 L 700,500 L 695,515 L 715,490" fill="none" stroke="#ff00a0" stroke-width="2" class="sparkle-twinkle"/>
+
+    <!-- Foreground Floating Magic Orbs -->
+    <circle cx="210" cy="430" r="4" fill="#00ffff" class="sparkle-twinkle"/>
+    <circle cx="650" cy="340" r="5" fill="#ff00a0" class="sparkle-twinkle"/>
+    <circle cx="500" cy="260" r="3" fill="#ffffff" class="sparkle-twinkle"/>
+    <circle cx="350" cy="560" r="3.5" fill="#ffe600" class="sparkle-twinkle"/>
+  </g>
+</svg>
