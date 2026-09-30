@@ -4,7 +4,7 @@
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/metadore/arcoistry/main/doraemon.svg" width="150" alt="Doraemon" />
+<img src="https://raw.githubusercontent.com/metadore/arcoistry/doraemon.svg" width="150" alt="Doraemon" />
 
 <br>
 
