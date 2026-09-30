@@ -1,0 +1,345 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Space & Glow Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2a085c"/>
+      <stop offset="50%" stop-color="#12032b"/>
+      <stop offset="100%" stop-color="#050010"/>
+    </radialGradient>
+
+    <!-- Doraemon Blue Gradients -->
+    <linearGradient id="doraBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a0e9"/>
+      <stop offset="50%" stop-color="#0080d0"/>
+      <stop offset="100%" stop-color="#005b9e"/>
+    </linearGradient>
+
+    <radialGradient id="bellyWhite" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f0f5fa"/>
+      <stop offset="100%" stop-color="#d0dce5"/>
+    </radialGradient>
+
+    <!-- Pocket Gradients -->
+    <linearGradient id="pocketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#edf2f7"/>
+      <stop offset="100%" stop-color="#c5d3e0"/>
+    </linearGradient>
+
+    <linearGradient id="pocketInnerVoid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d0026"/>
+      <stop offset="40%" stop-color="#2c0054"/>
+      <stop offset="80%" stop-color="#690080"/>
+      <stop offset="100%" stop-color="#ff00a0"/>
+    </linearGradient>
+
+    <!-- Gadget Metallics & Colors -->
+    <radialGradient id="bellGold" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fff066"/>
+      <stop offset="60%" stop-color="#ffcc00"/>
+      <stop offset="90%" stop-color="#cc9900"/>
+      <stop offset="100%" stop-color="#806000"/>
+    </radialGradient>
+
+    <radialGradient id="propellerGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="50%" stop-color="#ffcc00"/>
+      <stop offset="100%" stop-color="#b38f00"/>
+    </radialGradient>
+
+    <!-- Portal & Magic Glow Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur1"/>
+      <feGaussianBlur stdDeviation="20" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="sparkleGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComponentTransfer in="blur" result="bright">
+        <feFuncA type="linear" slope="2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="bright"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Pocket Rim Cutout Clip Path -->
+    <clipPath id="pocketOpeningClip">
+      <path d="M 260,390 C 260,390 400,340 540,390 C 540,390 530,580 400,580 C 270,580 260,390 260,390 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Embedded Animations -->
+  <style>
+    /* 4D Void Pulse */
+    .void-glow {
+      animation: voidPulse 3s ease-in-out infinite alternate;
+      transform-origin: 400px 420px;
+    }
+    @keyframes voidPulse {
+      0% { transform: scale(0.92); opacity: 0.7; }
+      100% { transform: scale(1.08); opacity: 1; }
+    }
+
+    /* Floating Gadgets Emerging from Pocket */
+    .gadget-propeller {
+      animation: floatPropeller 5s ease-in-out infinite alternate;
+    }
+    @keyframes floatPropeller {
+      0% { transform: translate(0px, 0px) rotate(-5deg); }
+      100% { transform: translate(-15px, -35px) rotate(10deg); }
+    }
+
+    .bamboo-blades {
+      animation: spinPropeller 0.4s linear infinite;
+      transform-origin: 290px 210px;
+    }
+    @keyframes spinPropeller {
+      0% { transform: scaleX(1); }
+      50% { transform: scaleX(0.1); }
+      100% { transform: scaleX(1); }
+    }
+
+    .gadget-memory-bread {
+      animation: floatBread 6s ease-in-out infinite alternate 0.5s;
+    }
+    @keyframes floatBread {
+      0% { transform: translate(0px, 0px) rotate(5deg); }
+      100% { transform: translate(20px, -40px) rotate(-8deg); }
+    }
+
+    .gadget-pass-loop {
+      animation: floatLoop 5.5s ease-in-out infinite alternate 1s;
+    }
+    @keyframes floatLoop {
+      0% { transform: translate(0px, 0px) scale(0.95); }
+      100% { transform: translate(-10px, -30px) scale(1.05); }
+    }
+
+    .gadget-small-light {
+      animation: floatTorch 4.8s ease-in-out infinite alternate 1.5s;
+    }
+    @keyframes floatTorch {
+      0% { transform: translate(0px, 0px) rotate(-10deg); }
+      100% { transform: translate(15px, -25px) rotate(15deg); }
+    }
+
+    /* Light Beam Pulse from Torch */
+    .torch-beam {
+      animation: beamPulse 2s ease-in-out infinite alternate;
+    }
+    @keyframes beamPulse {
+      0% { opacity: 0.3; }
+      100% { opacity: 0.85; }
+    }
+
+    /* Cosmic Particle Sparkles */
+    .sparkle-1 { animation: twinkle 1.5s ease-in-out infinite alternate; }
+    .sparkle-2 { animation: twinkle 2.2s ease-in-out infinite alternate 0.5s; }
+    .sparkle-3 { animation: twinkle 2.8s ease-in-out infinite alternate 1s; }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; transform: scale(0.7); }
+      100% { opacity: 1; transform: scale(1.3); }
+    }
+
+    /* Rising Magic Energy Stream */
+    .energy-particle {
+      animation: riseAndFade 3.5s ease-in infinite;
+    }
+    .delay-1 { animation-delay: 0.7s; }
+    .delay-2 { animation-delay: 1.4s; }
+    .delay-3 { animation-delay: 2.1s; }
+
+    @keyframes riseAndFade {
+      0% { transform: translateY(0px) scale(0.5); opacity: 0; }
+      50% { opacity: 0.9; }
+      100% { transform: translateY(-120px) scale(1.2); opacity: 0; }
+    }
+
+    /* Bell Ringing Animation */
+    .bell-group {
+      animation: ringBell 4s ease-in-out infinite;
+      transform-origin: 400px 240px;
+    }
+    @keyframes ringBell {
+      0%, 80%, 100% { transform: rotate(0deg); }
+      85% { transform: rotate(8deg); }
+      90% { transform: rotate(-8deg); }
+      95% { transform: rotate(4deg); }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGlow)"/>
+
+  <!-- Background Cosmic Dust & Stars -->
+  <g opacity="0.5">
+    <circle cx="150" cy="120" r="1.5" fill="#fff" class="sparkle-1"/>
+    <circle cx="680" cy="160" r="2" fill="#72f2ff" class="sparkle-2"/>
+    <circle cx="120" cy="550" r="1.2" fill="#ff99dd" class="sparkle-3"/>
+    <circle cx="700" cy="600" r="1.8" fill="#fff" class="sparkle-1"/>
+    <path d="M 640,100 Q 640,110 650,110 Q 640,110 640,120 Q 640,110 630,110 Q 640,110 640,100 Z" fill="#fff" class="sparkle-2" filter="url(#sparkleGlow)"/>
+    <path d="M 160,260 Q 160,270 170,270 Q 160,270 160,280 Q 160,270 150,270 Q 160,270 160,260 Z" fill="#72f2ff" class="sparkle-3"/>
+  </g>
+
+  <!-- Aura Glow Behind Doraemon Body -->
+  <circle cx="400" cy="450" r="320" fill="#00a0e9" opacity="0.15" filter="url(#intenseGlow)"/>
+
+  <!-- ================= DORAEMON BODY & BELLY ================= -->
+  <g filter="url(#dropShadow)">
+    <!-- Outer Blue Body/Fur Backdrop -->
+    <path d="M 160,350 C 160,220 260,180 400,180 C 540,180 640,220 640,350 C 640,550 560,680 400,680 C 240,680 160,550 160,350 Z" fill="url(#doraBlue)"/>
+
+    <!-- White Belly Oval -->
+    <ellipse cx="400" cy="420" rx="190" ry="210" fill="url(#bellyWhite)" stroke="#d0dce5" stroke-width="2"/>
+
+    <!-- Red Collar -->
+    <path d="M 230,225 C 290,245 510,245 570,225 C 585,240 575,260 560,265 C 500,280 300,280 240,265 C 225,260 215,240 230,225 Z" fill="#e60000" stroke="#990000" stroke-width="2"/>
+
+    <!-- Collar Shadow on Belly -->
+    <path d="M 240,265 C 300,282 500,282 560,265 C 520,300 280,300 240,265 Z" fill="#000000" opacity="0.15"/>
+
+    <!-- Golden Bell -->
+    <g class="bell-group" filter="url(#dropShadow)">
+      <circle cx="400" cy="285" r="28" fill="url(#bellGold)" stroke="#b38f00" stroke-width="1.5"/>
+      <!-- Bell Reflection -->
+      <ellipse cx="392" cy="275" rx="8" ry="5" fill="#ffffff" opacity="0.6" transform="rotate(-20 392 275)"/>
+      <!-- Bell Line & Hole -->
+      <line x1="373" y1="280" x2="427" y2="280" stroke="#4d3b00" stroke-width="3"/>
+      <line x1="375" y1="284" x2="425" y2="284" stroke="#ffe680" stroke-width="1"/>
+      <circle cx="400" cy="294" r="5" fill="#2b2000"/>
+      <line x1="400" y1="299" x2="400" y2="312" stroke="#2b2000" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <!-- ================= 4D POCKET VOID & PORTAL ================= -->
+  <g filter="url(#dropShadow)">
+    <!-- Pocket Outer White Base Leather -->
+    <path d="M 240,380 L 560,380 C 560,380 550,600 400,600 C 250,600 240,380 240,380 Z" fill="url(#pocketGrad)" stroke="#b0c2d0" stroke-width="3"/>
+
+    <!-- Inner 4D Dimensional Void Hole -->
+    <path d="M 255,385 C 255,385 400,340 545,385 C 545,385 535,585 400,585 C 265,585 255,385 255,385 Z" fill="url(#pocketInnerVoid)"/>
+
+    <!-- Animated Cosmic Nebula Inside Pocket -->
+    <g clip-path="url(#pocketOpeningClip)">
+      <circle cx="400" cy="460" r="130" fill="#bf00ff" class="void-glow" filter="url(#intenseGlow)" opacity="0.6"/>
+      <circle cx="360" cy="480" r="90" fill="#00f0ff" class="void-glow" filter="url(#intenseGlow)" opacity="0.5"/>
+
+      <!-- Spiral Vortex Lines in Pocket -->
+      <g stroke="#ffffff" stroke-width="1.5" opacity="0.4" fill="none" class="void-glow">
+        <path d="M 400,480 A 20,20 0 0,0 420,480 A 40,40 0 0,0 360,480 A 70,70 0 0,0 470,480 A 110,110 0 0,0 290,480"/>
+      </g>
+
+      <!-- Deep Portal Stars -->
+      <circle cx="340" cy="440" r="1" fill="#fff" class="sparkle-1"/>
+      <circle cx="450" cy="450" r="1.5" fill="#fff" class="sparkle-2"/>
+      <circle cx="390" cy="510" r="1.2" fill="#ff99dd" class="sparkle-3"/>
+      <circle cx="430" cy="490" r="2" fill="#72f2ff" class="sparkle-1"/>
+    </g>
+
+    <!-- Pocket Inner Rim Depth Highlight -->
+    <path d="M 255,385 C 330,360 470,360 545,385 C 510,370 290,370 255,385 Z" fill="#ffffff" opacity="0.8"/>
+    <path d="M 255,385 C 255,385 400,340 545,385" fill="none" stroke="#80a0b8" stroke-width="3"/>
+  </g>
+
+  <!-- ================= FLOATING EMERGING GADGETS ================= -->
+
+  <!-- 1. Bamboo Copter (Hopter) -->
+  <g class="gadget-propeller" filter="url(#dropShadow)">
+    <!-- Yellow Base Mount -->
+    <path d="M 282,230 L 298,230 L 294,242 L 286,242 Z" fill="url(#propellerGrad)" stroke="#806600" stroke-width="1"/>
+    <ellipse cx="290" cy="242" rx="6" ry="2.5" fill="#997a00"/>
+    <rect x="288" y="210" width="4" height="22" rx="1.5" fill="url(#propellerGrad)" stroke="#806600" stroke-width="0.8"/>
+    <!-- Rotor Hub -->
+    <ellipse cx="290" cy="210" rx="5" ry="2.5" fill="#ffe680"/>
+    <!-- Spinning Blades -->
+    <g class="bamboo-blades">
+      <ellipse cx="290" cy="210" rx="55" ry="5" fill="url(#propellerGrad)" stroke="#b38f00" stroke-width="1" opacity="0.95"/>
+      <ellipse cx="290" cy="210" rx="60" ry="2" fill="#ffffff" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- 2. Memory Bread ( Anki-Pan ) -->
+  <g class="gadget-memory-bread" filter="url(#dropShadow)">
+    <g transform="translate(480, 260) rotate(12)">
+      <!-- Crust -->
+      <rect x="0" y="0" width="75" height="85" rx="12" fill="#d9822b" stroke="#8c4a0e" stroke-width="2"/>
+      <!-- Soft Bread Center -->
+      <rect x="5" y="6" width="65" height="73" rx="8" fill="#fff5e6"/>
+      <!-- Math Formulas written on bread -->
+      <g fill="#5c3a21" font-family="monospace" font-weight="bold" font-size="11" opacity="0.85">
+        <text x="12" y="26">3 + 5 = 8</text>
+        <text x="12" y="46">a²+b²=c²</text>
+        <text x="12" y="66">9 × 9 = 81</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 3. Small Light ( Shrink Ray ) -->
+  <g class="gadget-small-light" filter="url(#dropShadow)">
+    <g transform="translate(200, 310) rotate(-25)">
+      <!-- Green Torch Body -->
+      <path d="M 25,45 L 45,45 L 40,85 L 30,85 Z" fill="#00cc66" stroke="#006633" stroke-width="1.5"/>
+      <!-- Metallic Bands -->
+      <rect x="27" y="55" width="16" height="5" fill="#ffd700"/>
+      <rect x="29" y="70" width="13" height="4" fill="#cccccc"/>
+      <!-- Red Switch -->
+      <rect x="33" y="62" width="5" height="6" rx="1" fill="#ff3300"/>
+      <!-- Bell Head (Torch Front) -->
+      <path d="M 15,20 L 55,20 L 45,45 L 25,45 Z" fill="#ffcc00" stroke="#b38f00" stroke-width="1.5"/>
+      <!-- Lens Inner -->
+      <ellipse cx="35" cy="20" rx="20" ry="7" fill="#72f2ff" stroke="#ffffff" stroke-width="1.5"/>
+
+      <!-- Emitted Shrink Light Beam -->
+      <polygon points="15,20 55,20 -10,-60 80,-60" fill="url(#portalGlow)" class="torch-beam" opacity="0.6" style="mix-blend-mode: screen;"/>
+    </g>
+  </g>
+
+  <!-- 4. Pass Loop ( Anywhere Through Hoop ) -->
+  <g class="gadget-pass-loop" filter="url(#dropShadow)">
+    <g transform="translate(450, 330) rotate(-15)">
+      <!-- Red Oval Hole Frame -->
+      <ellipse cx="40" cy="30" rx="45" ry="16" fill="none" stroke="#ff0040" stroke-width="10"/>
+      <ellipse cx="40" cy="30" rx="45" ry="16" fill="none" stroke="#ff8099" stroke-width="2"/>
+      <!-- Void Center of Pass Loop -->
+      <ellipse cx="40" cy="30" rx="38" ry="11" fill="url(#spaceGlow)"/>
+      <ellipse cx="40" cy="30" rx="30" ry="7" fill="#690080" opacity="0.7" filter="url(#softGlow)"/>
+    </g>
+  </g>
+
+  <!-- ================= FOREGROUND MAGIC PARTICLES & BEAMS ================= -->
+  <g filter="url(#sparkleGlow)">
+    <!-- Rising Energy Orbs out of Pocket -->
+    <circle cx="380" cy="400" r="5" fill="#72f2ff" class="energy-particle"/>
+    <circle cx="430" cy="420" r="4" fill="#ff99dd" class="energy-particle delay-1"/>
+    <circle cx="330" cy="430" r="6" fill="#ffe600" class="energy-particle delay-2"/>
+    <circle cx="460" cy="390" r="3.5" fill="#ffffff" class="energy-particle delay-3"/>
+
+    <!-- Outer Floating Magic Stars -->
+    <path d="M 310,320 Q 310,330 320,330 Q 310,330 310,340 Q 310,330 300,330 Q 310,330 310,320 Z" fill="#ffe680" class="sparkle-1"/>
+    <path d="M 500,360 Q 500,372 512,372 Q 500,372 500,384 Q 500,372 488,372 Q 500,372 500,360 Z" fill="#ffffff" class="sparkle-2"/>
+    <path d="M 260,460 Q 260,470 270,470 Q 260,470 260,480 Q 260,470 250,470 Q 260,470 260,460 Z" fill="#72f2ff" class="sparkle-3"/>
+
+    <!-- Light Swirl Ring around Pocket Rim -->
+    <path d="M 240,385 C 320,410 480,410 560,385" fill="none" stroke="#72f2ff" stroke-width="2" stroke-dasharray="8 10" opacity="0.8"/>
+    <path d="M 255,395 C 330,420 470,420 545,395" fill="none" stroke="#ff99dd" stroke-width="1.5" stroke-dasharray="5 7" opacity="0.7"/>
+  </g>
+</svg>
