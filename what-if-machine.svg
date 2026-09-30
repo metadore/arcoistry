@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Space / Dimension Gradients -->
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#2d004d"/>
+      <stop offset="45%" stop-color="#120026"/>
+      <stop offset="100%" stop-color="#03000a"/>
+    </radialGradient>
+
+    <radialGradient id="portalGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#ff00a0"/>
+      <stop offset="65%" stop-color="#7000ff"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Metallic Box & Shell Gradients -->
+    <linearGradient id="boxFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d79"/>
+      <stop offset="40%" stop-color="#e60039"/>
+      <stop offset="80%" stop-color="#990026"/>
+      <stop offset="100%" stop-color="#5a0016"/>
+    </linearGradient>
+
+    <linearGradient id="boxTop" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff80a0"/>
+      <stop offset="50%" stop-color="#ff1a53"/>
+      <stop offset="100%" stop-color="#b3002d"/>
+    </linearGradient>
+
+    <linearGradient id="boxSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a6002c"/>
+      <stop offset="100%" stop-color="#400011"/>
+    </linearGradient>
+
+    <linearGradient id="goldBrass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="40%" stop-color="#ffd700"/>
+      <stop offset="80%" stop-color="#ccab00"/>
+      <stop offset="100%" stop-color="#665500"/>
+    </linearGradient>
+
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#001a11"/>
+      <stop offset="50%" stop-color="#004d33"/>
+      <stop offset="100%" stop-color="#00100a"/>
+    </linearGradient>
+
+    <linearGradient id="pipeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4a000"/>
+      <stop offset="50%" stop-color="#fff275"/>
+      <stop offset="100%" stop-color="#806000"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="20" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <style>
+    /* Machine Hover Float */
+    .what-if-unit {
+      animation: hoverFloating 4.5s ease-in-out infinite alternate;
+      transform-origin: 450px 420px;
+    }
+    @keyframes hoverFloating {
+      0% { transform: translateY(12px) rotate(-1.2deg); }
+      100% { transform: translateY(-16px) rotate(1.5deg); }
+    }
+
+    /* Dimensional Portal Background Pulse */
+    .portal-pulse {
+      animation: pulsePortal 4s ease-in-out infinite alternate;
+      transform-origin: 450px 380px;
+    }
+    @keyframes pulsePortal {
+      0% { transform: scale(0.92); opacity: 0.6; }
+      100% { transform: scale(1.1); opacity: 0.95; }
+    }
+
+    /* Spinning Question Mark Gear Ring */
+    .ring-spin-cw {
+      animation: spinRing 22s linear infinite;
+      transform-origin: 450px 380px;
+    }
+    .ring-spin-ccw {
+      animation: spinRing 15s linear infinite reverse;
+      transform-origin: 450px 380px;
+    }
+    @keyframes spinRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Question Mark Glow Pulse */
+    .qm-pulse {
+      animation: qmGlow 2s ease-in-out infinite alternate;
+      transform-origin: 450px 230px;
+    }
+    @keyframes qmGlow {
+      0% { transform: scale(0.96); filter: drop-shadow(0 0 10px #ff00a0); }
+      100% { transform: scale(1.08); filter: drop-shadow(0 0 28px #00ffff); }
+    }
+
+    /* Screen Text Glitch/Type Blink */
+    .screen-glitch {
+      animation: textBlink 1.4s steps(2, start) infinite;
+    }
+    @keyframes textBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* Sparkles & Floating Particles */
+    .sparkle-1 { animation: twinkle 1.5s ease-in-out infinite alternate; }
+    .sparkle-2 { animation: twinkle 2.3s ease-in-out infinite alternate 0.5s; }
+    .sparkle-3 { animation: twinkle 3.0s ease-in-out infinite alternate 1.0s; }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; transform: scale(0.6); }
+      100% { opacity: 1; transform: scale(1.4); }
+    }
+
+    .particle-rise {
+      animation: rise 3.8s ease-out infinite;
+    }
+    .delay-1 { animation-delay: 0.9s; }
+    .delay-2 { animation-delay: 1.8s; }
+    .delay-3 { animation-delay: 2.7s; }
+
+    @keyframes rise {
+      0% { transform: translateY(0px) scale(0.5); opacity: 0; }
+      50% { opacity: 0.9; }
+      100% { transform: translateY(-120px) scale(1.2); opacity: 0; }
+    }
+  </style>
+
+  <!-- Deep Cosmic / Multiverse Background -->
+  <rect width="900" height="800" fill="url(#spaceBg)"/>
+
+  <!-- Background Stars & Floating What-If Sparks -->
+  <g opacity="0.6">
+    <circle cx="120" cy="140" r="1.5" fill="#fff" class="sparkle-1"/>
+    <circle cx="780" cy="160" r="2" fill="#00ffff" class="sparkle-2"/>
+    <circle cx="150" cy="640" r="1.2" fill="#ff00a0" class="sparkle-3"/>
+    <circle cx="820" cy="580" r="1.8" fill="#fff" class="sparkle-1"/>
+    <circle cx="230" cy="220" r="1" fill="#fff"/>
+    <circle cx="710" cy="280" r="1.4" fill="#7000ff"/>
+  </g>
+
+  <!-- Ground Aura & Shadow -->
+  <ellipse cx="450" cy="670" rx="300" ry="35" fill="#000000" opacity="0.75" filter="url(#intenseGlow)"/>
+
+  <!-- ================= MULTIVERSE PORTAL (BACKGROUND) ================= -->
+  <g id="multiverse-portal">
+    <circle cx="450" cy="380" r="280" fill="url(#portalGlow)" class="portal-pulse"/>
+
+    <!-- Concentric Dimensional Gear Rings -->
+    <g class="ring-spin-cw" opacity="0.6" stroke="#00ffff" stroke-width="1.5" fill="none">
+      <circle cx="450" cy="380" r="240" stroke-dasharray="20 10 50 15"/>
+      <circle cx="450" cy="380" r="200" stroke-dasharray="12 8 30 12"/>
+      <!-- Small Question Marks on Outer Ring -->
+      <g font-family="sans-serif" font-weight="bold" font-size="16" fill="#00ffff" stroke="none" text-anchor="middle">
+        <text x="450" y="150">?</text>
+        <text x="680" y="385">?</text>
+        <text x="450" y="620">?</text>
+        <text x="220" y="385">?</text>
+        <text x="610" y="220">?</text>
+        <text x="290" y="550">?</text>
+      </g>
+    </g>
+
+    <g class="ring-spin-ccw" opacity="0.5" stroke="#ff00a0" stroke-width="1.5" fill="none">
+      <circle cx="450" cy="380" r="220" stroke-dasharray="40 15 10 15"/>
+      <circle cx="450" cy="380" r="170" stroke-dasharray="6 10"/>
+    </g>
+  </g>
+
+  <!-- ================= WHAT IF MACHINE ================= -->
+  <g class="what-if-unit" filter="url(#dropShadow)">
+
+    <!-- 1. COPPER EXHAUST / ENERGY PIPES (Behind Box) -->
+    <g id="pipes">
+      <!-- Curved Top Left Pipe -->
+      <path d="M 320,380 C 260,340 240,260 270,200" fill="none" stroke="url(#pipeGold)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M 320,380 C 260,340 240,260 270,200" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- Curved Top Right Pipe -->
+      <path d="M 580,380 C 640,340 660,260 630,200" fill="none" stroke="url(#pipeGold)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M 580,380 C 640,340 660,260 630,200" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- Glowing Exhaust Cups -->
+      <ellipse cx="270" cy="200" rx="14" ry="6" fill="#00ffff" filter="url(#softGlow)"/>
+      <ellipse cx="630" cy="200" rx="14" ry="6" fill="#ff00a0" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- 2. MAIN RED RETRO CONSOLE CABINET (3D Isometric-Style) -->
+    <g id="machine-body">
+      <!-- Left Side Wall -->
+      <polygon points="260,420 340,360 340,560 260,610" fill="url(#boxSide)" stroke="#33000d" stroke-width="2"/>
+
+      <!-- Top Face Wall -->
+      <polygon points="260,420 340,360 640,380 560,450" fill="url(#boxTop)" stroke="#33000d" stroke-width="2"/>
+
+      <!-- Front Main Face Wall -->
+      <polygon points="340,360 640,380 640,580 340,560" fill="url(#boxFront)" stroke="#33000d" stroke-width="2.5"/>
+
+      <!-- Gold Metal Frame Trim Border -->
+      <path d="M 340,360 L 640,380 L 640,580 L 340,560 Z" fill="none" stroke="url(#goldBrass)" stroke-width="6"/>
+      <path d="M 260,420 L 340,360 L 560,450 L 260,610 Z" fill="none" stroke="url(#goldBrass)" stroke-width="2" opacity="0.4"/>
+    </g>
+
+    <!-- 3. TOP GLOWING QUESTION MARK GLOBE / BULB -->
+    <g id="question-mark-emitter" class="qm-pulse">
+      <!-- Base Brass Pedestal -->
+      <ellipse cx="450" cy="305" rx="32" ry="10" fill="url(#goldBrass)" stroke="#4d3b00" stroke-width="2"/>
+      <rect x="432" y="285" width="36" height="20" fill="url(#goldBrass)" stroke="#4d3b00" stroke-width="1.5"/>
+      <ellipse cx="450" cy="285" rx="18" ry="6" fill="#ffffff"/>
+
+      <!-- Glowing Crystal Orb Sphere -->
+      <circle cx="450" cy="230" r="52" fill="url(#portalGlow)" filter="url(#intenseGlow)"/>
+      <circle cx="450" cy="230" r="48" fill="none" stroke="#00ffff" stroke-width="2" opacity="0.8"/>
+
+      <!-- Big Neon Giant Question Mark (?) Inside Orb -->
+      <text x="450" y="258" 
+            font-family="'Impact', 'Arial Black', sans-serif" 
+            font-size="80" 
+            font-weight="900" 
+            fill="#ffffff" 
+            stroke="#ff00a0" 
+            stroke-width="3" 
+            text-anchor="middle" 
+            filter="url(#softGlow)">?</text>
+    </g>
+
+    <!-- 4. FRONT DISPLAY SCREEN ("WHAT IF..." SIMULATOR MONITOR) -->
+    <g id="display-monitor" transform="matrix(0.98 0.065 0 0.98 12 -22)">
+      <!-- Bezel Screen Frame -->
+      <rect x="375" y="390" width="210" height="110" rx="12" fill="#1a1a1a" stroke="url(#goldBrass)" stroke-width="4"/>
+
+      <!-- CRT Glass Display Screen -->
+      <rect x="385" y="400" width="190" height="90" rx="8" fill="url(#screenGlass)" stroke="#003322" stroke-width="2"/>
+
+      <!-- Scanline Grid Overlay -->
+      <path d="M 385,410 L 575,410 M 385,420 L 575,420 M 385,430 L 575,430 M 385,440 L 575,440 M 385,450 L 575,450 M 385,460 L 575,460 M 385,470 L 575,470 M 385,480 L 575,480" stroke="#00ffaa" stroke-width="0.5" opacity="0.25"/>
+
+      <!-- Simulated Screen Text & Vector Graphic -->
+      <g class="screen-glitch">
+        <text x="395" y="422" font-family="monospace" font-size="12" font-weight="bold" fill="#00ffaa">QUERY: WHAT IF...?</text>
+        <text x="395" y="438" font-family="monospace" font-size="10" fill="#00cc88">> SIMULATING REALITY #2112</text>
+        <text x="395" y="452" font-family="monospace" font-size="10" fill="#00cc88">> NOBITA PASSED THE TEST</text>
+      </g>
+
+      <!-- Mini Waveform Graph -->
+      <path d="M 395,475 Q 410,460 425,475 T 455,475 T 485,460 T 515,480 T 545,465 L 565,475" fill="none" stroke="#ff00a0" stroke-width="2" filter="url(#softGlow)"/>
+
+      <!-- Glass Screen Flare Highlight -->
+      <path d="M 388,403 L 520,403 L 388,485 Z" fill="#ffffff" opacity="0.08"/>
+    </g>
+
+    <!-- 5. CONTROL PANEL & BUTTONS (Front Lower Console) -->
+    <g id="control-panel" transform="matrix(0.98 0.065 0 0.98 12 -22)">
+      <!-- Golden Control Plate Base -->
+      <rect x="375" y="515" width="210" height="42" rx="4" fill="url(#goldBrass)" stroke="#4d3b00" stroke-width="1.5"/>
+
+      <!-- Large Red "EXECUTE WHAT-IF" Push Button -->
+      <circle cx="405" cy="536" r="12" fill="#ff0040" stroke="#800020" stroke-width="2" filter="url(#softGlow)"/>
+      <ellipse cx="403" cy="532" rx="4" ry="2" fill="#ffffff" opacity="0.8"/>
+
+      <!-- Glowing Indicator Lights -->
+      <circle cx="432" cy="536" r="5" fill="#00ffff" stroke="#008080" class="sparkle-1"/>
+      <circle cx="447" cy="536" r="5" fill="#ff00a0" stroke="#800050" class="sparkle-2"/>
+      <circle cx="462" cy="536" r="5" fill="#ffcc00" stroke="#806600" class="sparkle-3"/>
+
+      <!-- Slider Controls -->
+      <rect x="485" y="525" width="8" height="22" fill="#222" rx="2"/>
+      <rect x="483" y="530" width="12" height="6" fill="#aaa" rx="1"/>
+
+      <rect x="502" y="525" width="8" height="22" fill="#222" rx="2"/>
+      <rect x="500" y="540" width="12" height="6" fill="#aaa" rx="1"/>
+
+      <!-- Keypad Buttons -->
+      <rect x="525" y="525" width="8" height="8" fill="#333"/>
+      <rect x="537" y="525" width="8" height="8" fill="#333"/>
+      <rect x="549" y="525" width="8" height="8" fill="#333"/>
+      <rect x="525" y="537" width="8" height="8" fill="#333"/>
+      <rect x="537" y="537" width="8" height="8" fill="#333"/>
+      <rect x="549" y="537" width="8" height="8" fill="#333"/>
+    </g>
+
+  </g> <!-- END WHAT IF MACHINE GROUP -->
+
+  <!-- FOREGROUND RISING MULTIVERSE PARTICLES & QUESTION SPARKS -->
+  <g filter="url(#intenseGlow)">
+    <!-- Floating Sparkle Question Marks -->
+    <text x="210" y="320" font-family="sans-serif" font-weight="bold" font-size="28" fill="#00ffff" class="sparkle-1">?</text>
+    <text x="680" y="300" font-family="sans-serif" font-weight="bold" font-size="34" fill="#ff00a0" class="sparkle-2">?</text>
+    <text x="310" y="180" font-family="sans-serif" font-weight="bold" font-size="22" fill="#ffffff" class="sparkle-3">?</text>
+
+    <!-- Upward Floating Energy Orbs -->
+    <circle cx="330" cy="620" r="4" fill="#00ffff" class="particle-rise"/>
+    <circle cx="590" cy="630" r="4.5" fill="#ff00a0" class="particle-rise delay-1"/>
+    <circle cx="450" cy="580" r="3" fill="#ffffff" class="particle-rise delay-2"/>
+    <circle cx="250" cy="530" r="5" fill="#7000ff" class="particle-rise delay-3"/>
+    <circle cx="670" cy="510" r="3.5" fill="#00ffaa" class="particle-rise delay-1"/>
+  </g>
+</svg>
